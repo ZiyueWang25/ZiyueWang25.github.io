@@ -1,53 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-18T14:45:47+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-</subtitle><entry><title type="html">Metrics in Learn-To-Rank (LTR) problems</title><link href="https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics/" rel="alternate" type="text/html" title="Metrics in Learn-To-Rank (LTR) problems" /><published>2023-04-09T00:00:00+00:00</published><updated>2023-04-09T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics/"><![CDATA[<p>Suppose we have <code class="language-plaintext highlighter-rouge">Q</code> queries, for each query <code class="language-plaintext highlighter-rouge">q</code>, it brings $N_q$ results and normally we care about the top <code class="language-plaintext highlighter-rouge">K</code> docs retrieved.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-18T15:16:27+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
+</subtitle><entry><title type="html">Metrics in Learn-To-Rank (LTR) problems</title><link href="https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics/" rel="alternate" type="text/html" title="Metrics in Learn-To-Rank (LTR) problems" /><published>2023-04-09T00:00:00+00:00</published><updated>2023-04-09T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics/"><![CDATA[<p>Suppose we have <code class="language-plaintext highlighter-rouge">Q</code> queries, for each query <code class="language-plaintext highlighter-rouge">q</code>, it brings \(N_q\) results and normally we care about the top <code class="language-plaintext highlighter-rouge">K</code> docs retrieved.</p>
 
 <p>All of the following metric is for 1 query, we need to average them to get an overall score for <code class="language-plaintext highlighter-rouge">Q</code> queries.</p>
 <ol>
   <li><code class="language-plaintext highlighter-rouge">Accuracy@K</code>: Whether top K results contain the relevant results.
     <ol>
-      <li>Formula: $A(K)=(\sum_{i=1}^K I(i)) &gt; 0$. $I(i)$ is an indicator function suggesting whether the $i_{th}$ position is relevant or not.</li>
+      <li>Formula: \(A(K)=(\sum_{i=1}^K I(i)) &gt; 0\). \(I(i)\) is an indicator function suggesting whether the \(i_{th}\) position is relevant or not.</li>
     </ol>
   </li>
   <li><code class="language-plaintext highlighter-rouge">Precision@K</code>: How many relevant results among the top K.
     <ol>
-      <li>Formula: $P(K) =\frac{1}{K}\sum_{i=1}^KI(i)$.</li>
+      <li>Formula: \(P(K) =\frac{1}{K}\sum_{i=1}^KI(i)\).</li>
       <li>Only for binary cases</li>
     </ol>
   </li>
   <li><code class="language-plaintext highlighter-rouge">Recall@K</code>: How many relevant results among the top K compared with all relevant results.
     <ol>
-      <li>Formula: $R(K) = \frac{1}{m}\sum_{i=1}^KI(i)$. $m$ is the total number of relevant results overall.</li>
+      <li>Formula: \(R(K) = \frac{1}{m}\sum_{i=1}^KI(i)\). \(m\) is the total number of relevant results overall.</li>
       <li>Only for binary cases</li>
     </ol>
   </li>
   <li><code class="language-plaintext highlighter-rouge">AP@K</code> (Average Precision): the weighted mean of precision at each threshold; the weight is the increase in recall from the prior threshold.
     <ol>
-      <li>Formula: $AP@K = \frac{1}{m}\sum_{k=1}^K P(k)I(k)$</li>
-      <li>A different way to represent $AP@K$: We can also use <code class="language-plaintext highlighter-rouge">Recall@K</code> here by using its delta format $\Delta R(k) = R(k) - R(k-1)$. It would be $\frac{1}{m}$ if a relevant result is at position $k$, otherwise it is 0. and it becomes $AP@K = \sum_{k=1}^K P(k) * \Delta R(k)$. In other words, it is the area under Precision-Recall curve.</li>
+      <li>Formula: \(AP@K = \frac{1}{m}\sum_{k=1}^K P(k)I(k)\)</li>
+      <li>A different way to represent \(AP@K\): We can also use <code class="language-plaintext highlighter-rouge">Recall@K</code> here by using its delta format \(\Delta R(k) = R(k) - R(k-1)\). It would be \(\frac{1}{m}\) if a relevant result is at position \(k\), otherwise it is 0. and it becomes \(AP@K = \sum_{k=1}^K P(k) * \Delta R(k)\). In other words, it is the area under Precision-Recall curve.</li>
       <li>Only for binary cases</li>
     </ol>
   </li>
   <li><code class="language-plaintext highlighter-rouge">RR</code> (Reciprocal Rank): reciprocal of the rank of the first relevant item in a ranked list.
     <ol>
-      <li>Formula: $RR = \frac{1}{\text{rank of the first relevant item}}$</li>
+      <li>Formula: \(RR = \frac{1}{\text{rank of the first relevant item}}\)</li>
       <li>Only for binary cases.</li>
     </ol>
   </li>
   <li><code class="language-plaintext highlighter-rouge">NDCG@K</code> (Normalized Discounted Cumulative Gain)
     <ol>
-      <li><code class="language-plaintext highlighter-rouge">CG@K</code>: Sum of relevance of all results in a search result list $CG@K = \sum_{k=1}^K rel(k)$, $rel(k)$ is the relevance score of the result at $k$.</li>
-      <li><code class="language-plaintext highlighter-rouge">DCG@K</code>: Give earlier result higher weights: $DCG@K = \sum_{k=1}^K\frac{2^{rel(k)} - 1}{ \log_2(k+1)}$</li>
+      <li><code class="language-plaintext highlighter-rouge">CG@K</code>: Sum of relevance of all results in a search result list \(CG@K = \sum_{k=1}^K rel(k)\), \(rel(k)\) is the relevance score of the result at \(k\).</li>
+      <li><code class="language-plaintext highlighter-rouge">DCG@K</code>: Give earlier result higher weights: \(DCG@K = \sum_{k=1}^K\frac{2^{rel(k)} - 1}{ \log_2(k+1)}\)</li>
       <li><code class="language-plaintext highlighter-rouge">NDCG@K</code>: normalize <code class="language-plaintext highlighter-rouge">DCG</code> by its perfect ranking result (a.k.an Ideal <code class="language-plaintext highlighter-rouge">DCG</code> (<code class="language-plaintext highlighter-rouge">IDCG</code>)) to reduce the effect that different search results can vary in length.</li>
     </ol>
   </li>
   <li>Normalized Kendall tau distance at K:
     <ol>
-      <li>$K_n@K(\tau_1, \tau_2) = \frac{K_d}{\frac{1}{2}n(n-1)} = \frac{2}{n(n-1)} \sum_{{i,j}\in \mathbb{K}, i &lt; j} \bar K_{i,j}(\tau_1, \tau_2)$. $\mathbb{K}$ is the set of unordered pairs of distinct elements among the top K in $\tau_1$ and $\tau_2$. $\bar K_{i,j}(\tau_1, \tau_2) = 0$ if $i$ and $j$ are in the same order in $\tau_1$ and $\tau_2$, otherwise 1.</li>
+      <li>\(K_n@K(\tau_1, \tau_2) = \frac{K_d}{\frac{1}{2}n(n-1)} = \frac{2}{n(n-1)} \sum_{\{i,j\}\in \mathbb{K}, i &lt; j} \bar K_{i,j}(\tau_1, \tau_2)\). \(\mathbb{K}\) is the set of unordered pairs of distinct elements among the top K in \(\tau_1\) and \(\tau_2\). \(\bar K_{i,j}(\tau_1, \tau_2) = 0\) if \(i\) and \(j\) are in the same order in \(\tau_1\) and \(\tau_2\), otherwise 1.</li>
     </ol>
   </li>
   <li>Spearman Rho:
     <ol>
-      <li>Formula: $\rho = \frac{cov(R(X), R(Y))}{\delta_{R(x)}\delta_{R(Y)}}$</li>
+      <li>Formula: \(\rho = \frac{cov(R(X), R(Y))}{\delta_{R(x)}\delta_{R(Y)}}\)</li>
     </ol>
   </li>
 </ol>
@@ -57,7 +57,7 @@
   <li>https://en.wikipedia.org/wiki/Discounted_cumulative_gain</li>
   <li>https://en.wikipedia.org/wiki/Kendall_tau_distance</li>
   <li>https://towardsdatascience.com/normalized-discounted-cumulative-gain-37e6f75090e9</li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[Suppose we have Q queries, for each query q, it brings $N_q$ results and normally we care about the top K docs retrieved.]]></summary></entry><entry><title type="html">KDS - Google Universal Image Embedding</title><link href="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1/" rel="alternate" type="text/html" title="KDS - Google Universal Image Embedding" /><published>2023-03-01T00:00:00+00:00</published><updated>2023-03-01T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1/"><![CDATA[<ul>
+</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[Suppose we have Q queries, for each query q, it brings \(N_q\) results and normally we care about the top K docs retrieved.]]></summary></entry><entry><title type="html">KDS - Google Universal Image Embedding</title><link href="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1/" rel="alternate" type="text/html" title="KDS - Google Universal Image Embedding" /><published>2023-03-01T00:00:00+00:00</published><updated>2023-03-01T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1/"><![CDATA[<ul>
   <li>Competition End time: 2022-10-17</li>
   <li>Submission Format: notebook &lt;= 9h</li>
 </ul>
@@ -523,10 +523,49 @@ Here is the distribution of test data.
 
 <p>I started tracking how I spent my week since January 1st and it helps me reflect upon <strong>how I was doing last week</strong> and <strong>figure out the plan for next week</strong>. It redirects my focus and tracks me to see how far I am away from mastery (10,000 hours). I listed a few identities as my goals (according to <a href="https://www.goodreads.com/book/show/2250.The_7_Habits_of_Highly_Effective_People_Personal_Workbook">The 7 Habits of Highly Effective People</a>) and another column named “wasted time” to track how I spend my week. Those goals can remind me of what kind of person I wanna be in the long run. The “wasted time” is usually some meaningless screen time watching youtube videos or short videos, they are sometimes really disturbing. I want to maximize my time on goal and minimize the “wasted time”.</p>
 
-<p><img src="https://github.com/VincentWang25/VincentWang25.github.io/blob/main/docs/assets/WeeklyHours.png?raw=true" alt="web_wh" /></p>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-<p>To be specific, we have 24 hours per day, excluding 8 hours of sleep and 3 hours of necessary activities (eating, dressing up and etc), we are left with <strong>13 hours</strong>. For a week, we will have 13 * 7 = <strong>91 hours</strong>. It is not much. If we deduct working hours (7 * 5), it only left us with <strong>56 hours</strong> and we need to use that time to spend with our family, personal hobbies, and some wild dreams ⭐. Here is a decomposition of my time.
-<img src="https://github.com/VincentWang25/VincentWang25.github.io/blob/main/docs/assets/HoursUsedSectors.png?raw=true" alt="web_hus" /></p>
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/WeeklyHours-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/WeeklyHours-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/WeeklyHours-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/WeeklyHours.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<p>To be specific, we have 24 hours per day, excluding 8 hours of sleep and 3 hours of necessary activities (eating, dressing up and etc), we are left with <strong>13 hours</strong>. For a week, we will have 13 * 7 = <strong>91 hours</strong>. It is not much. If we deduct working hours (7 * 5), it only left us with <strong>56 hours</strong> and we need to use that time to spend with our family, personal hobbies, and some wild dreams ⭐. Here is a decomposition of my time.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/HoursUsedSectors-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/HoursUsedSectors-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/HoursUsedSectors-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/HoursUsedSectors.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
 
 <p>Even though I tried to record the time I spend on each goal, sometimes it is still hard to track since I might just do some misc stuff like commuting or daydreaming 🤣. I am glad to see a high ratio of “Work / Research Engineer”, “Professional Climber” and “Spouse, Friends, Son”. They are part of my core identity. Note there that I listed “Spouse, Friends, Son” as part of my time tracking because they are important, never less than “Work / Research Engineer”. Having them here kept me balanced and my goal is not solely about being a great research engineer but to be happy (I agree with the meaning of life mentioned in <a href="https://www.goodreads.com/book/show/38210.The_Art_of_Happiness">Happiness</a>).</p>
 
@@ -534,7 +573,26 @@ Here is the distribution of test data.
 
 <p>Since October, after reading <a href="https://www.goodreads.com/book/show/22544758-triggers">Triggers</a>, I started using a <strong>scoring method</strong> mentioned to do daily reflection. They are self-evaluations regarding questions like “<strong>Did I do my best to …</strong>” (eg prioritize, meditate, sit in good posture and etc). Compared with other evaluations, this kind of question reminds me that <strong>I have control over my behavior and I shouldn’t blame anyone else if a certain desire is unmet</strong>. I will report the scores every day to my wife to make them accountable. (Thank you, my wife, you are a great listener!)</p>
 
-<p><img src="https://github.com/VincentWang25/VincentWang25.github.io/blob/main/docs/assets/DailyScore.png?raw=true" alt="web_ds" /></p>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/DailyScore-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/DailyScore-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/DailyScore-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/DailyScore.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
 
 <p>The score here is an average of several items during the day. Some days are good, and some are bad. Some habits are hard to get rid of or acquire while some don’t take that long. Doing daily reflection also helps me <strong>stay on track with my goal and progression</strong>. I normally will feel proud if I can score 90+ and feel a bit frustrated if it is lower than 80. This scoring method can also help me <strong>find the pattern and reflect upon when my willpower is the weakest</strong>. For example, I found myself easily getting hooked on excessive phone usage after dinner, so I learned to keep my phone away before dinner. If some items consistently score high after several weeks, then I have a strong belief that it becomes my habit and can be removed from my daily reflection score system.</p>
 
@@ -553,7 +611,7 @@ Here is the distribution of test data.
 <h1 id="remarks">Remarks</h1>
 
 <blockquote>
-  <p>Most people overestimate what they can do in one year and underestimate what they can do in ten years. —Bill Gates</p>
+  <p>Most people overestimate what they can do in one year and underestimate what they can do in ten years. — Bill Gates</p>
 </blockquote>
 
 <p>I am lucky to have the chance to fully experience 2022 and find my happiness level higher than before.</p>

@@ -129,42 +129,42 @@
   </header>
 
   <article class="post-content">
-    <p>Suppose we have <code class="language-plaintext highlighter-rouge">Q</code> queries, for each query <code class="language-plaintext highlighter-rouge">q</code>, it brings $N_q$ results and normally we care about the top <code class="language-plaintext highlighter-rouge">K</code> docs retrieved.</p>
+    <p>Suppose we have <code class="language-plaintext highlighter-rouge">Q</code> queries, for each query <code class="language-plaintext highlighter-rouge">q</code>, it brings \(N_q\) results and normally we care about the top <code class="language-plaintext highlighter-rouge">K</code> docs retrieved.</p>
 
 <p>All of the following metric is for 1 query, we need to average them to get an overall score for <code class="language-plaintext highlighter-rouge">Q</code> queries.</p>
 <ol>
   <li>
 <code class="language-plaintext highlighter-rouge">Accuracy@K</code>: Whether top K results contain the relevant results.
     <ol>
-      <li>Formula: $A(K)=(\sum_{i=1}^K I(i)) &gt; 0$. $I(i)$ is an indicator function suggesting whether the $i_{th}$ position is relevant or not.</li>
+      <li>Formula: \(A(K)=(\sum_{i=1}^K I(i)) &gt; 0\). \(I(i)\) is an indicator function suggesting whether the \(i_{th}\) position is relevant or not.</li>
     </ol>
   </li>
   <li>
 <code class="language-plaintext highlighter-rouge">Precision@K</code>: How many relevant results among the top K.
     <ol>
-      <li>Formula: $P(K) =\frac{1}{K}\sum_{i=1}^KI(i)$.</li>
+      <li>Formula: \(P(K) =\frac{1}{K}\sum_{i=1}^KI(i)\).</li>
       <li>Only for binary cases</li>
     </ol>
   </li>
   <li>
 <code class="language-plaintext highlighter-rouge">Recall@K</code>: How many relevant results among the top K compared with all relevant results.
     <ol>
-      <li>Formula: $R(K) = \frac{1}{m}\sum_{i=1}^KI(i)$. $m$ is the total number of relevant results overall.</li>
+      <li>Formula: \(R(K) = \frac{1}{m}\sum_{i=1}^KI(i)\). \(m\) is the total number of relevant results overall.</li>
       <li>Only for binary cases</li>
     </ol>
   </li>
   <li>
 <code class="language-plaintext highlighter-rouge">AP@K</code> (Average Precision): the weighted mean of precision at each threshold; the weight is the increase in recall from the prior threshold.
     <ol>
-      <li>Formula: $AP@K = \frac{1}{m}\sum_{k=1}^K P(k)I(k)$</li>
-      <li>A different way to represent $AP@K$: We can also use <code class="language-plaintext highlighter-rouge">Recall@K</code> here by using its delta format $\Delta R(k) = R(k) - R(k-1)$. It would be $\frac{1}{m}$ if a relevant result is at position $k$, otherwise it is 0. and it becomes $AP@K = \sum_{k=1}^K P(k) * \Delta R(k)$. In other words, it is the area under Precision-Recall curve.</li>
+      <li>Formula: \(AP@K = \frac{1}{m}\sum_{k=1}^K P(k)I(k)\)</li>
+      <li>A different way to represent \(AP@K\): We can also use <code class="language-plaintext highlighter-rouge">Recall@K</code> here by using its delta format \(\Delta R(k) = R(k) - R(k-1)\). It would be \(\frac{1}{m}\) if a relevant result is at position \(k\), otherwise it is 0. and it becomes \(AP@K = \sum_{k=1}^K P(k) * \Delta R(k)\). In other words, it is the area under Precision-Recall curve.</li>
       <li>Only for binary cases</li>
     </ol>
   </li>
   <li>
 <code class="language-plaintext highlighter-rouge">RR</code> (Reciprocal Rank): reciprocal of the rank of the first relevant item in a ranked list.
     <ol>
-      <li>Formula: $RR = \frac{1}{\text{rank of the first relevant item}}$</li>
+      <li>Formula: \(RR = \frac{1}{\text{rank of the first relevant item}}\)</li>
       <li>Only for binary cases.</li>
     </ol>
   </li>
@@ -172,21 +172,21 @@
 <code class="language-plaintext highlighter-rouge">NDCG@K</code> (Normalized Discounted Cumulative Gain)
     <ol>
       <li>
-<code class="language-plaintext highlighter-rouge">CG@K</code>: Sum of relevance of all results in a search result list $CG@K = \sum_{k=1}^K rel(k)$, $rel(k)$ is the relevance score of the result at $k$.</li>
+<code class="language-plaintext highlighter-rouge">CG@K</code>: Sum of relevance of all results in a search result list \(CG@K = \sum_{k=1}^K rel(k)\), \(rel(k)\) is the relevance score of the result at \(k\).</li>
       <li>
-<code class="language-plaintext highlighter-rouge">DCG@K</code>: Give earlier result higher weights: $DCG@K = \sum_{k=1}^K\frac{2^{rel(k)} - 1}{ \log_2(k+1)}$</li>
+<code class="language-plaintext highlighter-rouge">DCG@K</code>: Give earlier result higher weights: \(DCG@K = \sum_{k=1}^K\frac{2^{rel(k)} - 1}{ \log_2(k+1)}\)</li>
       <li>
 <code class="language-plaintext highlighter-rouge">NDCG@K</code>: normalize <code class="language-plaintext highlighter-rouge">DCG</code> by its perfect ranking result (a.k.an Ideal <code class="language-plaintext highlighter-rouge">DCG</code> (<code class="language-plaintext highlighter-rouge">IDCG</code>)) to reduce the effect that different search results can vary in length.</li>
     </ol>
   </li>
   <li>Normalized Kendall tau distance at K:
     <ol>
-      <li>$K_n@K(\tau_1, \tau_2) = \frac{K_d}{\frac{1}{2}n(n-1)} = \frac{2}{n(n-1)} \sum_{{i,j}\in \mathbb{K}, i &lt; j} \bar K_{i,j}(\tau_1, \tau_2)$. $\mathbb{K}$ is the set of unordered pairs of distinct elements among the top K in $\tau_1$ and $\tau_2$. $\bar K_{i,j}(\tau_1, \tau_2) = 0$ if $i$ and $j$ are in the same order in $\tau_1$ and $\tau_2$, otherwise 1.</li>
+      <li>\(K_n@K(\tau_1, \tau_2) = \frac{K_d}{\frac{1}{2}n(n-1)} = \frac{2}{n(n-1)} \sum_{\{i,j\}\in \mathbb{K}, i &lt; j} \bar K_{i,j}(\tau_1, \tau_2)\). \(\mathbb{K}\) is the set of unordered pairs of distinct elements among the top K in \(\tau_1\) and \(\tau_2\). \(\bar K_{i,j}(\tau_1, \tau_2) = 0\) if \(i\) and \(j\) are in the same order in \(\tau_1\) and \(\tau_2\), otherwise 1.</li>
     </ol>
   </li>
   <li>Spearman Rho:
     <ol>
-      <li>Formula: $\rho = \frac{cov(R(X), R(Y))}{\delta_{R(x)}\delta_{R(Y)}}$</li>
+      <li>Formula: \(\rho = \frac{cov(R(X), R(Y))}{\delta_{R(x)}\delta_{R(Y)}}\)</li>
     </ol>
   </li>
 </ol>
@@ -241,6 +241,34 @@
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/RockClimbing/">Me and Rock Climbing</a>
   </li>
 
+<div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
+  <script>
+    let giscusTheme = localStorage.getItem("theme");
+    let giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "ziyuewang25/ziyuewang25.github.io",
+        "data-repo-id": "R_kgDOJYJ4JQ",
+        "data-category": "Announcements",
+        "data-category-id": "DIC_kwDOJYJ4Jc4CV2ve",
+        "data-mapping": "pathname",
+        "data-strict": "0",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": giscusTheme,
+        "data-lang": "en",
+        "crossorigin": "anonymous",
+        "async": "",
+    };
+
+
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById("giscus_thread").appendChild(giscusScript);
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
+</noscript>
+</div>
 </div>
 
     </div>
