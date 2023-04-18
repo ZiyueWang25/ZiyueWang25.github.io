@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ziyuewang25
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - ziyuewang25/Kaggle_G2Net
+  - ziyuewang25/Kaggle_TGBR
+  - ziyuewang25/USVisaAppointment
