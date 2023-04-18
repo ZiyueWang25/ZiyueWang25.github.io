@@ -7,7 +7,7 @@ subtitle: ML Enthusiast / Avid Rock Climber.
 profile:
   align: right
   image: profile_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   address: 
 
 # news: true  # includes a list of news items
@@ -16,8 +16,10 @@ latest_posts: true  # includes a list of the newest posts
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a Software Engineer at [Google](www.google.com). I was a Quant Researcher at [BNP Paribas](https://group.bnpparibas/en/) and interned at [Aigen Investment](http://www.aigen-im.com/) before but switch to tech industry on May 2022 for the passion of AI.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I studied Mathematics and Financial Engineering (FE) during undergraduate study from [Renmin University of China](https://www.ruc.edu.cn/en) and got Master degree in FE from [Baruch College, City University of New York](http://mfe.baruch.cuny.edu/) (2023 [Best](https://quantnet.com/mfe-programs-rankings/) FE programs in the US).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In my spare time, I enjoy rock climbing ([video](https://www.instagram.com/p/CVG0jDqJMqJ/?utm_source=ig_web_button_share_sheet)) and explore AI/ML related stuff. I used to playing [Kaggle](https://www.kaggle.com/vincentwang25/Home) competition day and night and reached 3rd place of a competition called G2Net Gravitational Wave Detection ([Winning Solution](https://github.com/ZiyueWang25/Kaggle_G2Net)).
+
+I want to contribute to the fascinating AI community. So I think hard, do fun experimentation, create valuable content and serve others. Hope you enjoy it!
