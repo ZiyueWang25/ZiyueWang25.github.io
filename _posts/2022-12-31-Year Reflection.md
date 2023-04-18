@@ -5,7 +5,8 @@ date: 2022-12-31
 description: What I learnt from 2022 experience.
 tags: Reflection
 categories: Life
-
+giscus_comments: true
+related_posts: false
 ---
 
 > The unexamined life is not worth living --Socrates
@@ -118,10 +119,19 @@ I intentionally set the **1 hour before bedtime** as my reading hour, it helps m
 
 I started tracking how I spent my week since January 1st and it helps me reflect upon **how I was doing last week** and **figure out the plan for next week**. It redirects my focus and tracks me to see how far I am away from mastery (10,000 hours). I listed a few identities as my goals (according to [The 7 Habits of Highly Effective People](https://www.goodreads.com/book/show/2250.The_7_Habits_of_Highly_Effective_People_Personal_Workbook)) and another column named “wasted time” to track how I spend my week. Those goals can remind me of what kind of person I wanna be in the long run. The “wasted time” is usually some meaningless screen time watching youtube videos or short videos, they are sometimes really disturbing. I want to maximize my time on goal and minimize the “wasted time”.
 
-![web_wh](https://github.com/VincentWang25/VincentWang25.github.io/blob/main/docs/assets/WeeklyHours.png?raw=true)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/WeeklyHours.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 To be specific, we have 24 hours per day, excluding 8 hours of sleep and 3 hours of necessary activities (eating, dressing up and etc), we are left with **13 hours**. For a week, we will have 13 * 7 = **91 hours**. It is not much. If we deduct working hours (7 * 5), it only left us with **56 hours** and we need to use that time to spend with our family, personal hobbies, and some wild dreams ⭐. Here is a decomposition of my time.
-![web_hus](https://github.com/VincentWang25/VincentWang25.github.io/blob/main/docs/assets/HoursUsedSectors.png?raw=true)
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/HoursUsedSectors.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 Even though I tried to record the time I spend on each goal, sometimes it is still hard to track since I might just do some misc stuff like commuting or daydreaming 🤣. I am glad to see a high ratio of “Work / Research Engineer”, “Professional Climber” and “Spouse, Friends, Son”. They are part of my core identity. Note there that I listed “Spouse, Friends, Son” as part of my time tracking because they are important, never less than “Work / Research Engineer”. Having them here kept me balanced and my goal is not solely about being a great research engineer but to be happy (I agree with the meaning of life mentioned in [Happiness](https://www.goodreads.com/book/show/38210.The_Art_of_Happiness)).
 
@@ -129,7 +139,13 @@ I used [clockify](https://clockify.me/) to **track my time blocks every day** an
 
 Since October, after reading [Triggers](https://www.goodreads.com/book/show/22544758-triggers), I started using a **scoring method** mentioned to do daily reflection. They are self-evaluations regarding questions like “**Did I do my best to …**” (eg prioritize, meditate, sit in good posture and etc). Compared with other evaluations, this kind of question reminds me that **I have control over my behavior and I shouldn’t blame anyone else if a certain desire is unmet**. I will report the scores every day to my wife to make them accountable. (Thank you, my wife, you are a great listener!)
 
-![web_ds](https://github.com/VincentWang25/VincentWang25.github.io/blob/main/docs/assets/DailyScore.png?raw=true)
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/DailyScore.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 
 The score here is an average of several items during the day. Some days are good, and some are bad. Some habits are hard to get rid of or acquire while some don’t take that long. Doing daily reflection also helps me **stay on track with my goal and progression**. I normally will feel proud if I can score 90+ and feel a bit frustrated if it is lower than 80. This scoring method can also help me **find the pattern and reflect upon when my willpower is the weakest**. For example, I found myself easily getting hooked on excessive phone usage after dinner, so I learned to keep my phone away before dinner. If some items consistently score high after several weeks, then I have a strong belief that it becomes my habit and can be removed from my daily reflection score system.
@@ -146,7 +162,7 @@ I also tried to **make the good habits easy or fun to do**. For example, for med
 
 # Remarks
 
-> Most people overestimate what they can do in one year and underestimate what they can do in ten years. —Bill Gates
+> Most people overestimate what they can do in one year and underestimate what they can do in ten years. — Bill Gates
 
 I am lucky to have the chance to fully experience 2022 and find my happiness level higher than before.
 

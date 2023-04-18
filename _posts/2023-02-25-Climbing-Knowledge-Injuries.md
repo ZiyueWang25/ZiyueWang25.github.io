@@ -5,6 +5,7 @@ date: 2023-02-25
 description: Rock Climbing related injuries knowledge sharing.
 tags: Climbing
 categories: Life
+giscus_comments: true
 
 ---
 
