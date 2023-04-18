@@ -4,7 +4,6 @@ permalink: /cv/
 title: CV
 cv_pdf: resume.pdf
 nav: true
-nav_order: 2
 ---
 
 <div style="width: 100%; height:800">

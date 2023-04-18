@@ -6,7 +6,6 @@ description: What I learnt from 2022 experience.
 tags: Reflection
 categories: Life
 giscus_comments: true
-related_posts: false
 ---
 
 > The unexamined life is not worth living --Socrates

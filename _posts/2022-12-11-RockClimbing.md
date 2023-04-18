@@ -6,7 +6,6 @@ description: My journey about rock climbing
 tags: Climbing
 categories: Life
 giscus_comments: true
-related_posts: false
 
 ---
 
