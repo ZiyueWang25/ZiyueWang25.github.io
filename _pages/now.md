@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /now/
+title: Now
+description: 
+nav: true
+nav_order: 4
+---
+
+What I am doing now. Following the idea from [Derek Sivers](https://sive.rs/now).
+
+Updated May 7th, 2023, from Seattle, Washington, United States.
+
+1. Project-wise: I am learning [JAX](https://jax.readthedocs.io/en/latest/index.html) and [Flax](https://flax.readthedocs.io/en/latest/index.html) for some personal projects related with NLP and CV. The projects on my list are related with [VQ-VAE](https://arxiv.org/abs/1711.00937), [LoRA](https://arxiv.org/abs/2106.09685), [GPT-4](https://openai.com/research/gpt-4), [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion), [RLHF](https://huggingface.co/blog/rlhf). What a fascinating period for deep learning :)
+2. Reading-wise: I am reading [How to take smart notes](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes?ac=1&from_search=true&qid=oYWcH7lESa&rank=1) and [Tools of Titans](https://www.goodreads.com/book/show/31823677-tools-of-titans?ref=nav_sb_ss_1_9). I am also digesting my notes on [Think like a monk](https://www.goodreads.com/book/show/51942513-think-like-a-monk?ref=nav_sb_ss_1_17), [Never split the difference](https://www.goodreads.com/book/show/123857637-never-split-the-difference?ref=nav_sb_ss_1_26) and [How will you measure your life](https://www.goodreads.com/book/show/13425570-how-will-you-measure-your-life?ref=nav_sb_ss_1_30). You can find my activities on my Goodreads [page](https://www.goodreads.com/vincentwang).
+3. Career-wise: I am working on a problem related with finding the mostly likely broken test from a huge set of test range without running them. Compared with the Kaggle problem I worked on before, data is the main issue here. And I am trying to find ways to work on things related with LLM since my interest lies there.
+4. Climbing-wise: I did steroid injection two weeks ago (April 26th) for my right wrist TFCC injury and right middle finger PIP tenosynovitis. I made that decision because I have had them more than half year and active rehab doesn't seem to help much. Some paper suggest the injection approach (Reference [1](https://www.mountainproject.com/forum/topic/112059884/cortisone-shot-for-tendon-sheath-inflammation), [2](https://www.sciencedirect.com/science/article/abs/pii/S2468122919300842?via%3Dihub) and [3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9220062/)), so I decided to give a try, bearing in mind that it might make it easier to injure in the future. Luckily, I got much better afterwards. No pain on my middle finger anymore. Still a bit pain when rotating my right wrist, but much better than before. Still in observation mode and slowly increase the climbing volume to let the body adapt. I climb on Wednesday, Friday and Sunday on Edgework Seattle or Seattle Bouldering Project at Fremont. I follow [No Hang](https://www.youtube.com/watch?v=I_-YapmymjA) Training plan on Tuesday, Thursday, and Sunday. I follow [TRX Core Training](https://www.gymclimber.com/trx-core-training-for-climbers-with-alex-stiger/) plan on Monday and Thursday. I am planning a bouldering trip for Juneteeth (June 17 - June 19) around Seattle, hopefully my wrist and finger can fully recover by that time. 
+5. Diet-wise: I am following vegetarian diet but recently considering switch some days back to meat because I find myself a bit hard to digest plant-based protein, which causes bloating. I am also considering following intermittent fasting 16-8, from 8:30AM to 4:30PM. Mostly for my mental clarity and sleep quality reason, nothing related with losing weight.
+6. Life-wise: planning a trip to Olympic national park on Memorial Day (May 27 - May 29) and a trip back to China from June 30 to August 5. It has been 3.5 years since last time I saw my parents in person. I miss them. 
+

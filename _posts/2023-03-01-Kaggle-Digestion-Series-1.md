@@ -5,6 +5,7 @@ date: 2023-03-01
 description:
 tags: Kaggle
 categories: AI
+giscus_comments: true
 
 ---
 - Competition End time: 2022-10-17
@@ -17,7 +18,7 @@ categories: AI
 # [Evaluation](https://www.kaggle.com/competitions/google-universal-image-embedding/overview/evaluation)
 mean Precision @ 5 metric + a small modification to avoid penalizing queries with fewer than 5 expected index images.
 
-$mP@5 = \frac{1}{Q} \sum_{q=1}^Q \frac{1}{\min(n_q, 5)} \sum_{j=1}^{\min(n_q, 5)} rel_q(j)$
+$$mP@5 = \frac{1}{Q} \sum_{q=1}^Q \frac{1}{\min(n_q, 5)} \sum_{j=1}^{\min(n_q, 5)} rel_q(j)$$
 
 - embedding dimension should be <= 64
 - compatible with TensorFlow 2.6.4 or Pytorch 1.11.0
