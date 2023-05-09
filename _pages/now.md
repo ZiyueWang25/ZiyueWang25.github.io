@@ -7,8 +7,6 @@ nav: true
 nav_order: 4
 ---
 
-What I am doing now. Following the idea from [Derek Sivers](https://sive.rs/now).
-
 Updated May 7th, 2023, from Seattle, Washington, United States.
 
 1. Project-wise: I am learning [JAX](https://jax.readthedocs.io/en/latest/index.html) and [Flax](https://flax.readthedocs.io/en/latest/index.html) for some personal projects related with NLP and CV. The projects on my list are related with [VQ-VAE](https://arxiv.org/abs/1711.00937), [LoRA](https://arxiv.org/abs/2106.09685), [GPT-4](https://openai.com/research/gpt-4), [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion), [RLHF](https://huggingface.co/blog/rlhf). What a fascinating period for deep learning :)
@@ -18,3 +16,4 @@ Updated May 7th, 2023, from Seattle, Washington, United States.
 5. Diet-wise: I am following vegetarian diet but recently considering switch some days back to meat because I find myself a bit hard to digest plant-based protein, which causes bloating. I am also considering following intermittent fasting 16-8, from 8:30AM to 4:30PM. Mostly for my mental clarity and sleep quality reason, nothing related with losing weight.
 6. Life-wise: planning a trip to Olympic national park on Memorial Day (May 27 - May 29) and a trip back to China from June 30 to August 5. It has been 3.5 years since last time I saw my parents in person. I miss them. 
 
+_Insipred by [Derek Sivers](https://sive.rs/now)'s [/now](https://nownownow.com/) page._
