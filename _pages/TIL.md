@@ -6,13 +6,25 @@ description: Today I learnt. Update daily.
 nav: true
 nav_order: 5
 ---
+
+
+# 2023-05-17 - 2023-05-19
+
+1. Replicating [Attention is all you need](https://arxiv.org/abs/1706.03762) paper in JAX/Flax/Optax.
+# 2023-05-16
+1. [How to pursue a career in technical AI alignment](https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment): this is amazing post about ML/DL/AI alignment.
+# 2023-05-15
+1. [Leverage Dopamine to Overcome Procrastination & Optimize Effort](https://hubermanlab.com/leverage-dopamine-to-overcome-procrastination-and-optimize-effort/): this podcast episode is interesting and informative. The biggest takeaway for me is to understand how our motivation level changes according to dopamine and what the dopamine circuit is like. It is also surprising to learn that we can leverage something that sucks to overcome procrastination. A good summary can be found [here](https://podcastnotes.org/huberman-lab/leverage-dopamine-to-overcome-procrastination-optimize-effort-huberman-lab/)
+2. Instead of reading paper, I should spend more time getting my hands dirty. It is harder and has more direct impact on my career.
+
 # 2023-05-14
 1. [NeRF - Representing Scenes as Neural Radiance Fields for View Synthesis](https://www.matthewtancik.com/nerf): First time tackling 3D image synthesis problem. Followed [tiny_nerf.ipynb](https://github.com/bmild/nerf/blob/master/tiny_nerf.ipynb) notebook and added hierarchical sampling on it. [tiny_nerf_with_hierarchical_sampling.ipynb](https://colab.research.google.com/drive/1U18TrmcnL1TpZj1R-qv43hsxfu_DizOc?usp=sharing)
 2. [NeRF in the Wild](https://nerf-w.github.io/): add a series of extensions to NeRF to address dynamic subjects captured under uncontrolled setting.
+3. 
 
 # 2023-05-13
 1. [Project Starline](https://blog.google/technology/research/project-starline/): 3D display to connect people. [video](https://www.youtube.com/watch?v=kDgToq5aXh0&ab_channel=GoogleAR%26VR)
-2. [Novel View Synthesis with Diffusion Models](https://3d-diffusion.github.io/): 3D generation from a single image.
+2. [Novel View Synthesis with Diffusion Models](https://3d-diffusion.github.io/): 3D generation from a few image pairs.
 3. [NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images](https://bmild.github.io/rawnerf/): 
 4. [Time-Travel Rephotography](https://time-travel-rephotography.github.io/): use styleGAM2 framework to project old photo into modern high-resolution photos
 5. [HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance Fields](https://hypernerf.github.io/)
@@ -47,5 +59,4 @@ nav_order: 5
    3. Face detection and blurring for privacy. [detection model](https://arxiv.org/abs/2105.04714). [blurring effect](https://arxiv.org/abs/2103.06191)
 3. We definitely need to advocate for ourselves.
 4. Cleaning up the system can be time-consuming and a headache.
-
 
