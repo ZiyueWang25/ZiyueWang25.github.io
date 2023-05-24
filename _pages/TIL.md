@@ -6,6 +6,32 @@ description: Today I learnt. Update daily.
 nav: true
 nav_order: 5
 ---
+# 2023-05-20 - 2023-05-23
+
+1. Virtual Try-on models:
+	1. [TryOnDiffusion: A Tale of Two UNets](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_TryOnDiffusion_A_Tale_of_Two_UNets_CVPR_2023_paper.pdf): parallel-UNet, cross-attention, cascade diffusion, FiLM, Efficient UNet. Amazing results!
+	2. [High-Resolution Virtual Try-On with Misalignment and Occlusion-Handled Conditions](https://arxiv.org/abs/2206.14180): classic Virtual Try On (VITON) model by warping the cloth first and then blend with the target person.
+	3. [TryOnGAN](https://tryongan.github.io/tryongan/)
+	4. [Single Stage Virtual Try-on via Deformable Attention Flows](https://arxiv.org/abs/2207.09161)
+2. [FiLM](https://distill.pub/2018/feature-wise-transformations/): a way to combine concatenation & multiplication feature transformation.
+3. Diffusion Model Related read:
+	1. [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) by Lilian Weng
+	2. [The Annotated Diffusion Model](https://huggingface.co/blog/annotated-diffusion) by huggingface
+	3. [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
+	4. [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239): classic DDPM algorithm
+	5. [Improved Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2102.09672): learning variance of the reverse diffusion process.
+	6. [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502): DDIM , a more efficient iterative process for the reverse diffusion part.
+	7. [Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/abs/2105.05233): classifier guidance
+	8. [Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2104.07636): classifier-free guidance
+	9. [High-Resolution Image Synthesis with Latent Diffusion Models](https://ieeexplore.ieee.org/document/9878449): cross attention.
+	10. [Image Super-Resolution via Iterative Refinement](https://arxiv.org/abs/2104.07636)
+	11. [Cascaded Diffusion Models for High Fidelity Image Generation](https://arxiv.org/abs/2106.15282)
+	12. [Palette: Image-to-Image Diffusion Models](https://arxiv.org/abs/2111.05826): image to image diffusion model
+	13. [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487): text-to-image model by leveraging LLM.
+4. Human pose and segmentation:
+	1. [Towards Accurate Multi-person Pose Estimation in the Wild](https://arxiv.org/abs/1701.01779)
+	2. [Graphonomy: Universal Human Parsing via Graph Transfer Learning](https://arxiv.org/abs/1904.04536)
+5. [Parti](https://sites.research.google/parti/): Pathways Autoregressive Text-to-Image model 
 
 
 # 2023-05-17 - 2023-05-19
