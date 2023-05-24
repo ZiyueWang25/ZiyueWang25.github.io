@@ -22,7 +22,7 @@
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
@@ -121,13 +121,82 @@
           </header>
 
           <article>
-            <h1 id="2023-05-14">2023-05-14</h1>
+            <h1 id="2023-05-20---2023-05-23">2023-05-20 - 2023-05-23</h1>
+
+<ol>
+  <li>Virtual Try-on models:
+    <ol>
+      <li>
+<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_TryOnDiffusion_A_Tale_of_Two_UNets_CVPR_2023_paper.pdf" rel="external nofollow noopener" target="_blank">TryOnDiffusion: A Tale of Two UNets</a>: parallel-UNet, cross-attention, cascade diffusion, FiLM, Efficient UNet. Amazing results!</li>
+      <li>
+<a href="https://arxiv.org/abs/2206.14180" rel="external nofollow noopener" target="_blank">High-Resolution Virtual Try-On with Misalignment and Occlusion-Handled Conditions</a>: classic Virtual Try On (VITON) model by warping the cloth first and then blend with the target person.</li>
+      <li><a href="https://tryongan.github.io/tryongan/" rel="external nofollow noopener" target="_blank">TryOnGAN</a></li>
+      <li><a href="https://arxiv.org/abs/2207.09161" rel="external nofollow noopener" target="_blank">Single Stage Virtual Try-on via Deformable Attention Flows</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="https://distill.pub/2018/feature-wise-transformations/" rel="external nofollow noopener" target="_blank">FiLM</a>: a way to combine concatenation &amp; multiplication feature transformation.</li>
+  <li>Diffusion Model Related read:
+    <ol>
+      <li>
+<a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/" rel="external nofollow noopener" target="_blank">What are Diffusion Models?</a> by Lilian Weng</li>
+      <li>
+<a href="https://huggingface.co/blog/annotated-diffusion" rel="external nofollow noopener" target="_blank">The Annotated Diffusion Model</a> by huggingface</li>
+      <li><a href="https://arxiv.org/abs/2209.00796" rel="external nofollow noopener" target="_blank">Diffusion Models: A Comprehensive Survey of Methods and Applications</a></li>
+      <li>
+<a href="https://arxiv.org/abs/2006.11239" rel="external nofollow noopener" target="_blank">Denoising Diffusion Probabilistic Models</a>: classic DDPM algorithm</li>
+      <li>
+<a href="https://arxiv.org/abs/2102.09672" rel="external nofollow noopener" target="_blank">Improved Denoising Diffusion Probabilistic Models</a>: learning variance of the reverse diffusion process.</li>
+      <li>
+<a href="https://arxiv.org/abs/2010.02502" rel="external nofollow noopener" target="_blank">Denoising Diffusion Implicit Models</a>: DDIM , a more efficient iterative process for the reverse diffusion part.</li>
+      <li>
+<a href="https://arxiv.org/abs/2105.05233" rel="external nofollow noopener" target="_blank">Diffusion Models Beat GANs on Image Synthesis</a>: classifier guidance</li>
+      <li>
+<a href="https://arxiv.org/abs/2104.07636" rel="external nofollow noopener" target="_blank">Classifier-Free Diffusion Guidance</a>: classifier-free guidance</li>
+      <li>
+<a href="https://ieeexplore.ieee.org/document/9878449" rel="external nofollow noopener" target="_blank">High-Resolution Image Synthesis with Latent Diffusion Models</a>: cross attention.</li>
+      <li><a href="https://arxiv.org/abs/2104.07636" rel="external nofollow noopener" target="_blank">Image Super-Resolution via Iterative Refinement</a></li>
+      <li><a href="https://arxiv.org/abs/2106.15282" rel="external nofollow noopener" target="_blank">Cascaded Diffusion Models for High Fidelity Image Generation</a></li>
+      <li>
+<a href="https://arxiv.org/abs/2111.05826" rel="external nofollow noopener" target="_blank">Palette: Image-to-Image Diffusion Models</a>: image to image diffusion model</li>
+      <li>
+<a href="https://arxiv.org/abs/2205.11487" rel="external nofollow noopener" target="_blank">Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding</a>: text-to-image model by leveraging LLM.</li>
+    </ol>
+  </li>
+  <li>Human pose and segmentation:
+    <ol>
+      <li><a href="https://arxiv.org/abs/1701.01779" rel="external nofollow noopener" target="_blank">Towards Accurate Multi-person Pose Estimation in the Wild</a></li>
+      <li><a href="https://arxiv.org/abs/1904.04536" rel="external nofollow noopener" target="_blank">Graphonomy: Universal Human Parsing via Graph Transfer Learning</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="https://sites.research.google/parti/" rel="external nofollow noopener" target="_blank">Parti</a>: Pathways Autoregressive Text-to-Image model</li>
+</ol>
+
+<h1 id="2023-05-17---2023-05-19">2023-05-17 - 2023-05-19</h1>
+
+<ol>
+  <li>Replicating <a href="https://arxiv.org/abs/1706.03762" rel="external nofollow noopener" target="_blank">Attention is all you need</a> paper in JAX/Flax/Optax.
+    <h1 id="2023-05-16">2023-05-16</h1>
+  </li>
+  <li>
+<a href="https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment" rel="external nofollow noopener" target="_blank">How to pursue a career in technical AI alignment</a>: this is amazing post about ML/DL/AI alignment.
+    <h1 id="2023-05-15">2023-05-15</h1>
+  </li>
+  <li>
+<a href="https://hubermanlab.com/leverage-dopamine-to-overcome-procrastination-and-optimize-effort/" rel="external nofollow noopener" target="_blank">Leverage Dopamine to Overcome Procrastination &amp; Optimize Effort</a>: this podcast episode is interesting and informative. The biggest takeaway for me is to understand how our motivation level changes according to dopamine and what the dopamine circuit is like. It is also surprising to learn that we can leverage something that sucks to overcome procrastination. A good summary can be found <a href="https://podcastnotes.org/huberman-lab/leverage-dopamine-to-overcome-procrastination-optimize-effort-huberman-lab/" rel="external nofollow noopener" target="_blank">here</a>
+</li>
+  <li>Instead of reading paper, I should spend more time getting my hands dirty. It is harder and has more direct impact on my career.</li>
+</ol>
+
+<h1 id="2023-05-14">2023-05-14</h1>
 <ol>
   <li>
 <a href="https://www.matthewtancik.com/nerf" rel="external nofollow noopener" target="_blank">NeRF - Representing Scenes as Neural Radiance Fields for View Synthesis</a>: First time tackling 3D image synthesis problem. Followed <a href="https://github.com/bmild/nerf/blob/master/tiny_nerf.ipynb" rel="external nofollow noopener" target="_blank">tiny_nerf.ipynb</a> notebook and added hierarchical sampling on it. <a href="https://colab.research.google.com/drive/1U18TrmcnL1TpZj1R-qv43hsxfu_DizOc?usp=sharing" rel="external nofollow noopener" target="_blank">tiny_nerf_with_hierarchical_sampling.ipynb</a>
 </li>
   <li>
 <a href="https://nerf-w.github.io/" rel="external nofollow noopener" target="_blank">NeRF in the Wild</a>: add a series of extensions to NeRF to address dynamic subjects captured under uncontrolled setting.</li>
+  <li>
 </ol>
 
 <h1 id="2023-05-13">2023-05-13</h1>
@@ -136,7 +205,7 @@
 <a href="https://blog.google/technology/research/project-starline/" rel="external nofollow noopener" target="_blank">Project Starline</a>: 3D display to connect people. <a href="https://www.youtube.com/watch?v=kDgToq5aXh0&amp;ab_channel=GoogleAR%26VR" rel="external nofollow noopener" target="_blank">video</a>
 </li>
   <li>
-<a href="https://3d-diffusion.github.io/" rel="external nofollow noopener" target="_blank">Novel View Synthesis with Diffusion Models</a>: 3D generation from a single image.</li>
+<a href="https://3d-diffusion.github.io/" rel="external nofollow noopener" target="_blank">Novel View Synthesis with Diffusion Models</a>: 3D generation from a few image pairs.</li>
   <li>
 <a href="https://bmild.github.io/rawnerf/" rel="external nofollow noopener" target="_blank">NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</a>:</li>
   <li>
