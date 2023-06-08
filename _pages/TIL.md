@@ -2,10 +2,33 @@
 layout: page
 permalink: /TIL/
 title: TIL
-description: Today I learnt. Update daily.
+description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-06-01 - 2023-06-06
+1. AI Safety related topics:
+	1. [Alignment Course - AI Safety Fundamentals](https://aisafetyfundamentals.com/ai-alignment-curriculum): week 0 + week1
+	2. [AGI safety from first principles](https://drive.google.com/file/d/1uK7NhdSKprQKZnRjU58X7NLA1auXlWHt/view)
+	3. Various AI Safety team from different companies: Google DeepMind, OpenAI, Anthropic, etc.
+	4. [Preventing an AI-related catastrophe](https://80000hours.org/problem-profiles/artificial-intelligence/?source=email&uni_id=867&utm_source=80%2C000+Hours+mailing+list&utm_campaign=332544752a-EMAIL_CAMPAIGN_2023_06_01_11_29&utm_medium=email&utm_term=0_43bc1ae55c-71ae16e3db-%5BLIST_EMAIL_ID%5D)
+	5. [Four Background Claims](https://intelligence.org/2015/07/24/four-background-claims/)
+	6. [Visualizing the deep learning revolution](https://medium.com/@richardcngo/visualizing-the-deep-learning-revolution-722098eb9c5)
+2. Google internal Kaggle competition: LLM Nerd-off. First submission :)
+3. Deep Learning AI 4 Short [courses](https://www.deeplearning.ai/short-courses/)
+4. 1 on 1 consultation [chat](https://80000hours.org/speak-with-us/?int_campaign=homepage__get-1-1-advice) with 80k hours.
+5. Finish reading [Doing Good Better: How Effective Altruism Can Help You Make a Difference](https://www.goodreads.com/book/show/23398748-doing-good-better)
+6. Reading [The alignment problem](https://www.goodreads.com/book/show/50489349-the-alignment-problem)
+# 2023-05-25
+1. [podcast: PhD or programming?Fast paths into aligning AI as a machine learning engineer, according to ML engineers Catherine Olsson & Daniel Ziegler](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/): dive in, write detail plan and ask mentor to guide
+2. [Dive In](https://mindingourway.com/dive-in-2/):
+	1. [conviction without self-deception](https://mindingourway.com/conviction-without-s/): stop conflating feelings with beliefs.
+	2. [deliberate once](https://mindingourway.com/deliberate-once/): about making big decision, deliberate once and then don't deliberate again until new information comes in that would have changed the result of the deliberation.
+		1. commitment-aversion thoughts
+		2. abort notice
+		3. confusion pings
+	3. realize that you find good things to do by getting your hands dirty
+
 # 2023-05-20 - 2023-05-23
 
 1. Virtual Try-on models:
