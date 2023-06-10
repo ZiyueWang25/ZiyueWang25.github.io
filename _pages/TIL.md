@@ -6,6 +6,10 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-06-07
+1. Reviewed previous experience about [DeepLOB](https://arxiv.org/abs/1808.03668) and [Kaggle Gravitation Wave Detection Competition](https://github.com/ZiyueWang25/Kaggle_G2Net). Feels like it has been quite a while. I miss the feeling of doing DL models.
+2. Reviewed [How Diffusion Models Work](https://www.deeplearning.ai/short-courses/how-diffusion-models-work/) short course again on DeepLearning.AI. I will work on replicating it in JAX. It looks fun!
+
 # 2023-06-01 - 2023-06-06
 1. AI Safety related topics:
 	1. [Alignment Course - AI Safety Fundamentals](https://aisafetyfundamentals.com/ai-alignment-curriculum): week 0 + week1
@@ -19,6 +23,7 @@ nav_order: 5
 4. 1 on 1 consultation [chat](https://80000hours.org/speak-with-us/?int_campaign=homepage__get-1-1-advice) with 80k hours.
 5. Finish reading [Doing Good Better: How Effective Altruism Can Help You Make a Difference](https://www.goodreads.com/book/show/23398748-doing-good-better)
 6. Reading [The alignment problem](https://www.goodreads.com/book/show/50489349-the-alignment-problem)
+
 # 2023-05-25
 1. [podcast: PhD or programming?Fast paths into aligning AI as a machine learning engineer, according to ML engineers Catherine Olsson & Daniel Ziegler](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/): dive in, write detail plan and ask mentor to guide
 2. [Dive In](https://mindingourway.com/dive-in-2/):
@@ -30,7 +35,6 @@ nav_order: 5
 	3. realize that you find good things to do by getting your hands dirty
 
 # 2023-05-20 - 2023-05-23
-
 1. Virtual Try-on models:
 	1. [TryOnDiffusion: A Tale of Two UNets](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_TryOnDiffusion_A_Tale_of_Two_UNets_CVPR_2023_paper.pdf): parallel-UNet, cross-attention, cascade diffusion, FiLM, Efficient UNet. Amazing results!
 	2. [High-Resolution Virtual Try-On with Misalignment and Occlusion-Handled Conditions](https://arxiv.org/abs/2206.14180): classic Virtual Try On (VITON) model by warping the cloth first and then blend with the target person.
@@ -58,10 +62,11 @@ nav_order: 5
 
 
 # 2023-05-17 - 2023-05-19
-
 1. Replicating [Attention is all you need](https://arxiv.org/abs/1706.03762) paper in JAX/Flax/Optax.
+
 # 2023-05-16
 1. [How to pursue a career in technical AI alignment](https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment): this is amazing post about ML/DL/AI alignment.
+
 # 2023-05-15
 1. [Leverage Dopamine to Overcome Procrastination & Optimize Effort](https://hubermanlab.com/leverage-dopamine-to-overcome-procrastination-and-optimize-effort/): this podcast episode is interesting and informative. The biggest takeaway for me is to understand how our motivation level changes according to dopamine and what the dopamine circuit is like. It is also surprising to learn that we can leverage something that sucks to overcome procrastination. A good summary can be found [here](https://podcastnotes.org/huberman-lab/leverage-dopamine-to-overcome-procrastination-optimize-effort-huberman-lab/)
 2. Instead of reading paper, I should spend more time getting my hands dirty. It is harder and has more direct impact on my career.
@@ -69,7 +74,6 @@ nav_order: 5
 # 2023-05-14
 1. [NeRF - Representing Scenes as Neural Radiance Fields for View Synthesis](https://www.matthewtancik.com/nerf): First time tackling 3D image synthesis problem. Followed [tiny_nerf.ipynb](https://github.com/bmild/nerf/blob/master/tiny_nerf.ipynb) notebook and added hierarchical sampling on it. [tiny_nerf_with_hierarchical_sampling.ipynb](https://colab.research.google.com/drive/1U18TrmcnL1TpZj1R-qv43hsxfu_DizOc?usp=sharing)
 2. [NeRF in the Wild](https://nerf-w.github.io/): add a series of extensions to NeRF to address dynamic subjects captured under uncontrolled setting.
-3. 
 
 # 2023-05-13
 1. [Project Starline](https://blog.google/technology/research/project-starline/): 3D display to connect people. [video](https://www.youtube.com/watch?v=kDgToq5aXh0&ab_channel=GoogleAR%26VR)
@@ -98,7 +102,6 @@ nav_order: 5
 1. [Harnessing the power of LLMs in Practice](https://github.com/Mooler0410/LLMsPracticalGuide): the chart inside is quite informative and the future trend is also thoughtful: evaluation on real-world datasets, alignment, safety.
 2. To do great things, focus on small stuff. 
 3. To make a fortune, help 1-billion people or make a grand breakthrough.
-
 
 # 2023-05-08
 1. [Now Page](https://nownownow.com/): A simple but quite informative and fun page created by Derek Sivers. 
