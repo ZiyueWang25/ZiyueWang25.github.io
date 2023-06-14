@@ -6,9 +6,16 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-06-08 - 2023-06-13
+1. DDPM and DDIM diffusion Pytorch version replication: [DiffusionModel-DeepLearningAI-Pytorch.ipynb](https://colab.research.google.com/drive/1LcxLcVfxeFQWlEEWVTBx_LfNMaY3CoNg?usp=sharing) . It takes me a while to collect the data to mimic the short [course](https://www.deeplearning.ai/short-courses/how-diffusion-models-work/) on DeepLearning.AI and in the end I decide to use MNIST data with customized label to replicate the results.  The script works well and I am glad to see the model can generate digits according to the given conditions.
+2. Kaggle LLM Nerd-Off. Checked out the existing model performance and competition data details. Since the model size constraint is 1B, it seems to me that specialized model to deal with different kind of input is the way to go. Also, parameter-efficient fine-tuning methods are definitely important.
+3. Some more readings about AI Safety in [week 1](https://aisafetyfundamentals.com/ai-alignment-curriculum). It is fun to see the [Specification Gaming](https://www.deepmind.com/blog/specification-gaming-the-flip-side-of-ai-ingenuity) issue.
+4. [Famine, Affluence, and Morality](https://utilitarianism.net/peter-singer-famine-affluence-and-morality/): it motivates me to donate 10% of my income to do more goods effectively.
+5. Consultation with 80k hours works well. I am glad I did it :)
+
 # 2023-06-07
 1. Reviewed previous experience about [DeepLOB](https://arxiv.org/abs/1808.03668) and [Kaggle Gravitation Wave Detection Competition](https://github.com/ZiyueWang25/Kaggle_G2Net). Feels like it has been quite a while. I miss the feeling of doing DL models.
-2. Reviewed [How Diffusion Models Work](https://www.deeplearning.ai/short-courses/how-diffusion-models-work/) short course again on DeepLearning.AI. I will work on replicating it in JAX. It looks fun!
+2. Reviewed [How Diffusion Models Work](https://www.deeplearning.ai/short-courses/how-diffusion-models-work/) short course again on DeepLearning.AI. I will work on replicating it in Pytorch/JAX. It looks fun!
 
 # 2023-06-01 - 2023-06-06
 1. AI Safety related topics:
