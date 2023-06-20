@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Replicating Diffusion Models on MNIST
-date: 2023-06-19
+date: 2023-06-11
 description: I tried to replicating diffusion model (DDPM & DDIM) by following DeepLearningAI course and trained it on MNIST.
 tags: ML
 categories: AI
