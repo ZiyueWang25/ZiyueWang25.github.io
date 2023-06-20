@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Replicating Decoder-only Transformer by using William ShakeSpeare Corpus
+title: Replicating Decoder-only Transformer by using William Shakespeare Corpus
 date: 2023-06-19
 description: I tried to replicating the Decoder-only transformer by following "Attention is all you need" paper and trained it on William Shakespeare's work.
 tags: ML
