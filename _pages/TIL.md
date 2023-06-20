@@ -6,6 +6,10 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-06-14 - 2023-06-19
+1. Followed [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum) and finished [Topic 1 Transformer](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/1-Transformers.md), it takes me about 20 hours but I learnt a lot throughout the process.
+2. Read Mechanistic Interpretability related materials: [Concrete Steps to Get Started in Transformer Mechanistic Interpretability](https://www.neelnanda.io/mechanistic-interpretability/getting-started) and Google Internal documents about Introduction to Alignment.
+
 # 2023-06-08 - 2023-06-13
 1. DDPM and DDIM diffusion Pytorch version replication: [DiffusionModel-DeepLearningAI-Pytorch.ipynb](https://colab.research.google.com/drive/1LcxLcVfxeFQWlEEWVTBx_LfNMaY3CoNg?usp=sharing) . It takes me a while to collect the data to mimic the short [course](https://www.deeplearning.ai/short-courses/how-diffusion-models-work/) on DeepLearning.AI and in the end I decide to use MNIST data with customized label to replicate the results.  The script works well and I am glad to see the model can generate digits according to the given conditions.
 2. Kaggle LLM Nerd-Off. Checked out the existing model performance and competition data details. Since the model size constraint is 1B, it seems to me that specialized model to deal with different kind of input is the way to go. Also, parameter-efficient fine-tuning methods are definitely important.
