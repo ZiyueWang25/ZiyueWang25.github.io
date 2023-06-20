@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 # 2023-06-14 - 2023-06-19
-1. Followed [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum) and finished [Topic 1 Transformer](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/1-Transformers.md), it takes me about 20 hours but I learnt a lot throughout the process.
+1. Followed [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum) and finished [Topic 1 Transformer](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/1-Transformers.md), it takes me about 20 hours but I learnt a lot throughout the process. I wrote a post about it [here](https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer/)
 2. Read Mechanistic Interpretability related materials: [Concrete Steps to Get Started in Transformer Mechanistic Interpretability](https://www.neelnanda.io/mechanistic-interpretability/getting-started) and Google Internal documents about Introduction to Alignment.
 
 # 2023-06-08 - 2023-06-13
