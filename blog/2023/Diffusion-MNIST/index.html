@@ -9,10 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>KDS - Google Universal Image Embedding | Ziyue  Wang</title>
+    <title>Replicating Diffusion Models on MNIST | Ziyue  Wang</title>
     <meta name="author" content="Ziyue  Wang">
-    <meta name="description" content="Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-">
+    <meta name="description" content="I tried to replicating diffusion model (DDPM &amp; DDIM) by following DeepLearningAI course and trained it on MNIST.">
     <meta name="keywords" content="portfolio-website">
 
 
@@ -33,7 +32,7 @@
     <link rel="shortcut icon" href="/assets/img/monkey.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1/">
+    <link rel="canonical" href="https://ziyuewang25.github.io/blog/2023/Diffusion-MNIST/">
     
     <!-- Dark Mode -->
     
@@ -118,13 +117,13 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">KDS - Google Universal Image Embedding</h1>
-    <p class="post-meta">March 1, 2023</p>
+    <h1 class="post-title">Replicating Diffusion Models on MNIST</h1>
+    <p class="post-meta">June 19, 2023</p>
     <p class="post-tags">
       <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
         ·  
-        <a href="/blog/tag/kaggle">
-          <i class="fas fa-hashtag fa-sm"></i> Kaggle</a>  
+        <a href="/blog/tag/ml">
+          <i class="fas fa-hashtag fa-sm"></i> ML</a>  
           
         ·  
         <a href="/blog/category/ai">
@@ -135,98 +134,14 @@
   </header>
 
   <article class="post-content">
-    <ul>
-  <li>Competition End time: 2022-10-17</li>
-  <li>Submission Format: notebook &lt;= 9h</li>
-</ul>
+    <p>My solution is written in colab <a href="https://colab.research.google.com/drive/1LcxLcVfxeFQWlEEWVTBx_LfNMaY3CoNg?usp=sharing" rel="external nofollow noopener" target="_blank">DiffusionModel-DeepLearningAI-Pytorch.ipynb</a></p>
 
-<h1 id="key-features">Key Features</h1>
-<ol>
-  <li>No training data provided.</li>
-  <li>Ensemble cannot easily work. <a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/340546#1876558]" rel="external nofollow noopener" target="_blank">thread</a>
-</li>
-</ol>
-
-<h1 id="evaluation"><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/overview/evaluation" rel="external nofollow noopener" target="_blank">Evaluation</a></h1>
-<p>mean Precision @ 5 metric + a small modification to avoid penalizing queries with fewer than 5 expected index images.</p>
-
-\[mP@5 = \frac{1}{Q} \sum_{q=1}^Q \frac{1}{\min(n_q, 5)} \sum_{j=1}^{\min(n_q, 5)} rel_q(j)\]
-
-<ul>
-  <li>embedding dimension should be &lt;= 64</li>
-  <li>compatible with TensorFlow 2.6.4 or Pytorch 1.11.0</li>
-</ul>
-
-<p>The host will use k-NN (k=5) to lookup for each test sample, using the Euclidean distance between test and index embeddings.</p>
-
-<h1 id="data"><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/data" rel="external nofollow noopener" target="_blank">Data</a></h1>
-<p><strong>No training data provided.</strong>
-Here is the distribution of test data.
-<img src="https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F3258%2Fa02c90ad69a049b11a39bd38abcde2cb%2Fdomains.png?generation=1657141626387503&amp;alt=media" alt=""></p>
-<ol>
-  <li>External data thread: https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/337384</li>
-</ol>
-
-<h1 id="great-notebooks">Great Notebooks</h1>
-<ol>
-  <li>
-<a href="https://www.kaggle.com/code/motono0223/guie-clip-tensorflow-train-example" rel="external nofollow noopener" target="_blank">CLIP-TF-Train-Example</a>
-    <ol>
-      <li>CLIP + Arcface + TPU training.</li>
-    </ol>
-  </li>
-  <li>
-<a href="https://www.kaggle.com/code/awsaf49/gcvit-global-context-vision-transformer" rel="external nofollow noopener" target="_blank">GCVIT</a>
-    <ol>
-      <li>Global Context Vision Transformer</li>
-    </ol>
-  </li>
-  <li>
-<a href="https://www.kaggle.com/code/evilpsycho42/understand-comp-domain-and-imagenet-21k-labels" rel="external nofollow noopener" target="_blank">Understand Comp Domain and ImageNet 21k Labels</a>
-    <ol>
-      <li>Understanding comp domain and labels</li>
-    </ol>
-  </li>
-</ol>
-
-<h1 id="solutions">Solutions</h1>
+<p>It took me around 8 hours to implement it and 2 hours are spent on gathering the proper data. Throughout the process I learnt:</p>
 
 <ol>
-  <li>
-<a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359316" rel="external nofollow noopener" target="_blank">1st place solution</a>
-    <ol>
-      <li>Using <a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/340043" rel="external nofollow noopener" target="_blank">pre-trained weights</a> w/o training or fine-tuning first.</li>
-      <li>CLIP <a href="https://github.com/mlfoundations/open_clip" rel="external nofollow noopener" target="_blank">Github</a>
-</li>
-      <li><a href="https://arxiv.org/abs/1801.07698" rel="external nofollow noopener" target="_blank">ArcFace</a></li>
-      <li>Add datasets to training list <strong>iteratively</strong> to save time and maintain good performance</li>
-      <li>unfreeze the backbone after linear head is well trained, so we don’t need to worry about the random linear head would affect the backbone weights
-        <ol>
-          <li>use 10 times lower initial learning rate.</li>
-          <li>Easy to get overfit and linear projection weights jumped sharply.</li>
-          <li>So freeze linear head to train and add dropout to fully connection layer.</li>
-        </ol>
-      </li>
-      <li>Clever ensemble to overcome different F(C, X) issues
-        <ol>
-          <li>resolution 224 + resolution 280</li>
-        </ol>
-      </li>
-      <li>LAION-5B CLIP Model <a href="https://laion.ai/blog/large-openclip/" rel="external nofollow noopener" target="_blank">blog</a>
-</li>
-    </ol>
-  </li>
-  <li>
-<a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359525" rel="external nofollow noopener" target="_blank">2nd place solution</a>
-    <ol>
-      <li>dynamic margin</li>
-      <li>stratified learning rate when training non-backbone part.</li>
-    </ol>
-  </li>
-  <li><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359487" rel="external nofollow noopener" target="_blank">4th place solution</a></li>
-  <li><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359161" rel="external nofollow noopener" target="_blank">5th place solution</a></li>
-  <li>The rest <a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359948" rel="external nofollow noopener" target="_blank">thread</a>
-</li>
+  <li>The details of DDPM and DDIM algorithm and how diffusion model works</li>
+  <li>Manipulating image data for diffusion modeling and demonstration purpose</li>
+  <li>classifier-free guided diffusion to let the model generate, <code class="language-plaintext highlighter-rouge">even</code> or <code class="language-plaintext highlighter-rouge">divisible by 3</code> digits.</li>
 </ol>
 
   </article>
@@ -251,13 +166,13 @@ Here is the distribution of test data.
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/Diffusion-MNIST/">Replicating Diffusion Models on MNIST</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/Learn-To-Rank-Metrics/">Metrics in Learn-To-Rank (LTR) problems</a>
   </li>
 
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/Learn-To-Rank-Metrics/">Metrics in Learn-To-Rank (LTR) problems</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/Kaggle-Digestion-Series-1/">KDS - Google Universal Image Embedding</a>
   </li>
 
   
