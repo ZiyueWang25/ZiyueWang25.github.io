@@ -6,6 +6,12 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-06-20 - 2023-06-24
+1. Around 2.3 hours to finish exercise [week0_d2_cnn](https://arena-ch0-fundamentals.streamlit.app/[0.2]_CNNs). Learnt about `torch.as_strided` related stuff.
+2. Around 2.4 hours to finish exercise [week0_d3_resnet](https://arena-ch0-fundamentals.streamlit.app/[0.3]_ResNets). Learnt a more detailed view about resnet, pytorch_lighting, batchnorm
+3. induction head [understanding](https://www.lesswrong.com/posts/TvrfY4c9eaGLeyDkE/induction-heads-illustrated)
+4. [Eliciting latent knowledge](https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit#heading=h.kkaua0hwmp1d)
+
 # 2023-06-14 - 2023-06-19
 1. Followed [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum) and finished [Topic 1 Transformer](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/1-Transformers.md), it takes me about 20 hours but I learnt a lot throughout the process. I wrote a post about it [here](https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer/)
 2. Read Mechanistic Interpretability related materials: [Concrete Steps to Get Started in Transformer Mechanistic Interpretability](https://www.neelnanda.io/mechanistic-interpretability/getting-started) and Google Internal documents about Introduction to Alignment.
