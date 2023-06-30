@@ -6,11 +6,13 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
-# 2023-06-25 - 2023-06-28
+
+# 2023-06-25 - 2023-06-30
 1. Around 2 hours to finish exercise [week0_d4_optimization](https://colab.research.google.com/drive/1HjzmCYqBVz_Q0XVj0mmOZGV26tW1WvHi?usp=sharing). Learnt about details of various optimizer, `Weight & Bias` related usage.
 2. Around 2 hours to finish exercise [week0_d5_backprop](https://colab.research.google.com/drive/1WjtXIlpr3iC5fPGC4_hGSm6nYMdIptNc?usp=sharing). Learnt about details of back propagation & Autograd. Skipped part 3 & 4 & 5.
 3. Around 3 hours to finish exercise [week1_d1_transformer](https://colab.research.google.com/drive/1Ig779Od-OoO8lHolRqWQTaAvhK98EdJT?usp=sharing). Learnt about details of transformer, sampling, training and inference sampling. Skipped part of sampling.
 4. Around 5 hours to finish exercise [week1_d2_mechanistic_interpretability](https://colab.research.google.com/drive/1NfLlt3McxOK9eY4xT_S6Q0ZFaoXtrW2B?usp=sharing). Learnt about induction circuits, transformerLens, induction heads, hooks, reverse-engineering induction circuits. These material opened a new view for me about how to understand LLM. I find some part hard to understand though and skipped some of the exercise as I don't want to spend too much time on this topic for now.
+5. Around 3 hours to finis [Topic 8 Interpretability](https://colab.research.google.com/drive/15CSZ09T0LQ4_BAM7_NcGDy5sTVneFJQw?usp=sharing) in [DLC](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md). It didn't take me too long because ARENA courses covered most of it. 
 
 # 2023-06-20 - 2023-06-24
 1. Around 2.3 hours to finish exercise [week0_d2_cnn](https://colab.research.google.com/drive/1tmwlA1YQIrgXblzo_9q2mNvEOuAqsV3N?usp=sharing). Learnt about `torch.as_strided` related stuff.
