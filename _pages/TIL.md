@@ -7,6 +7,15 @@ nav: true
 nav_order: 5
 ---
 
+# 2023-07-16 - 2023-07-23
+1. Around 15 hours to finish [Topic 2 Scaling Laws](https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing) in [DLC](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md).  I wrote a post about it [here](https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling-Laws/)
+2. Around 7 hours to finish [week2_deep_Q_Learning](https://arena-ch2-rl.streamlit.app/).
+3. Around 4 hours to finish [week2_PPO](https://colab.research.google.com/drive/1UlhPmIfhQLo_10r5OkDwLxWF--A2iCKc?usp=sharing). The Atari Breakout game result is shown [here](https://wandb.ai//vincentwang25/PPOAtari/reports/videos-23-07-18-13-10-22---Vmlldzo0OTA1MjM0).
+4. Around 25 hours to finish Topic 6 Reinforcement Learning in DLC. The solution is written in colab [here](https://colab.research.google.com/drive/1n8EhT0RHxdS1MIgiPQkvjDX7sD7Mpxoy?usp=sharing). The post is written [here](https://ziyuewang25.github.io/blog/2023/DLC-T6-RL/)
+
+# 2023-07-01 - 2023-07-15
+Flight back to China. Time with family and friends.
+
 # 2023-06-25 - 2023-06-30
 1. Around 2 hours to finish exercise [week0_d4_optimization](https://colab.research.google.com/drive/1HjzmCYqBVz_Q0XVj0mmOZGV26tW1WvHi?usp=sharing). Learnt about details of various optimizer, `Weight & Bias` related usage.
 2. Around 2 hours to finish exercise [week0_d5_backprop](https://colab.research.google.com/drive/1WjtXIlpr3iC5fPGC4_hGSm6nYMdIptNc?usp=sharing). Learnt about details of back propagation & Autograd. Skipped part 3 & 4 & 5.
