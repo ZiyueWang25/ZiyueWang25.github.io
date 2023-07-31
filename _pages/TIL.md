@@ -6,9 +6,14 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-07-24 - 2023-07-31
+1. In the progress of doing Alignment exercise in [DLC](https://github.com/jacobhilton/deep_learning_curriculum/tree/master)
+2. Finished [Week 2 Reward Misspecification](https://course.aisafetyfundamentals.com/alignment?week=2) reading
+3. Read [the effectiveness mindset](https://forum.effectivealtruism.org/s/B79ro5zkhndbBKRRX) chapter for the [introductory to EA](https://www.effectivealtruism.org/virtual-programs/introductory-program) course.
+4. travel week (Beijing, Shanghai, Hangzhou). Met many friends and had great fun!
 
 # 2023-07-16 - 2023-07-23
-1. Around 15 hours to finish [Topic 2 Scaling Laws](https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing) in [DLC](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md).  I wrote a post about it [here](https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling-Laws/)
+1. Around 15 hours to finish [Topic 2 Scaling Laws](https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing) in [DLC](https://github.com/jacobhilton/deep_learning_curriculum/tree/master).  I wrote a post about it [here](https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling-Laws/)
 2. Around 7 hours to finish [week2_deep_Q_Learning](https://arena-ch2-rl.streamlit.app/).
 3. Around 4 hours to finish [week2_PPO](https://colab.research.google.com/drive/1UlhPmIfhQLo_10r5OkDwLxWF--A2iCKc?usp=sharing). The Atari Breakout game result is shown [here](https://wandb.ai//vincentwang25/PPOAtari/reports/videos-23-07-18-13-10-22---Vmlldzo0OTA1MjM0).
 4. Around 25 hours to finish Topic 6 Reinforcement Learning in DLC. The solution is written in colab [here](https://colab.research.google.com/drive/1n8EhT0RHxdS1MIgiPQkvjDX7sD7Mpxoy?usp=sharing). The post is written [here](https://ziyuewang25.github.io/blog/2023/DLC-T6-RL/)
