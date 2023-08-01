@@ -1,5 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-01T00:00:43+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-</subtitle><entry><title type="html">How to get gold medal in Kaggle competition, from a Competition Master perspective.</title><link href="https://ziyuewang25.github.io/blog/2023/win-thoughts/" rel="alternate" type="text/html" title="How to get gold medal in Kaggle competition, from a Competition Master perspective." /><published>2023-07-29T00:00:00+00:00</published><updated>2023-07-29T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/win-thoughts</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/win-thoughts/"><![CDATA[<p>I started doing Kaggle competition seriously since 2021 February and became Kaggle Competition Master on 2022 March. During that 1 year, I have won 2 gold, 1 silver and 2 bronze medals.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-01T14:36:47+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
+</subtitle><entry><title type="html">ARENA learning experience</title><link href="https://ziyuewang25.github.io/blog/2023/ARENA/" rel="alternate" type="text/html" title="ARENA learning experience" /><published>2023-08-01T00:00:00+00:00</published><updated>2023-08-01T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/ARENA</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/ARENA/"><![CDATA[<p>I found <a href="https://github.com/callummcdougall/ARENA_2.0">ARENA</a> quite helpful for self-study AI safety related topics and it can work well in together with <a href="https://github.com/jacobhilton/deep_learning_curriculum">Deep Learning Curriculum</a>. It offers colab choice for the exercise part, which is great since I don’t have much GPU support for my own computer.</p>
+
+<p>Here is how I spent my time on various topics in ARENA and hope it can work as a reference for someone also interested in self-studying this material.</p>
+
+<p>Total Hours: 32.7. Split into the following:</p>
+<ul>
+  <li>8.7h <a href="https://arena-ch0-fundamentals.streamlit.app/">Chapter 0: Fundamentals</a>
+    <ul>
+      <li>skipped  exercise 0.1 <a href="https://arena-ch0-fundamentals.streamlit.app/[0.1]_Ray_Tracing">Ray Tracing</a> since I found it too advanced to be necessary.</li>
+      <li>2.3h exercise 0.2 <a href="https://colab.research.google.com/drive/1tmwlA1YQIrgXblzo_9q2mNvEOuAqsV3N?usp=sharing">CNN</a>. I learnt about <code class="language-plaintext highlighter-rouge">torch.as_strided</code> related stuff.</li>
+      <li>2.4h exercise 0.3 <a href="https://colab.research.google.com/drive/1gnUiIAzIvjYvaUXdZP7J8e_n1qeLhHFj?usp=sharing">Resnet</a>. I learnt a more detailed view about resnet, pytorch_lighting, batchnorm.</li>
+      <li>2.0h exercise 0.4 <a href="https://colab.research.google.com/drive/1HjzmCYqBVz_Q0XVj0mmOZGV26tW1WvHi?usp=sharing">Optimization</a>. I learnt about details of various optimizer, <code class="language-plaintext highlighter-rouge">Weight &amp; Bias</code> related usage.</li>
+      <li>2.0h  exercise 0.5 <a href="https://colab.research.google.com/drive/1WjtXIlpr3iC5fPGC4_hGSm6nYMdIptNc?usp=sharing">Backprop</a> (skipped part 3 &amp; 4 &amp; 5). I learnt about details of back propagation &amp; Autograd.</li>
+    </ul>
+  </li>
+  <li>8.0h <a href="https://arena-ch1-transformers.streamlit.app/">Chapter 1: Transformers &amp; Mech Interp</a>
+    <ul>
+      <li>3.0h  exercise 1.1 <a href="https://colab.research.google.com/drive/1Ig779Od-OoO8lHolRqWQTaAvhK98EdJT?usp=sharing">transformer</a> (I skipped part of sampling.). I learnt about details of transformer, sampling, training and inference sampling.</li>
+      <li>5.0h  exercise 1.2 <a href="https://colab.research.google.com/drive/1NfLlt3McxOK9eY4xT_S6Q0ZFaoXtrW2B?usp=sharing">mechanistic interpretability</a>. I learnt about induction circuits, transformerLens, induction heads, hooks, reverse-engineering induction circuits. These material opened a new view for me about how to understand LLM. I find some part hard to understand though and skipped some of the exercise as I don’t want to spend too much time on this topic for now.</li>
+    </ul>
+  </li>
+  <li>16.0h <a href="https://arena-ch2-rl.streamlit.app/">Chapter 2: Reinforcement Learning</a>
+    <ul>
+      <li>2.5h  exercise 2.1 <a href="https://arena-ch2-rl.streamlit.app/">Introduction to RL</a>. it works like a memory refresher about some RL concepts. It is nice to check the detail of some RL environments.</li>
+      <li>7.0h  exercise 2.2 <a href="https://arena-ch2-rl.streamlit.app/">Deep Q Learning</a></li>
+      <li>4.0h  exercise 2.3 <a href="https://colab.research.google.com/drive/1UlhPmIfhQLo_10r5OkDwLxWF--A2iCKc?usp=sharing">PPO</a>. The Atari Breakout game result is shown <a href="https://wandb.ai//vincentwang25/PPOAtari/reports/videos-23-07-18-13-10-22---Vmlldzo0OTA1MjM0">here</a>.</li>
+      <li>2.5h  exercise 2.4 <a href="https://arena-ch2-rl.streamlit.app/[2.4]_RLHF">RLHF</a>.</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I summarized my learning experience about ARENA.]]></summary></entry><entry><title type="html">How to get gold medal in Kaggle competition, from a Competition Master perspective.</title><link href="https://ziyuewang25.github.io/blog/2023/win-thoughts/" rel="alternate" type="text/html" title="How to get gold medal in Kaggle competition, from a Competition Master perspective." /><published>2023-07-29T00:00:00+00:00</published><updated>2023-07-29T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/win-thoughts</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/win-thoughts/"><![CDATA[<p>I started doing Kaggle competition seriously since 2021 February and became Kaggle Competition Master on 2022 March. During that 1 year, I have won 2 gold, 1 silver and 2 bronze medals.</p>
 
 <p><img src="https://i.ibb.co/MBHJMmG/2023-07-29-15-40.png" alt="" /></p>
 
@@ -80,7 +109,14 @@
 <p><img src="https://i.ibb.co/41vg6jL/download-2.png" alt="" /></p>
 
 <p><img src="https://i.ibb.co/zNDhTpD/download.png" alt="" />
-<img src="https://i.ibb.co/dgSp0MN/download-1.png" alt="" /></p>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.]]></summary></entry><entry><title type="html">Replicating Decoder-only Transformer by using William Shakespeare Corpus</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer/" rel="alternate" type="text/html" title="Replicating Decoder-only Transformer by using William Shakespeare Corpus" /><published>2023-06-19T00:00:00+00:00</published><updated>2023-06-19T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/1-Transformers.md">Topic 1 - Transformer</a>. My solution is written in Colab <a href="https://colab.research.google.com/drive/18oP7mmz6sgC3pUembsOLdS6jSwlVbmIv?usp=sharing">T1-Transformers-solution.ipynb</a></p>
+<img src="https://i.ibb.co/dgSp0MN/download-1.png" alt="" /></p>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.]]></summary></entry><entry><title type="html">Find the induction heads in GPT-2</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/" rel="alternate" type="text/html" title="Find the induction heads in GPT-2" /><published>2023-06-28T00:00:00+00:00</published><updated>2023-06-28T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T1-MI</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md">Topic 8 - Interpretability</a>. My solution is written in Colab <a href="https://colab.research.google.com/drive/15CSZ09T0LQ4_BAM7_NcGDy5sTVneFJQw?usp=sharing">T8-Interpretability-solution.ipynb</a></p>
+
+<p>It took me around 8 hours to finish the exercise and most of the time is spent on <a href="https://github.com/callummcdougall/ARENA_2.0">ARENA</a> course material about this topic. It helps me a lot in understanding this topic and it offers many helper functions to do this exercise. Here is what I learnt from this exercise:</p>
+<ol>
+  <li><strong>Induction head</strong>: A head which implements the induction behavior. They attend to the token immediately after an earlier copy of the current token, and then predicts that the token attended to will come next.</li>
+  <li>How to reverse engineer the model’s behavior.</li>
+  <li>How to find induction head by checking the model’s attention pattern and doing logit attribution.</li>
+</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating the Decoder-only transformer by following "Attention is all you need" paper and trained it on William Shakespeare's work.]]></summary></entry><entry><title type="html">Replicating Decoder-only Transformer by using William Shakespeare Corpus</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer/" rel="alternate" type="text/html" title="Replicating Decoder-only Transformer by using William Shakespeare Corpus" /><published>2023-06-19T00:00:00+00:00</published><updated>2023-06-19T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/1-Transformers.md">Topic 1 - Transformer</a>. My solution is written in Colab <a href="https://colab.research.google.com/drive/18oP7mmz6sgC3pUembsOLdS6jSwlVbmIv?usp=sharing">T1-Transformers-solution.ipynb</a></p>
 
 <p>It took me around 20 hours to finish the exercise and it totally worth it. Throughout the process I learnt:</p>
 <ol>
@@ -431,298 +467,4 @@ Here is the distribution of test data.
       <li>There are <strong>fewer rules with finger training</strong> than you likely think. Using a bigger edge to make your fingers stronger is totally acceptable.</li>
     </ul>
   </li>
-</ul>]]></content><author><name></name></author><category term="Life" /><category term="Climbing" /><summary type="html"><![CDATA[Rock Climbing related injuries knowledge sharing.]]></summary></entry><entry><title type="html">Kaggle Digestion Series</title><link href="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series/" rel="alternate" type="text/html" title="Kaggle Digestion Series" /><published>2023-02-25T00:00:00+00:00</published><updated>2023-02-25T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series/"><![CDATA[<p>I always found Kaggle competition quite fascinating because the problems are interesting and various a lot. We can always learn some new tricks and gain some valuable insights from each competition. Since most of the comps are real-life cases, it is also quite practical and meaningful to handle them well. Since I found participating in each comp and getting a gold medal can usually take quite long time (&gt;100 hours). I decide to actually step back and learn from those comps by reading through the discussion and notebook after the comp has finished. Let’s see how much we can gain from this journey. Hope we will find something valuable through this series as well.</p>
-
-<p>The main things I wanna know from each competition is:</p>
-<ol>
-  <li>What’s special about the data?</li>
-  <li>How to understand the data better?</li>
-  <li>What model works?</li>
-  <li>What competition tricks work?</li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="Kaggle" /><summary type="html"><![CDATA[I always found Kaggle competition quite fascinating because the problems are interesting and various a lot. We can always learn some new tricks and gain some valuable insights from each competition. Since most of the comps are real-life cases, it is also quite practical and meaningful to handle them well. Since I found participating in each comp and getting a gold medal can usually take quite long time (&gt;100 hours). I decide to actually step back and learn from those comps by reading through the discussion and notebook after the comp has finished. Let’s see how much we can gain from this journey. Hope we will find something valuable through this series as well.]]></summary></entry><entry><title type="html">2022 Year Reflection</title><link href="https://ziyuewang25.github.io/blog/2022/Year-Reflection/" rel="alternate" type="text/html" title="2022 Year Reflection" /><published>2022-12-31T00:00:00+00:00</published><updated>2022-12-31T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2022/Year%20Reflection</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2022/Year-Reflection/"><![CDATA[<blockquote>
-  <p>The unexamined life is not worth living –Socrates</p>
-</blockquote>
-
-<p>Reflecting back on 2022, I experienced a lot, both outside and inside:</p>
-
-<ol>
-  <li>
-    <p>I changed my job from quant 💰 at BNP to software engineer 🖥️ at Google.</p>
-  </li>
-  <li>
-    <p>I moved from New York 🗽 to Seattle 🗻.</p>
-  </li>
-  <li>
-    <p>I met many awesome friends from climbing, working and friends.</p>
-  </li>
-  <li>
-    <p>I bought my first car 🚗 and it really changed my way of living.</p>
-  </li>
-  <li>
-    <p>I switched from omnivore 🍖 to Veggan 🥦 (Vegan + Egg). Today is my 117 days since my last meat bite and I felt very good to see a lower footprint and a contribution to animal protection.</p>
-  </li>
-  <li>
-    <p>I become a husband, legally. 😀</p>
-  </li>
-  <li>
-    <p>I traveled with my wife together to San Jose, San Francisco, Yosemite and Vancouver.</p>
-  </li>
-  <li>
-    <p>I start consistently doing meditation 🧘 in the morning and I have meditated for around 38.6 hours.</p>
-  </li>
-  <li>
-    <p>I start consistently reading books 📚. I have read and summarized 38 books since the beginning of this year and here is my goodreads <a href="http://goodreads.com/vincentwang">profile</a>.</p>
-  </li>
-  <li>
-    <p>I wrote an open-source <a href="https://github.com/VincentWang25/USVisaAppointment">program</a> 🧑‍💻 to get US visa appointment slots and successfully got my visa stamped in Canada.</p>
-  </li>
-  <li>
-    <p>I got a Kaggle competition gold medal 🏅 on February and wrote a <a href="https://www.kaggle.com/competitions/tensorflow-great-barrier-reef/discussion/307718">post</a> to summarize our methods.</p>
-  </li>
-  <li>
-    <p>I started reading papers seriously and upgraded my note-taking system by following <a href="https://reasonabledeviations.com/2022/04/18/molecular-notes-part-1/">Molecular Notes</a> and <a href="https://www.buildingasecondbrain.com/">Building a Second Brain</a>. I can’t wait to see it scale up 😀</p>
-  </li>
-  <li>
-    <p>I almost stopped using social media, like WeChat and Instagram. I freed myself for more time to enjoy what was truly worth my attention.</p>
-  </li>
-  <li>
-    <p>I changed from doing rock climbing crazily into injury recovery mode. I became more patient and a long-term viewer from this one. But before the injury, I got my first single arm open hand 20mm 5s hang (that’s something probably only climbers can understand 😅)</p>
-  </li>
-</ol>
-
-<p>Overall I felt proud and happy about these changes. I felt more controlled about myself and motivated every day to enjoy my life. As failure needs reflection to be avoided in the future, success needs it as well to keep the momentum. I would say the following 3 habits/methods really helped me to become the person I wanna be.</p>
-
-<h1 id="1-reading">1 Reading</h1>
-
-<blockquote>
-  <p>开卷有益 (Reading enriches the mind) —— 《与子俨等疏》</p>
-</blockquote>
-
-<p>I intentionally set the <strong>1 hour before bedtime</strong> as my reading hour, it helps me <strong>wind down for the day</strong> and <strong>step into a different world</strong> by following the books. I like reading non-fiction books since I enjoy learning new knowledge from them. I agree with this <a href="https://reasonabledeviations.com/2022/01/24/reading-philosophy/">post</a> regarding how to read a nonfiction book and I kept <strong>extracting the wisdom from books into my life</strong>. Luckily, my wife also enjoys reading books and it is really nice time to read books together in a relaxed mode. I listed a few books that helped me in different fields.</p>
-
-<ul>
-  <li>
-    <p>Productivity:</p>
-
-    <ul>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/22544758-triggers">Triggers: Creating Behavior That Lasts—Becoming the Person You Want to Be</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/2250.The_7_Habits_of_Highly_Effective_People_Personal_Workbook">The 7 Habits of Highly Effective People Personal Workbook</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/25744928-deep-work">Deep Work: Rules for Focused Success in a Distracted World</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/40121378-atomic-habits">Atomic Habits: An Easy &amp; Proven Way to Build Good Habits &amp; Break Bad Ones</a></p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Relax and be healthy:</p>
-
-    <ul>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/24019187-humans-of-new-york">Humans of New York: Stories</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/35457841-the-4-pillar-plan">The 4 Pillar Plan: How to Relax, Eat, Move, Sleep Your Way to a Longer, Healthier Life</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/34466963-why-we-sleep">Why We Sleep: Unlocking the Power of Sleep and Dreams</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/23846205-how-to-relax">How to Relax</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/48307.Becoming_Vegan">Becoming Vegan: The Complete Guide to Adopting a Healthy Plant-Based Diet</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/22392738-the-rock-climber-s-training-manual-a-guide-to-continuous-improvement">The Rock Climber’s Training Manual - A Guide to Continuous Improvement</a></p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Communicate:</p>
-
-    <ul>
-      <li><a href="https://www.goodreads.com/book/show/3601593-non-violent-communication-a-language-of-life">Non Violent Communication A Language of Life</a>,</li>
-    </ul>
-  </li>
-  <li>
-    <p>Be financially secure:</p>
-
-    <ul>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/40491946-financial-freedom">Financial Freedom: A Proven Path to All the Money You Will Ever Need</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/41881472-the-psychology-of-money">The Psychology of Money</a></p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Find meaning in my life:</p>
-
-    <ul>
-      <li><a href="https://www.goodreads.com/book/show/38210.The_Art_of_Happiness">The Art of Happiness</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>Learn:</p>
-
-    <ul>
-      <li><a href="https://www.goodreads.com/book/show/18770267-make-it-stick">Make It Stick: The Science of Successful Learning</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>Understand the world:</p>
-
-    <ul>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/40933227-factfulness">Factfulness: Ten Reasons We’re Wrong About the World – and Why Things Are Better Than You Think</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/33585392-dear-ijeawele-or-a-feminist-manifesto-in-fifteen-suggestions">Dear Ijeawele, or a Feminist Manifesto in Fifteen Suggestions</a></p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Gain knowledge in my interested fields:</p>
-
-    <ul>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/55275019-machine-learning-design-patterns">Machine Learning Design Patterns: Solutions to Common Challenges in Data Preparation, Model Building, and MLOps</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/3735293-clean-code">Clean Code: A Handbook of Agile Software Craftsmanship</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications">Designing Data-Intensive Applications</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/60715378-designing-machine-learning-systems">Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer">The Pragmatic Programmer: From Journeyman to Master</a></p>
-      </li>
-      <li>
-        <p><a href="https://www.goodreads.com/book/show/59694883-deep-learning-in-production">Deep Learning in Production</a></p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="2-tracking--scoring">2 Tracking &amp; Scoring</h1>
-
-<blockquote>
-  <p>The first step toward change is awareness. The second step is acceptance. —Nathaniel Branden</p>
-</blockquote>
-
-<p>I started tracking how I spent my week since January 1st and it helps me reflect upon <strong>how I was doing last week</strong> and <strong>figure out the plan for next week</strong>. It redirects my focus and tracks me to see how far I am away from mastery (10,000 hours). I listed a few identities as my goals (according to <a href="https://www.goodreads.com/book/show/2250.The_7_Habits_of_Highly_Effective_People_Personal_Workbook">The 7 Habits of Highly Effective People</a>) and another column named “wasted time” to track how I spend my week. Those goals can remind me of what kind of person I wanna be in the long run. The “wasted time” is usually some meaningless screen time watching youtube videos or short videos, they are sometimes really disturbing. I want to maximize my time on goal and minimize the “wasted time”.</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/WeeklyHours-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/WeeklyHours-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/WeeklyHours-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/WeeklyHours.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-
-<p>To be specific, we have 24 hours per day, excluding 8 hours of sleep and 3 hours of necessary activities (eating, dressing up and etc), we are left with <strong>13 hours</strong>. For a week, we will have 13 * 7 = <strong>91 hours</strong>. It is not much. If we deduct working hours (7 * 5), it only left us with <strong>56 hours</strong> and we need to use that time to spend with our family, personal hobbies, and some wild dreams ⭐. Here is a decomposition of my time.</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/HoursUsedSectors-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/HoursUsedSectors-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/HoursUsedSectors-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/HoursUsedSectors.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-
-<p>Even though I tried to record the time I spend on each goal, sometimes it is still hard to track since I might just do some misc stuff like commuting or daydreaming 🤣. I am glad to see a high ratio of “Work / Research Engineer”, “Professional Climber” and “Spouse, Friends, Son”. They are part of my core identity. Note there that I listed “Spouse, Friends, Son” as part of my time tracking because they are important, never less than “Work / Research Engineer”. Having them here kept me balanced and my goal is not solely about being a great research engineer but to be happy (I agree with the meaning of life mentioned in <a href="https://www.goodreads.com/book/show/38210.The_Art_of_Happiness">Happiness</a>).</p>
-
-<p>I used <a href="https://clockify.me/">clockify</a> to <strong>track my time blocks every day</strong> and used google Sheets to record my weekly data. It is part of my weekly reflection routine and helped me stay on track.</p>
-
-<p>Since October, after reading <a href="https://www.goodreads.com/book/show/22544758-triggers">Triggers</a>, I started using a <strong>scoring method</strong> mentioned to do daily reflection. They are self-evaluations regarding questions like “<strong>Did I do my best to …</strong>” (eg prioritize, meditate, sit in good posture and etc). Compared with other evaluations, this kind of question reminds me that <strong>I have control over my behavior and I shouldn’t blame anyone else if a certain desire is unmet</strong>. I will report the scores every day to my wife to make them accountable. (Thank you, my wife, you are a great listener!)</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/DailyScore-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/DailyScore-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/DailyScore-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/DailyScore.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-
-<p>The score here is an average of several items during the day. Some days are good, and some are bad. Some habits are hard to get rid of or acquire while some don’t take that long. Doing daily reflection also helps me <strong>stay on track with my goal and progression</strong>. I normally will feel proud if I can score 90+ and feel a bit frustrated if it is lower than 80. This scoring method can also help me <strong>find the pattern and reflect upon when my willpower is the weakest</strong>. For example, I found myself easily getting hooked on excessive phone usage after dinner, so I learned to keep my phone away before dinner. If some items consistently score high after several weeks, then I have a strong belief that it becomes my habit and can be removed from my daily reflection score system.</p>
-
-<h1 id="3-triggering-good-habits-and-avoiding-bad-ones">3 Triggering good habits and avoiding bad ones</h1>
-
-<blockquote>
-  <p>We are what we repeatedly do. Excellence, then, is not an act, but a habit. — Aristotle</p>
-</blockquote>
-
-<p>I used to be got distracted by social media and short videos a lot and they are habits I want to get rid of. I even tested myself that “I will only watch one clip of a short video” then I opened the app, and after 1 hour, I realized that I can’t stop. Our willpower is limited and we need some help to deal with various distractions in our modern world.</p>
-
-<p>That’s why I decided to follow the methods mentioned in <a href="https://www.goodreads.com/book/show/40121378-atomic-habits">Atomic Habits</a> and <strong>make the bad habits hard to do</strong>. I went crazy: I hid all my friends’ moments on WeChat so whenever I opened the friend circle, there is no new feeds. I put my phone somewhere hard to reach, so I don’t need to worry about myself using it when my willpower is low. By using this method, my screen time went down quite a lot and allowed me more time to do the things I love/need to do.</p>
-
-<p>I also tried to <strong>make the good habits easy or fun to do</strong>. For example, for meditation, I bought a <a href="https://a.co/d/3M46Am1">Digital Finger Counter</a> so my daily meditation becomes easier to follow. Seeing the counter also makes the time more visible and helps me make progress over time.</p>
-
-<h1 id="remarks">Remarks</h1>
-
-<blockquote>
-  <p>Most people overestimate what they can do in one year and underestimate what they can do in ten years. — Bill Gates</p>
-</blockquote>
-
-<p>I am lucky to have the chance to fully experience 2022 and find my happiness level higher than before.</p>
-
-<p>The road to happiness is blocked by our ignorance and lack of knowledge. We are often told what to do, and what is expected, and born with the constraint of our culture. I used this post as a reflection and a wish to help you find something useful, to <strong>enable your possibility of less suffering and more happiness</strong>.</p>
-
-<p>Coping from what Robert said: “Writing about personal productivity always feels somewhat self-indulgent; it inevitably comes down to ‘this is how I do things – you should do it too!’.” That’s not my intention and what I suggested here is only a reference or I should say something that works for me. I hope it can help you but it may not 😃</p>
-
-<p>Time is limited. Attention is also limited. To do something great requires persistence and consistency. Luckily, we still have time and when we can focus our attention on those truly important things, they will come, eventually 😉</p>
-
-<p>Cheers,</p>
-
-<p>Ziyue</p>
-
-<p>2022-12-31</p>]]></content><author><name></name></author><category term="Life" /><category term="Reflection" /><summary type="html"><![CDATA[What I learnt from 2022 experience.]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><category term="Life" /><category term="Climbing" /><summary type="html"><![CDATA[Rock Climbing related injuries knowledge sharing.]]></summary></entry></feed>
