@@ -3,7 +3,7 @@ layout: post
 title: How to get gold medal in Kaggle competition, from a Competition Master perspective.
 date: 2023-07-29
 description: I summarized 7 key points about how to get a Kaggle competition gold medal.
-tags: ML
+tags: ML Kaggle
 categories: AI
 giscus_comments: true
 
