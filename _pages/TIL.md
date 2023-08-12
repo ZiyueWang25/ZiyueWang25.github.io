@@ -7,10 +7,10 @@ nav: true
 nav_order: 5
 ---
 
-# 2023-08-01
-1. Finished [Week 3 Goal Misgeneralization](https://course.aisafetyfundamentals.com/alignment?week=3) reading
-2. Wrote blog posts [Find the induction heads in GPT-2](https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/) and [ARENA learning experience](https://ziyuewang25.github.io/blog/2023/ARENA/)
-
+# 2023-08-01 - 2023-08-11
+1. Finished DLC Alignment topic exericise, it takes me around 30 hours. The code is here: [Finetune LLM with RLHF to generate positive tone message from Shakespeare Corpus](https://github.com/ZiyueWang25/RLHF-Shakespeare)
+2. Finished [Week 3 Goal Misgeneralization](https://course.aisafetyfundamentals.com/alignment?week=3) and [Week 4 Task Decomposition for scalable oversight](https://course.aisafetyfundamentals.com/home/alignment?week=4) reading
+3. Wrote blog posts [Find the induction heads in GPT-2](https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/) and [ARENA learning experience](https://ziyuewang25.github.io/blog/2023/ARENA/)
 
 # 2023-07-24 - 2023-07-31
 1. In the progress of doing Alignment exercise in [DLC](https://github.com/jacobhilton/deep_learning_curriculum/tree/master)
