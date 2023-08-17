@@ -6,6 +6,9 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-08-12
+1. Read and submitted my first result to [trojan detection challenge](https://trojandetection.ai/start) , [How to Train Really Large Models on Many GPUs?](https://lilianweng.github.io/posts/2021-09-25-train-large/), 
+2. 
 
 # 2023-08-01 - 2023-08-11
 1. Finished DLC Alignment topic exericise, it takes me around 30 hours. The code is here: [Finetune LLM with RLHF to generate positive tone message from Shakespeare Corpus](https://github.com/ZiyueWang25/RLHF-Shakespeare)

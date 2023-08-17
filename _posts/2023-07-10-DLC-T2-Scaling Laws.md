@@ -9,7 +9,7 @@ giscus_comments: true
 
 ---
 
-I started following [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum/tree/master) written by [Jacob Hilton](https://www.jacobh.co.uk/) and here is what I learnt from the exercise in [Topic 2 - Scaling Laws](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/2-Scaling-Laws.md). My solution is written in Colab [T2-ScalingLaws-solution.ipynb](https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing)
+I started following [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum/tree/master) written by [Jacob Hilton](https://www.jacobh.co.uk/) and here is what I learnt from the exercise in [Topic 2 - Scaling Laws](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/2-Scaling-Laws.md). **My solution is written in Colab [T2-ScalingLaws-solution.ipynb](https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing)**
 
 It took me around 15 hours to finish the exercise. Throughout the process I learnt:
 1. How to vary the CNN width and training data to follow scaling laws experimentation set up.
