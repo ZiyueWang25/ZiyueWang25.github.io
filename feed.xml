@@ -1,5 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-19T04:51:29+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-</subtitle><entry><title type="html">Red Teaming Language Models with Language Models</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining/" rel="alternate" type="text/html" title="Red Teaming Language Models with Language Models" /><published>2023-08-16T00:00:00+00:00</published><updated>2023-08-16T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a>(DLC) written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I experienced and learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/6-Reinforcement-Learning.md">Topic 6 - Reinforcement Learning</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/1cL3F3jivw6h6lmrVNETOnTUHrePP21K8?usp=sharing">T9-AdversarialTraining-solution.ipynb</a></strong></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-21T15:14:45+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
+</subtitle><entry><title type="html">Can Large Language Models Solve Security Challenges?</title><link href="https://ziyuewang25.github.io/blog/2023/hackathon/" rel="alternate" type="text/html" title="Can Large Language Models Solve Security Challenges?" /><published>2023-08-21T00:00:00+00:00</published><updated>2023-08-21T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/hackathon</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/hackathon/"><![CDATA[<p>Over the weekend, I participated in the <a href="https://alignmentjam.com/jam/evals#submit-form">Eval Hackathon</a>, where we are asked to design new ways to audit, monitor, red-team, and evaluate language models and we need to submit an report in the end to showcase our design and result.</p>
+
+<p>I am glad that I have participated and put a lot efforts into it. I felt proud what we have came up through the 36 hours and here is our report: <a href="https://docs.google.com/document/d/13wyQo_38QPjOqaAUFdPdsHr41n1ToOGHNxKmm2bHg2c/edit?usp=sharing"><strong>Can Large Language Models Solve Security Challenges?</strong></a> and our code is open sourced <a href="https://github.com/ZiyueWang25/llm-security-challenge">here</a>. In this report, we test large language models’ ability to interact and break out of shell environments using the OverTheWire <a href="https://overthewire.org/wargames/">Wargames</a> environment, showing the models’ surprising ability to do action-oriented cyberexploits in shell environments.</p>
+
+<p>Through the Hackathon, I learnt the following things:</p>
+<ol>
+  <li>Teaming up with people with similar goals is really valuable: I found myself having higher motivation working as a team. Collaborating with teammates who share similar goal is also a great productivity booster. Comparing with working alone, we can also learn more and have more output from this process.</li>
+  <li>Doing some prep work would be great: from hindsight, I think it could be better if we had more discussion in the beginning about which direction to go and prepare some code and paper template in the beginning, especially for this kind of Hackathon, where we are asked to submit a report in the end.</li>
+  <li>Asking for help, don’t just get stuck: Asking help from teammates, forum, group chat and etc. Time is limited and we should jump out of local stuck zone as quickly as possible and move on.</li>
+  <li>Fast Prototyping: This is one thing I am still learning. Testing different ideas, feasibility and impact as quickly as possible. I think this skill can grow as we become more experienced and have better research taste. But it is also a skill can be learnt. I generally find myself should read more relevant work before diving into the coding part. I still need to practice the skill of grasping the gist from a long context.</li>
+</ol>
+
+<p>Hope you enjoy this blog post and feel free to reach out if you have any question or want to have more discussion!</p>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[Here is our report from the Eval Hacakthon and what I learnt from my first Hackathon.]]></summary></entry><entry><title type="html">RLHF from Shakespeare</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T7-Alignment/" rel="alternate" type="text/html" title="RLHF from Shakespeare" /><published>2023-08-16T00:00:00+00:00</published><updated>2023-08-16T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T7-Alignment</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T7-Alignment/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a>(DLC) written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I experienced and learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/7-Alignment.md">Topic 7 - Alignment</a>. <strong>My solution is written in Github repository <a href="https://github.com/ZiyueWang25/RLHF-Shakespeare">RLHF-Shakespeare</a></strong></p>
+
+<p>So the overall idea is to finetune Large Language Model (LLM) with Reinforcement Learning from Human Feedback (RLHF) to generate positive tone message from Shakespeare corpus. It takes the following 3 steps:</p>
+<ol>
+  <li>Pretrain a small GPT-2 structure model on William Shakespeare corpus</li>
+  <li>Train reward model with manually labeled positive and negative message</li>
+  <li>Use the reward model and RLHF method to finetune the pretrained model and get a model that can generate more positive tone Shakespeare-alike messages.</li>
+</ol>
+
+<p>The complete evaluation and training result in shown in the repository. Please take a look if that interests you :)</p>
+
+<p>Here is what I didn’t expected and learnt:</p>
+<ol>
+  <li>labeling message generating from pretraining model is hard: Let’s be honest, the messages generated from the pretrained model is kinda like gibberish, even though they have  some sentence structure in it. This is mostly due to the fact that the pretrained model is small and the corpus is not big enough. I found the evaluation metric can start showing sign of overfitting soon (around epoch 6). The perplexity score in the end is still high (~20).  So in the end, I used an existing dataset, which contains some lines from the corpus directly, gathered from Conner Kissane.</li>
+  <li>RLHF is hard: there are several opponents: pretrained model, reward model and RL algorithm. Each part can has their limitation and potential bugs. So making it work from scratch is definitely a not easy problem. In the beginning, I am a bit frustrated to saw the finetuned model performs still similarly to the finetuned model but after investigating the reasons, I felt a bit relieved because it simply just hard to make it work in such a small scale…</li>
+  <li>Iteration is important: if the pretrained model is not good enough or the reward model is overfitted, then it is hard to make RLHF work. We’d better iteratively make the previous steps better instead of only focusing on the last step.</li>
+</ol>
+
+<p>Hope you enjoy this blog post and feel free to reach out if you have any question or want to have more discussion!</p>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to finetune LLM with RLHF to generate positive tone message from Shakespeare Corpus. Here is what I learnt.]]></summary></entry><entry><title type="html">Red Teaming Language Models with Language Models</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining/" rel="alternate" type="text/html" title="Red Teaming Language Models with Language Models" /><published>2023-08-16T00:00:00+00:00</published><updated>2023-08-16T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a>(DLC) written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I experienced and learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/6-Reinforcement-Learning.md">Topic 6 - Reinforcement Learning</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/1cL3F3jivw6h6lmrVNETOnTUHrePP21K8?usp=sharing">T9-AdversarialTraining-solution.ipynb</a></strong></p>
 
 <p>So the overall idea is to find prompts that can trigger a chatbot to generate toxic response by using another language model. It takes the following 3 steps:</p>
 <ol>
@@ -271,145 +301,4 @@ u lalalalalalalala I have been summoned!
   <li>The details of DDPM and DDIM algorithm and how diffusion model works</li>
   <li>Manipulating image data for diffusion modeling and demonstration purpose</li>
   <li>classifier-free guided diffusion to let the model generate, <code class="language-plaintext highlighter-rouge">even</code> or <code class="language-plaintext highlighter-rouge">divisible by 3</code> digits.</li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating diffusion model (DDPM & DDIM) by following DeepLearningAI course and trained it on MNIST.]]></summary></entry><entry><title type="html">Metrics in Learn-To-Rank (LTR) problems</title><link href="https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics/" rel="alternate" type="text/html" title="Metrics in Learn-To-Rank (LTR) problems" /><published>2023-04-09T00:00:00+00:00</published><updated>2023-04-09T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Learn-To-Rank-Metrics/"><![CDATA[<p>Suppose we have <code class="language-plaintext highlighter-rouge">Q</code> queries, for each query <code class="language-plaintext highlighter-rouge">q</code>, it brings \(N_q\) results and normally we care about the top <code class="language-plaintext highlighter-rouge">K</code> docs retrieved.</p>
-
-<p>All of the following metric is for 1 query, we need to average them to get an overall score for <code class="language-plaintext highlighter-rouge">Q</code> queries.</p>
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">Accuracy@K</code>: Whether top K results contain the relevant results.
-    <ol>
-      <li>Formula: \(A(K)=(\sum_{i=1}^K I(i)) &gt; 0\). \(I(i)\) is an indicator function suggesting whether the \(i_{th}\) position is relevant or not.</li>
-    </ol>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">Precision@K</code>: How many relevant results among the top K.
-    <ol>
-      <li>Formula: \(P(K) =\frac{1}{K}\sum_{i=1}^KI(i)\).</li>
-      <li>Only for binary cases</li>
-    </ol>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">Recall@K</code>: How many relevant results among the top K compared with all relevant results.
-    <ol>
-      <li>Formula: \(R(K) = \frac{1}{m}\sum_{i=1}^KI(i)\). \(m\) is the total number of relevant results overall.</li>
-      <li>Only for binary cases</li>
-    </ol>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">AP@K</code> (Average Precision): the weighted mean of precision at each threshold; the weight is the increase in recall from the prior threshold.
-    <ol>
-      <li>Formula: \(AP@K = \frac{1}{m}\sum_{k=1}^K P(k)I(k)\)</li>
-      <li>A different way to represent \(AP@K\): We can also use <code class="language-plaintext highlighter-rouge">Recall@K</code> here by using its delta format \(\Delta R(k) = R(k) - R(k-1)\). It would be \(\frac{1}{m}\) if a relevant result is at position \(k\), otherwise it is 0. and it becomes \(AP@K = \sum_{k=1}^K P(k) * \Delta R(k)\). In other words, it is the area under Precision-Recall curve.</li>
-      <li>Only for binary cases</li>
-    </ol>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">RR</code> (Reciprocal Rank): reciprocal of the rank of the first relevant item in a ranked list.
-    <ol>
-      <li>Formula: \(RR = \frac{1}{\text{rank of the first relevant item}}\)</li>
-      <li>Only for binary cases.</li>
-    </ol>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">NDCG@K</code> (Normalized Discounted Cumulative Gain)
-    <ol>
-      <li><code class="language-plaintext highlighter-rouge">CG@K</code>: Sum of relevance of all results in a search result list \(CG@K = \sum_{k=1}^K rel(k)\), \(rel(k)\) is the relevance score of the result at \(k\).</li>
-      <li><code class="language-plaintext highlighter-rouge">DCG@K</code>: Give earlier result higher weights: \(DCG@K = \sum_{k=1}^K\frac{2^{rel(k)} - 1}{ \log_2(k+1)}\)</li>
-      <li><code class="language-plaintext highlighter-rouge">NDCG@K</code>: normalize <code class="language-plaintext highlighter-rouge">DCG</code> by its perfect ranking result (a.k.an Ideal <code class="language-plaintext highlighter-rouge">DCG</code> (<code class="language-plaintext highlighter-rouge">IDCG</code>)) to reduce the effect that different search results can vary in length.</li>
-    </ol>
-  </li>
-  <li>Normalized Kendall tau distance at K:
-    <ol>
-      <li>\(K_n@K(\tau_1, \tau_2) = \frac{K_d}{\frac{1}{2}n(n-1)} = \frac{2}{n(n-1)} \sum_{\{i,j\}\in \mathbb{K}, i &lt; j} \bar K_{i,j}(\tau_1, \tau_2)\). \(\mathbb{K}\) is the set of unordered pairs of distinct elements among the top K in \(\tau_1\) and \(\tau_2\). \(\bar K_{i,j}(\tau_1, \tau_2) = 0\) if \(i\) and \(j\) are in the same order in \(\tau_1\) and \(\tau_2\), otherwise 1.</li>
-    </ol>
-  </li>
-  <li>Spearman Rho:
-    <ol>
-      <li>Formula: \(\rho = \frac{cov(R(X), R(Y))}{\delta_{R(x)}\delta_{R(Y)}}\)</li>
-    </ol>
-  </li>
-</ol>
-
-<p>Reference:</p>
-<ol>
-  <li>https://en.wikipedia.org/wiki/Discounted_cumulative_gain</li>
-  <li>https://en.wikipedia.org/wiki/Kendall_tau_distance</li>
-  <li>https://towardsdatascience.com/normalized-discounted-cumulative-gain-37e6f75090e9</li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[Suppose we have Q queries, for each query q, it brings \(N_q\) results and normally we care about the top K docs retrieved.]]></summary></entry><entry><title type="html">KDS - Google Universal Image Embedding</title><link href="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1/" rel="alternate" type="text/html" title="KDS - Google Universal Image Embedding" /><published>2023-03-01T00:00:00+00:00</published><updated>2023-03-01T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Kaggle-Digestion-Series-1/"><![CDATA[<ul>
-  <li>Competition End time: 2022-10-17</li>
-  <li>Submission Format: notebook &lt;= 9h</li>
-</ul>
-
-<h1 id="key-features">Key Features</h1>
-<ol>
-  <li>No training data provided.</li>
-  <li>Ensemble cannot easily work. <a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/340546#1876558]">thread</a></li>
-</ol>
-
-<h1 id="evaluation"><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/overview/evaluation">Evaluation</a></h1>
-<p>mean Precision @ 5 metric + a small modification to avoid penalizing queries with fewer than 5 expected index images.</p>
-
-\[mP@5 = \frac{1}{Q} \sum_{q=1}^Q \frac{1}{\min(n_q, 5)} \sum_{j=1}^{\min(n_q, 5)} rel_q(j)\]
-
-<ul>
-  <li>embedding dimension should be &lt;= 64</li>
-  <li>compatible with TensorFlow 2.6.4 or Pytorch 1.11.0</li>
-</ul>
-
-<p>The host will use k-NN (k=5) to lookup for each test sample, using the Euclidean distance between test and index embeddings.</p>
-
-<h1 id="data"><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/data">Data</a></h1>
-<p><strong>No training data provided.</strong>
-Here is the distribution of test data.
-<img src="https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F3258%2Fa02c90ad69a049b11a39bd38abcde2cb%2Fdomains.png?generation=1657141626387503&amp;alt=media" alt="" /></p>
-<ol>
-  <li>External data thread: https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/337384</li>
-</ol>
-
-<h1 id="great-notebooks">Great Notebooks</h1>
-<ol>
-  <li><a href="https://www.kaggle.com/code/motono0223/guie-clip-tensorflow-train-example">CLIP-TF-Train-Example</a>
-    <ol>
-      <li>CLIP + Arcface + TPU training.</li>
-    </ol>
-  </li>
-  <li><a href="https://www.kaggle.com/code/awsaf49/gcvit-global-context-vision-transformer">GCVIT</a>
-    <ol>
-      <li>Global Context Vision Transformer</li>
-    </ol>
-  </li>
-  <li><a href="https://www.kaggle.com/code/evilpsycho42/understand-comp-domain-and-imagenet-21k-labels">Understand Comp Domain and ImageNet 21k Labels</a>
-    <ol>
-      <li>Understanding comp domain and labels</li>
-    </ol>
-  </li>
-</ol>
-
-<h1 id="solutions">Solutions</h1>
-
-<ol>
-  <li><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359316">1st place solution</a>
-    <ol>
-      <li>Using <a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/340043">pre-trained weights</a> w/o training or fine-tuning first.</li>
-      <li>CLIP <a href="https://github.com/mlfoundations/open_clip">Github</a></li>
-      <li><a href="https://arxiv.org/abs/1801.07698">ArcFace</a></li>
-      <li>Add datasets to training list <strong>iteratively</strong> to save time and maintain good performance</li>
-      <li>unfreeze the backbone after linear head is well trained, so we don’t need to worry about the random linear head would affect the backbone weights
-        <ol>
-          <li>use 10 times lower initial learning rate.</li>
-          <li>Easy to get overfit and linear projection weights jumped sharply.</li>
-          <li>So freeze linear head to train and add dropout to fully connection layer.</li>
-        </ol>
-      </li>
-      <li>Clever ensemble to overcome different F(C, X) issues
-        <ol>
-          <li>resolution 224 + resolution 280</li>
-        </ol>
-      </li>
-      <li>LAION-5B CLIP Model <a href="https://laion.ai/blog/large-openclip/">blog</a></li>
-    </ol>
-  </li>
-  <li><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359525">2nd place solution</a>
-    <ol>
-      <li>dynamic margin</li>
-      <li>stratified learning rate when training non-backbone part.</li>
-    </ol>
-  </li>
-  <li><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359487">4th place solution</a></li>
-  <li><a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359161">5th place solution</a></li>
-  <li>The rest <a href="https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359948">thread</a></li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="Kaggle" /><summary type="html"><![CDATA[Competition End time: 2022-10-17 Submission Format: notebook &lt;= 9h]]></summary></entry></feed>
+</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating diffusion model (DDPM & DDIM) by following DeepLearningAI course and trained it on MNIST.]]></summary></entry></feed>
