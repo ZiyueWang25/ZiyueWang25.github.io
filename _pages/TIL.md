@@ -6,6 +6,9 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-08-19 - 2023-08-20
+1. Focused on [Eval Hackathon](https://alignmentjam.com/jam/evals) and here is our final report  :) [Can Large Language Models Solve Security Challenges?](https://alignmentjam.com/project/can-large-language-models-solve-security-challenges).
+
 # 2023-08-12 - 2023-08-18
 1. Read and submitted my first result to [trojan detection challenge](https://trojandetection.ai/start) , [How to Train Really Large Models on Many GPUs?](https://lilianweng.github.io/posts/2021-09-25-train-large/), 
 2. Wrote a blog post about [Red Teaming Language Models with Language Models](https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining/)
