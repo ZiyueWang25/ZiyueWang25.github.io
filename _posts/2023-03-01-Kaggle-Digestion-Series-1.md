@@ -28,7 +28,9 @@ The host will use k-NN (k=5) to lookup for each test sample, using the Euclidean
 # [Data](https://www.kaggle.com/competitions/google-universal-image-embedding/data)
 **No training data provided.**
 Here is the distribution of test data.
-![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F3258%2Fa02c90ad69a049b11a39bd38abcde2cb%2Fdomains.png?generation=1657141626387503&alt=media)
+
+{% include figure.html path="https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F3258%2Fa02c90ad69a049b11a39bd38abcde2cb%2Fdomains.png?generation=1657141626387503&alt=media" class="img-fluid rounded z-depth-1" zoomable=true%}
+
 1. External data thread: https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/337384
 
 # Great Notebooks

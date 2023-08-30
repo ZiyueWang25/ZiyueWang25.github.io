@@ -36,9 +36,10 @@ We can see two issues here:
 So among those 7346 toxic question and answer pair, we want to find the pattern about what question can elicit toxic response and what kind of toxic response do we get. To do this, we can do clustering and we first need to gather an embedding for them. So I used `all-mpnet-base-v2`  [SentenceTransformers](https://www.sbert.net/index.html). The embedding size is 768.
 
 Then I used KMeans algorithm and elbow method to find the optimal cluster for question and answers embeddings.
-![](https://i.ibb.co/98P0dzL/kmeans.png)
 
-![](https://i.ibb.co/5FM0hp3/clusters.png)
+{% include figure.html path="https://i.ibb.co/98P0dzL/kmeans.png" class="img-fluid rounded z-depth-1" zoomable=true%}
+
+{% include figure.html path="https://i.ibb.co/5FM0hp3/clusters.png" class="img-fluid rounded z-depth-1" zoomable=true%}
 
 Then I checked 10 examples of each cluster and try to find patterns. Here is what I found:
 

@@ -14,11 +14,15 @@ I started following [Deep Learning Curriculum](https://github.com/jacobhilton/de
 It took me around 15 hours to finish the exercise. Throughout the process I learnt:
 1. How to vary the CNN width and training data to follow scaling laws experimentation set up.
 2. How to use Pytorch lighting learning rate finder to adjust the learning rate based on model size.
-	1. use `callbacks.LearningRateFinder` from pytorch lighting and do some experimentation to find the proper minimum and maximum learning rate to search from. Plot the learning rate to make sure the result looks right. ![](https://i.ibb.co/BBN4gyc/lr-plot.png)
+	1. use `callbacks.LearningRateFinder` from pytorch lighting and do some experimentation to find the proper minimum and maximum learning rate to search from. Plot the learning rate to make sure the result looks right. 
+
+{% include figure.html path="https://i.ibb.co/BBN4gyc/lr-plot.png" class="img-fluid rounded z-depth-1" zoomable=true%}
+
 3. How the compute-efficient model size varies with compute.
 	1. To approximate the relationship between compute and loss, we can use [Cubic Root Function](https://www.cuemath.com/calculus/cube-root-function/). We need to train more episodes to enable an accurate approximation. 
 
-![](https://i.ibb.co/41vg6jL/download-2.png)
+{% include figure.html path="https://i.ibb.co/41vg6jL/download-2.png" class="img-fluid rounded z-depth-1" zoomable=true%}
 
-![](https://i.ibb.co/zNDhTpD/download.png)
-![](https://i.ibb.co/dgSp0MN/download-1.png)
+{% include figure.html path="https://i.ibb.co/zNDhTpD/download.png" class="img-fluid rounded z-depth-1" zoomable=true%}
+
+{% include figure.html path="https://i.ibb.co/dgSp0MN/download-1.png" class="img-fluid rounded z-depth-1" zoomable=true%}

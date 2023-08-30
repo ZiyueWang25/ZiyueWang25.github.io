@@ -11,7 +11,7 @@ giscus_comments: true
 
 I started doing Kaggle competition seriously since 2021 February and became Kaggle Competition Master on 2022 March. During that 1 year, I have won 2 gold, 1 silver and 2 bronze medals. 
 
-![](https://i.ibb.co/MBHJMmG/2023-07-29-15-40.png)
+{% include figure.html path="https://i.ibb.co/MBHJMmG/2023-07-29-15-40.png" class="img-fluid rounded z-depth-1" zoomable=true%}
 
 Here is my 7 suggestions about how to win a Competition:
 

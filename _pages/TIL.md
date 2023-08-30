@@ -6,6 +6,9 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-08-21 - 2023-08-26
+1. Read Interpretablity, Agent Foundations, Careers and Projects Topics in [Alignment Course - AI Safety Fundamentals](https://aisafetyfundamentals.com/ai-alignment-curriculum) 
+
 # 2023-08-19 - 2023-08-20
 1. Focused on [Eval Hackathon](https://alignmentjam.com/jam/evals) and here is our final report  :) [Can Large Language Models Solve Security Challenges?](https://alignmentjam.com/project/can-large-language-models-solve-security-challenges).
 
