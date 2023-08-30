@@ -9,9 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Implementing PPO from scratch | Ziyue  Wang</title>
+    <title>My Thoughts on AI and Future | Ziyue  Wang</title>
     <meta name="author" content="Ziyue  Wang">
-    <meta name="description" content="I tried to implementing PPO from scratch and apply it to Procgen environment. Here is what I learnt.">
+    <meta name="description" content="About AI promising and also dangerous future and what I want to do about it.">
     <meta name="keywords" content="portfolio-website">
 
 
@@ -32,7 +32,7 @@
     <link rel="shortcut icon" href="/assets/img/monkey.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ziyuewang25.github.io/blog/2023/DLC-T6-RL/">
+    <link rel="canonical" href="https://ziyuewang25.github.io/blog/2023/AI-Safety/">
     
     <!-- Dark Mode -->
     
@@ -117,8 +117,8 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Implementing PPO from scratch</h1>
-    <p class="post-meta">July 23, 2023</p>
+    <h1 class="post-title">My Thoughts on AI and Future</h1>
+    <p class="post-meta">August 30, 2023</p>
     <p class="post-tags">
       <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
         ·  
@@ -134,80 +134,55 @@
   </header>
 
   <article class="post-content">
-    <p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master" rel="external nofollow noopener" target="_blank">Deep Learning Curriculum</a>(DLC) written by <a href="https://www.jacobh.co.uk/" rel="external nofollow noopener" target="_blank">Jacob Hilton</a> and here is what I experienced and learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/6-Reinforcement-Learning.md" rel="external nofollow noopener" target="_blank">Topic 6 - Reinforcement Learning</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/1n8EhT0RHxdS1MIgiPQkvjDX7sD7Mpxoy?usp=sharing" rel="external nofollow noopener" target="_blank">T6-RL-solution.ipynb</a></strong></p>
+    <p>It is promising but in the same dangerous if they cannot align with our intention. It is like what has been discussed in <a href="https://theprecipice.com/" rel="external nofollow noopener" target="_blank">Precipice</a> and I want to take the chance to help it.</p>
 
-<p>It took me around 40 hours to finish the exercise. I started by spending around 15 hours doing the exercise in <a href="https://github.com/callummcdougall/ARENA_2.0/tree/main" rel="external nofollow noopener" target="_blank">ARENA</a> about RL to get myself familiar with different components in RL and then spending the rest 25 hours doing the DLC exercise.</p>
+<p>I say it is promising because it already demonstrated superior capability, and can be used to improve people’s life quality. The application field can be robotics, education, health system, productivity boost and etc.</p>
 
-<p>I referred to the ARENA’s exercise solution heavily since I have done them. To implement and debug the RL algorithm, I referred to posts <a href="https://andyljones.com/posts/rl-debugging.html" rel="external nofollow noopener" target="_blank">Debugging RL, Without the Agonizing Pain</a> and <a href="https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/" rel="external nofollow noopener" target="_blank">The 37 Implementation Details of Proximal Policy Optimization</a>.</p>
+<p>But AI can get misaligned if we aren’t paying enough attention to it. Here, according to Paul Christiano, alignment means <a href="https://ai-alignment.com/clarifying-ai-alignment-cec47cd69dd6" rel="external nofollow noopener" target="_blank">intent alignment</a>:</p>
 
-<p>I used Colab Pro+ environment to enable background running and more compute. The experimentation is done using 1 V100 GPU.</p>
+<blockquote>
+  <p>AI A is aligned with an operator H when A is trying to do what H wants it to do.</p>
+</blockquote>
 
-<p>I have generated the  Result <a href="https://wandb.ai/vincentwang25/PPOProcgen/reports/PPO-Implementation-in-Procgen-Env--Vmlldzo0OTQ3NzE5?accessToken=s9w0lpjb2fjv77ouf1c7nrb2s0zcviymc0mmw8pksr34mnsiblw5x7t7izv5gbhs" rel="external nofollow noopener" target="_blank">Report</a> in Weights &amp; Bias. It shows</p>
+<p>The focus here is “trying”, which means it is on intention/goal/motivation level rather than behavior level. A model can behave like aligned but it tries to <a href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential" rel="external nofollow noopener" target="_blank">deceive human</a> or human actually couldn’t see its defect due to the high complexity of future tasks.</p>
 
+<p>In the argument above, we assumed it can have “intention” and we can understand how it comes from by using optimizer. When we train a model, we use an optimizer which usually tries to minimize certain loss function or maximize reward function by adjusting the weight of the model. For example, Generative Pretraining Transformer (GPT) is trained by minimizing the next token prediction loss. So the goal of it is simply trying to make the next word make sense given what it sees in the past. Its goal is not about aligning with human instruction and making human happy or productive. Hence we need to do further finetuning, like Reinforcement From Human Feedback (RLHF), to make it align with human instruction.</p>
+
+<p>But I am not confident they are aligned by doing this. Here are several reasons:</p>
 <ol>
-  <li>Increasing amount of episode return</li>
-  <li>reasonable amount of ratios clipped by PPO.</li>
-  <li>Small and fairly stable approximate KL.</li>
-  <li>Policy entropy (relative entropy) falls gradually</li>
-  <li>Value residual Variance (1 - value explained variance) tend to something positive.</li>
-  <li>Mean and standard deviation for advantage normalization are fairly stable and mean is pretty close to zero.</li>
+  <li>
+<strong>Mesa-optimizer</strong>: The optimizer we used in the model training is <strong>not the same</strong> as the optimizer inside (<a href="https://www.youtube.com/watch?v=bJLcIBixGj8&amp;t=147s&amp;ab_channel=RobertMilesAISafety" rel="external nofollow noopener" target="_blank">mesa-optimizer</a>) the model that drives its behavior. We can use a dataset to teach the model to tell the truth but due to labeling mistake, the model can understand it as <strong>telling the result as long as human think it is correct, rather than the truth</strong>. It can also comes from a concept called “<strong><a href="https://drive.google.com/file/d/1KewDov1taegTzrqJ4uurmJ2CJ0Y72EU3/view" rel="external nofollow noopener" target="_blank">instrumental convergence</a></strong>”, which means as the model tend to do something, it can also develop some goals to help itself achieve that. Common instrumental goals are self-preservation, power-seeking and etc. For example, it is trained to make the quality of a person better, and it learnt to avoid being shutdown because if it get shut down, it can no longer  make a person life better. So overall, a mesa-optimizer make the intention of the model different from what we want, hence misaligned.</li>
+  <li>
+<strong>The bulk of capability and hence “intention” are still from pretraining</strong>:  Compared with finetuning, pretraining takes hundreds of more resources to do. During that phase, the model get exposed to a lot of knowledge. It is not told to be polite and helpful during that phase, it is simply told to predict the next word. Putting this mode on human would be like: children are getting “educated” about reasoning, culture, reading comprehension and etc without being told about what is a good intention and how to communicate or help other people. This sounds dangerous because before they are being told about what is a good intention, they can already develop their own view strongly, which may not be in favor of the good intention. This is especially dangerous when the pretraining data, corpus, contains a lot of toxic/biased data. Some arguments against this would be how the model learns is different from human and their intention can be corrected during finetuning phase. But still, there is a chance that they can develop strong intention during pretraining phase, which we has almost no control over, except making the data better.</li>
+  <li>
+<strong>Many existing jail breaker</strong>: there are many <a href="https://www.lesswrong.com/posts/RYcoJdvmoBbi5Nax7/jailbreaking-chatgpt-on-release-day" rel="external nofollow noopener" target="_blank">examples</a> online showing that model turned into a rude/toxic mode by saying unfavorable things. Those behavior can be elicited by using role-play and some other hacking methods.  They are the sign of bad intention within the model that we currently cannot control with.</li>
 </ol>
 
-<figure>
+<p>Even when the model is aligned, it can still be misused. So a model that tries to do what human wants it to do can also be applied to dangerous field, like weapon development, attacking security system and etc. This requires policy maker and corporate to have proper control over how AI gets deployed and used, which leads to a large field of AI safety policy and governance. For more details, please check <a href="https://www.lesswrong.com/posts/9dNxz2kjNvPtiZjxj/an-overview-of-catastrophic-ai-risks-summary" rel="external nofollow noopener" target="_blank">An overview of Catastrophic AI Risks</a>.</p>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-1400.webp"></source>
-    
+<p>According to <a href="https://theprecipice.com/" rel="external nofollow noopener" target="_blank">Precipice</a> , misaligned AI can pose existential risk to humanity and the chance about it for this century is around 10%. This a large percentage and may sound wild to you at this moment and you may not be convinced, that’s totally understandable. But even we feel uncertain at this moment, the outcome of this small-chance event is unimaginable. This puts us into urgent state to take action and for me, it is about becoming an <a href="https://80000hours.org/articles/ml-engineering-career-transition-guide/" rel="external nofollow noopener" target="_blank">AI Safety Research Engineer</a> to help model get aligned.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/9rkgjbc/2023-07-23-09-12.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
+<p>I started learning about different safety topics since May 2023. According to <a href="https://forum.effectivealtruism.org/posts/63stBTw3WAW6k45dY/paul-christiano-current-work-in-ai-alignment" rel="external nofollow noopener" target="_blank">the AI landscape</a> from Paul Christiano, there are many topics about AI alignment.</p>
 
 <figure>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/nQzcTBs/2023-07-23-09-13.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-  </picture>
-
-</figure>
-
-<p>Another closer look at the episode return. It shows that using IMPALA model performs better than traditional CNN, especially at <code class="language-plaintext highlighter-rouge">bigfish</code> environment.</p>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  </picture><figcaption class="caption">AI Landscape from Paul Christiano</figcaption>
 
 </figure>
 
-<p>Other than these results, I found implementing the PPO algorithm under customized easy probing environments quite helpful. It is also helpful to achieve decent performance under CartPole environment and Atari environments before moving into harder Procgen Environments.</p>
+<p>Up to this point, to be honest, I don’t have a strong preference over which direction to go :) But if I had to say one, I think “Inner Alignment” part sounds more important to me because only with inner alignment verification, we can tell whether outer alignment worked or not. The concrete inner alignment examples are like <a href="https://www.anthropic.com/index/core-views-on-ai-safety" rel="external nofollow noopener" target="_blank">Scalable Oversight</a>, <a href="https://transformer-circuits.pub/2022/mech-interp-essay/index.html" rel="external nofollow noopener" target="_blank">Mechanistic Interpretability</a>, Automated <a href="https://huggingface.co/blog/red-teaming" rel="external nofollow noopener" target="_blank">Red Teaming</a>, <a href="https://www.lesswrong.com/tag/eliciting-latent-knowledge-elk#:~:text=Eliciting%20Latent%20Knowledge%20is%20an,that%20look%20good%20to%20us." rel="external nofollow noopener" target="_blank">Eliciting Latent Knowledge</a> and etc.</p>
 
-<p>Extensively track the metrics can also be helpful to debug where things went wrong or well, though relying on some of them solely might be inadequate. I am confused by <a href="https://andyljones.com/posts/rl-debugging.html#:~:text=handling%20invalid%20actions.-,Residual%20variance,-The%20variance%20of" rel="external nofollow noopener" target="_blank">residual variance</a> oscillation inside CartPole environment before, i.e. the residual variance doesn’t go smoothly towards a positive value, but <a href="https://wandb.ai//vincentwang25/PPOCart/reports/PPO-CartPPO-CartPole-Wrong-Value-Residual-Variance--Vmlldzo0OTE1NTcw?accessToken=jb0t273joya2ec1a4xaiefydzhb5qd0h1wekl40yo55cr9r6mcz6t25ibj0otim4" rel="external nofollow noopener" target="_blank">oscillate wildly</a>. It turns out that this can be due to the inherent simplicity of the CartPole environment: it doesn’t need much value estimation, but more relying on planning. This cause the value estimation to be unstable.</p>
-
-<p>Overall I found this exercise quite helpful for me to understand the PPO algorithm and generally RL algorithm structure.</p>
+<p>The main point at this point in my life and career is to switch my career towards them and contribute the bulk of my day time to maximize my impacts. I felt motivated given the urgency we have to solve this alignment problem and I look forward to the day of becoming an AI Safety Research Engineer :)</p>
 
   </article>
 
@@ -222,12 +197,6 @@
     <!-- Adds related posts to the end of an article -->
     <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
     <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/AI-Safety/">My Thoughts on AI and Future</a>
-  </li>
-
   
 
   <li class="my-2">
@@ -250,6 +219,12 @@
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/ARENA/">ARENA learning experience</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/win-thoughts/">How to get gold medal in Kaggle competition, from a Competition Master perspective.</a>
   </li>
 
 <div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">

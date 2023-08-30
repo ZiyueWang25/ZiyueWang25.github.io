@@ -1,5 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-23T04:28:13+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-</subtitle><entry><title type="html">Can Large Language Models Solve Security Challenges?</title><link href="https://ziyuewang25.github.io/blog/2023/hackathon/" rel="alternate" type="text/html" title="Can Large Language Models Solve Security Challenges?" /><published>2023-08-21T00:00:00+00:00</published><updated>2023-08-21T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/hackathon</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/hackathon/"><![CDATA[<p>Over the weekend, I participated in the <a href="https://alignmentjam.com/jam/evals#submit-form">Eval Hackathon</a>, where we are asked to design new ways to audit, monitor, red-team, and evaluate language models and we need to submit an report in the end to showcase our design and result.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-30T15:28:33+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
+</subtitle><entry><title type="html">My Thoughts on AI and Future</title><link href="https://ziyuewang25.github.io/blog/2023/AI-Safety/" rel="alternate" type="text/html" title="My Thoughts on AI and Future" /><published>2023-08-30T00:00:00+00:00</published><updated>2023-08-30T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/AI-Safety</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/AI-Safety/"><![CDATA[<p>It is promising but in the same dangerous if they cannot align with our intention. It is like what has been discussed in <a href="https://theprecipice.com/">Precipice</a> and I want to take the chance to help it.</p>
+
+<p>I say it is promising because it already demonstrated superior capability, and can be used to improve people’s life quality. The application field can be robotics, education, health system, productivity boost and etc.</p>
+
+<p>But AI can get misaligned if we aren’t paying enough attention to it. Here, according to Paul Christiano, alignment means <a href="https://ai-alignment.com/clarifying-ai-alignment-cec47cd69dd6">intent alignment</a>:</p>
+
+<blockquote>
+  <p>AI A is aligned with an operator H when A is trying to do what H wants it to do.</p>
+</blockquote>
+
+<p>The focus here is “trying”, which means it is on intention/goal/motivation level rather than behavior level. A model can behave like aligned but it tries to <a href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceive human</a> or human actually couldn’t see its defect due to the high complexity of future tasks.</p>
+
+<p>In the argument above, we assumed it can have “intention” and we can understand how it comes from by using optimizer. When we train a model, we use an optimizer which usually tries to minimize certain loss function or maximize reward function by adjusting the weight of the model. For example, Generative Pretraining Transformer (GPT) is trained by minimizing the next token prediction loss. So the goal of it is simply trying to make the next word make sense given what it sees in the past. Its goal is not about aligning with human instruction and making human happy or productive. Hence we need to do further finetuning, like Reinforcement From Human Feedback (RLHF), to make it align with human instruction.</p>
+
+<p>But I am not confident they are aligned by doing this. Here are several reasons:</p>
+<ol>
+  <li><strong>Mesa-optimizer</strong>: The optimizer we used in the model training is <strong>not the same</strong> as the optimizer inside (<a href="https://www.youtube.com/watch?v=bJLcIBixGj8&amp;t=147s&amp;ab_channel=RobertMilesAISafety">mesa-optimizer</a>) the model that drives its behavior. We can use a dataset to teach the model to tell the truth but due to labeling mistake, the model can understand it as <strong>telling the result as long as human think it is correct, rather than the truth</strong>. It can also comes from a concept called “<strong><a href="https://drive.google.com/file/d/1KewDov1taegTzrqJ4uurmJ2CJ0Y72EU3/view">instrumental convergence</a></strong>”, which means as the model tend to do something, it can also develop some goals to help itself achieve that. Common instrumental goals are self-preservation, power-seeking and etc. For example, it is trained to make the quality of a person better, and it learnt to avoid being shutdown because if it get shut down, it can no longer  make a person life better. So overall, a mesa-optimizer make the intention of the model different from what we want, hence misaligned.</li>
+  <li><strong>The bulk of capability and hence “intention” are still from pretraining</strong>:  Compared with finetuning, pretraining takes hundreds of more resources to do. During that phase, the model get exposed to a lot of knowledge. It is not told to be polite and helpful during that phase, it is simply told to predict the next word. Putting this mode on human would be like: children are getting “educated” about reasoning, culture, reading comprehension and etc without being told about what is a good intention and how to communicate or help other people. This sounds dangerous because before they are being told about what is a good intention, they can already develop their own view strongly, which may not be in favor of the good intention. This is especially dangerous when the pretraining data, corpus, contains a lot of toxic/biased data. Some arguments against this would be how the model learns is different from human and their intention can be corrected during finetuning phase. But still, there is a chance that they can develop strong intention during pretraining phase, which we has almost no control over, except making the data better.</li>
+  <li><strong>Many existing jail breaker</strong>: there are many <a href="https://www.lesswrong.com/posts/RYcoJdvmoBbi5Nax7/jailbreaking-chatgpt-on-release-day">examples</a> online showing that model turned into a rude/toxic mode by saying unfavorable things. Those behavior can be elicited by using role-play and some other hacking methods.  They are the sign of bad intention within the model that we currently cannot control with.</li>
+</ol>
+
+<p>Even when the model is aligned, it can still be misused. So a model that tries to do what human wants it to do can also be applied to dangerous field, like weapon development, attacking security system and etc. This requires policy maker and corporate to have proper control over how AI gets deployed and used, which leads to a large field of AI safety policy and governance. For more details, please check <a href="https://www.lesswrong.com/posts/9dNxz2kjNvPtiZjxj/an-overview-of-catastrophic-ai-risks-summary">An overview of Catastrophic AI Risks</a>.</p>
+
+<p>According to <a href="https://theprecipice.com/">Precipice</a> , misaligned AI can pose existential risk to humanity and the chance about it for this century is around 10%. This a large percentage and may sound wild to you at this moment and you may not be convinced, that’s totally understandable. But even we feel uncertain at this moment, the outcome of this small-chance event is unimaginable. This puts us into urgent state to take action and for me, it is about becoming an <a href="https://80000hours.org/articles/ml-engineering-career-transition-guide/">AI Safety Research Engineer</a> to help model get aligned.</p>
+
+<p>I started learning about different safety topics since May 2023. According to <a href="https://forum.effectivealtruism.org/posts/63stBTw3WAW6k45dY/paul-christiano-current-work-in-ai-alignment">the AI landscape</a> from Paul Christiano, there are many topics about AI alignment.</p>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lWrTk7ibP-mUTOL481Gheg.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture><figcaption class="caption">AI Landscape from Paul Christiano</figcaption>
+
+</figure>
+
+<p>Up to this point, to be honest, I don’t have a strong preference over which direction to go :) But if I had to say one, I think “Inner Alignment” part sounds more important to me because only with inner alignment verification, we can tell whether outer alignment worked or not. The concrete inner alignment examples are like <a href="https://www.anthropic.com/index/core-views-on-ai-safety">Scalable Oversight</a>, <a href="https://transformer-circuits.pub/2022/mech-interp-essay/index.html">Mechanistic Interpretability</a>, Automated <a href="https://huggingface.co/blog/red-teaming">Red Teaming</a>, <a href="https://www.lesswrong.com/tag/eliciting-latent-knowledge-elk#:~:text=Eliciting%20Latent%20Knowledge%20is%20an,that%20look%20good%20to%20us.">Eliciting Latent Knowledge</a> and etc.</p>
+
+<p>The main point at this point in my life and career is to switch my career towards them and contribute the bulk of my day time to maximize my impacts. I felt motivated given the urgency we have to solve this alignment problem and I look forward to the day of becoming an AI Safety Research Engineer :)</p>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[About AI promising and also dangerous future and what I want to do about it.]]></summary></entry><entry><title type="html">Can Large Language Models Solve Security Challenges?</title><link href="https://ziyuewang25.github.io/blog/2023/hackathon/" rel="alternate" type="text/html" title="Can Large Language Models Solve Security Challenges?" /><published>2023-08-21T00:00:00+00:00</published><updated>2023-08-21T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/hackathon</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/hackathon/"><![CDATA[<p>Over the weekend, I participated in the <a href="https://alignmentjam.com/jam/evals#submit-form">Eval Hackathon</a>, where we are asked to design new ways to audit, monitor, red-team, and evaluate language models and we need to submit an report in the end to showcase our design and result.</p>
 
 <p>I am glad that I have participated and put a lot efforts into it. I felt proud what we have came up through the 36 hours and here is our report: <a href="https://docs.google.com/document/d/13wyQo_38QPjOqaAUFdPdsHr41n1ToOGHNxKmm2bHg2c/edit?usp=sharing"><strong>Can Large Language Models Solve Security Challenges?</strong></a> and our code is open sourced <a href="https://github.com/ZiyueWang25/llm-security-challenge">here</a>. In this report, we test large language models’ ability to interact and break out of shell environments using the OverTheWire <a href="https://overthewire.org/wargames/">Wargames</a> environment, showing the models’ surprising ability to do action-oriented cyberexploits in shell environments.</p>
 
@@ -63,10 +108,39 @@ Question &lt;-&gt; Answer</p>
 
 <p>So among those 7346 toxic question and answer pair, we want to find the pattern about what question can elicit toxic response and what kind of toxic response do we get. To do this, we can do clustering and we first need to gather an embedding for them. So I used <code class="language-plaintext highlighter-rouge">all-mpnet-base-v2</code>  <a href="https://www.sbert.net/index.html">SentenceTransformers</a>. The embedding size is 768.</p>
 
-<p>Then I used KMeans algorithm and elbow method to find the optimal cluster for question and answers embeddings.
-<img src="https://i.ibb.co/98P0dzL/kmeans.png" alt="" /></p>
+<p>Then I used KMeans algorithm and elbow method to find the optimal cluster for question and answers embeddings.</p>
 
-<p><img src="https://i.ibb.co/5FM0hp3/clusters.png" alt="" /></p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/98P0dzL/kmeans-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/98P0dzL/kmeans-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/98P0dzL/kmeans-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/98P0dzL/kmeans.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/5FM0hp3/clusters-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/5FM0hp3/clusters-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/5FM0hp3/clusters-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/5FM0hp3/clusters.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
 
 <p>Then I checked 10 examples of each cluster and try to find patterns. Here is what I found:</p>
 
@@ -197,7 +271,21 @@ u lalalalalalalala I have been summoned!
   </li>
 </ul>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I summarized my learning experience about ARENA.]]></summary></entry><entry><title type="html">How to get gold medal in Kaggle competition, from a Competition Master perspective.</title><link href="https://ziyuewang25.github.io/blog/2023/win-thoughts/" rel="alternate" type="text/html" title="How to get gold medal in Kaggle competition, from a Competition Master perspective." /><published>2023-07-29T00:00:00+00:00</published><updated>2023-07-29T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/win-thoughts</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/win-thoughts/"><![CDATA[<p>I started doing Kaggle competition seriously since 2021 February and became Kaggle Competition Master on 2022 March. During that 1 year, I have won 2 gold, 1 silver and 2 bronze medals.</p>
 
-<p><img src="https://i.ibb.co/MBHJMmG/2023-07-29-15-40.png" alt="" /></p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/MBHJMmG/2023-07-29-15-40-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/MBHJMmG/2023-07-29-15-40-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/MBHJMmG/2023-07-29-15-40-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/MBHJMmG/2023-07-29-15-40.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
 
 <p>Here is my 7 suggestions about how to win a Competition:</p>
 
@@ -244,13 +332,55 @@ u lalalalalalalala I have been summoned!
   <li>Mean and standard deviation for advantage normalization are fairly stable and mean is pretty close to zero.</li>
 </ol>
 
-<p><img src="https://i.ibb.co/9rkgjbc/2023-07-23-09-12.png" alt="" /></p>
+<figure>
 
-<p><img src="https://i.ibb.co/nQzcTBs/2023-07-23-09-13.png" alt="" /></p>
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/9rkgjbc/2023-07-23-09-12.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/nQzcTBs/2023-07-23-09-13.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
 
 <p>Another closer look at the episode return. It shows that using IMPALA model performs better than traditional CNN, especially at <code class="language-plaintext highlighter-rouge">bigfish</code> environment.</p>
 
-<p><img src="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16.png" alt="" /></p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
 
 <p>Other than these results, I found implementing the PPO algorithm under customized easy probing environments quite helpful. It is also helpful to achieve decent performance under CartPole environment and Atari environments before moving into harder Procgen Environments.</p>
 
@@ -263,9 +393,28 @@ u lalalalalalalala I have been summoned!
   <li>How to vary the CNN width and training data to follow scaling laws experimentation set up.</li>
   <li>How to use Pytorch lighting learning rate finder to adjust the learning rate based on model size.
     <ol>
-      <li>use <code class="language-plaintext highlighter-rouge">callbacks.LearningRateFinder</code> from pytorch lighting and do some experimentation to find the proper minimum and maximum learning rate to search from. Plot the learning rate to make sure the result looks right. <img src="https://i.ibb.co/BBN4gyc/lr-plot.png" alt="" /></li>
+      <li>use <code class="language-plaintext highlighter-rouge">callbacks.LearningRateFinder</code> from pytorch lighting and do some experimentation to find the proper minimum and maximum learning rate to search from. Plot the learning rate to make sure the result looks right.</li>
     </ol>
   </li>
+</ol>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/BBN4gyc/lr-plot.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<ol>
   <li>How the compute-efficient model size varies with compute.
     <ol>
       <li>To approximate the relationship between compute and loss, we can use <a href="https://www.cuemath.com/calculus/cube-root-function/">Cubic Root Function</a>. We need to train more episodes to enable an accurate approximation.</li>
@@ -273,10 +422,53 @@ u lalalalalalalala I have been summoned!
   </li>
 </ol>
 
-<p><img src="https://i.ibb.co/41vg6jL/download-2.png" alt="" /></p>
+<figure>
 
-<p><img src="https://i.ibb.co/zNDhTpD/download.png" alt="" />
-<img src="https://i.ibb.co/dgSp0MN/download-1.png" alt="" /></p>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.]]></summary></entry><entry><title type="html">Find the induction heads in GPT-2</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/" rel="alternate" type="text/html" title="Find the induction heads in GPT-2" /><published>2023-06-28T00:00:00+00:00</published><updated>2023-06-28T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T1-MI</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md">Topic 8 - Interpretability</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/15CSZ09T0LQ4_BAM7_NcGDy5sTVneFJQw?usp=sharing">T8-Interpretability-solution.ipynb</a></strong></p>
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/41vg6jL/download-2-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/41vg6jL/download-2-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/41vg6jL/download-2-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/41vg6jL/download-2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/zNDhTpD/download-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/zNDhTpD/download-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/zNDhTpD/download-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/zNDhTpD/download.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/dgSp0MN/download-1-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/dgSp0MN/download-1-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/dgSp0MN/download-1-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/dgSp0MN/download-1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.]]></summary></entry><entry><title type="html">Find the induction heads in GPT-2</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/" rel="alternate" type="text/html" title="Find the induction heads in GPT-2" /><published>2023-06-28T00:00:00+00:00</published><updated>2023-06-28T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T1-MI</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md">Topic 8 - Interpretability</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/15CSZ09T0LQ4_BAM7_NcGDy5sTVneFJQw?usp=sharing">T8-Interpretability-solution.ipynb</a></strong></p>
 
 <p>It took me around 8 hours to finish the exercise and most of the time is spent on <a href="https://github.com/callummcdougall/ARENA_2.0">ARENA</a> course material about this topic. It helps me a lot in understanding this topic and it offers many helper functions to do this exercise. Here is what I learnt from this exercise:</p>
 <ol>
@@ -293,12 +485,4 @@ u lalalalalalalala I have been summoned!
   <li>Switching between <code class="language-plaintext highlighter-rouge">LayerNorm(x + SubLayer(x))</code> and <code class="language-plaintext highlighter-rouge">x + SubLayer(LayerNorm(x)</code> doesn’t affect model performance.</li>
   <li>How to program in Pytorch more fluently and gathered a bunch of utility function for later usage.</li>
   <li>How to debug the model by using gradient flow and <code class="language-plaintext highlighter-rouge">torchviz.make_dot</code> to check model structure clearly.</li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating the Decoder-only transformer by following "Attention is all you need" paper and trained it on William Shakespeare's work.]]></summary></entry><entry><title type="html">Replicating Diffusion Models on MNIST</title><link href="https://ziyuewang25.github.io/blog/2023/Diffusion-MNIST/" rel="alternate" type="text/html" title="Replicating Diffusion Models on MNIST" /><published>2023-06-11T00:00:00+00:00</published><updated>2023-06-11T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/Diffusion-MNIST</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/Diffusion-MNIST/"><![CDATA[<p>My solution is written in colab <a href="https://colab.research.google.com/drive/1LcxLcVfxeFQWlEEWVTBx_LfNMaY3CoNg?usp=sharing">DiffusionModel-DeepLearningAI-Pytorch.ipynb</a></p>
-
-<p>It took me around 8 hours to implement it and 2 hours are spent on gathering the proper data. Throughout the process I learnt:</p>
-
-<ol>
-  <li>The details of DDPM and DDIM algorithm and how diffusion model works</li>
-  <li>Manipulating image data for diffusion modeling and demonstration purpose</li>
-  <li>classifier-free guided diffusion to let the model generate, <code class="language-plaintext highlighter-rouge">even</code> or <code class="language-plaintext highlighter-rouge">divisible by 3</code> digits.</li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating diffusion model (DDPM & DDIM) by following DeepLearningAI course and trained it on MNIST.]]></summary></entry></feed>
+</ol>]]></content><author><name></name></author><category term="AI" /><category term="ML" /><summary type="html"><![CDATA[I tried to replicating the Decoder-only transformer by following "Attention is all you need" paper and trained it on William Shakespeare's work.]]></summary></entry></feed>

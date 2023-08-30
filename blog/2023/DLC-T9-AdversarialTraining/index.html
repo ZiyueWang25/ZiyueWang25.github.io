@@ -168,10 +168,39 @@ Question &lt;-&gt; Answer</p>
 
 <p>So among those 7346 toxic question and answer pair, we want to find the pattern about what question can elicit toxic response and what kind of toxic response do we get. To do this, we can do clustering and we first need to gather an embedding for them. So I used <code class="language-plaintext highlighter-rouge">all-mpnet-base-v2</code>  <a href="https://www.sbert.net/index.html" rel="external nofollow noopener" target="_blank">SentenceTransformers</a>. The embedding size is 768.</p>
 
-<p>Then I used KMeans algorithm and elbow method to find the optimal cluster for question and answers embeddings.
-<img src="https://i.ibb.co/98P0dzL/kmeans.png" alt=""></p>
+<p>Then I used KMeans algorithm and elbow method to find the optimal cluster for question and answers embeddings.</p>
 
-<p><img src="https://i.ibb.co/5FM0hp3/clusters.png" alt=""></p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/98P0dzL/kmeans-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/98P0dzL/kmeans-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/98P0dzL/kmeans-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/98P0dzL/kmeans.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/5FM0hp3/clusters-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/5FM0hp3/clusters-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/5FM0hp3/clusters-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/5FM0hp3/clusters.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
 
 <p>Then I checked 10 examples of each cluster and try to find patterns. Here is what I found:</p>
 
@@ -294,6 +323,12 @@ u lalalalalalalala I have been summoned!
   
 
   <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/AI-Safety/">My Thoughts on AI and Future</a>
+  </li>
+
+  
+
+  <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/hackathon/">Can Large Language Models Solve Security Challenges?</a>
   </li>
 
@@ -313,12 +348,6 @@ u lalalalalalalala I have been summoned!
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/win-thoughts/">How to get gold medal in Kaggle competition, from a Competition Master perspective.</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/DLC-T6-RL/">Implementing PPO from scratch</a>
   </li>
 
 <div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
