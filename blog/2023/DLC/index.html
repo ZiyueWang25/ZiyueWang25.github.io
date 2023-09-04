@@ -9,9 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Replicating Scaling Laws by using MNIST data | Ziyue  Wang</title>
+    <title>Deep Learning Curriculum learning experience | Ziyue  Wang</title>
     <meta name="author" content="Ziyue  Wang">
-    <meta name="description" content="I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.">
+    <meta name="description" content="I summarized my learning experience about DLC.">
     <meta name="keywords" content="portfolio-website">
 
 
@@ -32,7 +32,7 @@
     <link rel="shortcut icon" href="/assets/img/monkey.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling-Laws/">
+    <link rel="canonical" href="https://ziyuewang25.github.io/blog/2023/DLC/">
     
     <!-- Dark Mode -->
     
@@ -117,8 +117,8 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Replicating Scaling Laws by using MNIST data</h1>
-    <p class="post-meta">July 10, 2023</p>
+    <h1 class="post-title">Deep Learning Curriculum learning experience</h1>
+    <p class="post-meta">September 4, 2023</p>
     <p class="post-tags">
       <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
         ·  
@@ -134,89 +134,46 @@
   </header>
 
   <article class="post-content">
-    <p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master" rel="external nofollow noopener" target="_blank">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/" rel="external nofollow noopener" target="_blank">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/2-Scaling-Laws.md" rel="external nofollow noopener" target="_blank">Topic 2 - Scaling Laws</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing" rel="external nofollow noopener" target="_blank">T2-ScalingLaws-solution.ipynb</a></strong></p>
-
-<p>It took me around 15 hours to finish the exercise. Throughout the process I learnt:</p>
-<ol>
-  <li>How to vary the CNN width and training data to follow scaling laws experimentation set up.</li>
-  <li>How to use Pytorch lighting learning rate finder to adjust the learning rate based on model size.
-    <ol>
-      <li>use <code class="language-plaintext highlighter-rouge">callbacks.LearningRateFinder</code> from pytorch lighting and do some experimentation to find the proper minimum and maximum learning rate to search from. Plot the learning rate to make sure the result looks right.</li>
-    </ol>
-  </li>
-</ol>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/BBN4gyc/lr-plot.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
+    <p>I found <a href="https://github.com/jacobhilton/deep_learning_curriculum" rel="external nofollow noopener" target="_blank">Deep Learning Curriculum</a>(DLC) very helpful and challenging. It is a good way to get hands-on experience in topics related with technical AI Safety. Here are some points I want to mention about self-studying it:</p>
 
 <ol>
-  <li>How the compute-efficient model size varies with compute.
+  <li>Difficulty : As mentioned in the DLC, it is indeed hard to solve some topics alone. I am not a newbie in the field as I had some experience with DL through Kaggle and work, but I still find implementing something from scratch can be intimidating and often lost direction in the middle of the exercise. There is no standard solution available for this curriculum, which made it hard to know whether the solution is correct or not. For example, in the Alignment topic, I couldn’t get the RLHF model perform better than the pretrained model but I doubt there is anything wrong with the RL algorithm but most likely from the model size and data size… It probably works like a real research environment, we need to find evidence to prove our solution is right or not instead of relying on existing solution, which doesn’t exist in real world.</li>
+  <li>Worth or not: Yes, definitely! I learnt a lot through the process and enriched my resume with relevant project and thoughts. This can also act as an proof for our determination to technical AI safety road or AI in general.</li>
+  <li>Helpful resources:
     <ol>
-      <li>To approximate the relationship between compute and loss, we can use <a href="https://www.cuemath.com/calculus/cube-root-function/" rel="external nofollow noopener" target="_blank">Cubic Root Function</a>. We need to train more episodes to enable an accurate approximation.</li>
+      <li>
+<a href="https://github.com/callummcdougall/ARENA_2.0" rel="external nofollow noopener" target="_blank">ARENA</a> is quite helpful since it provides more instructions on related topics.</li>
+      <li>Google Colab is quite helpful. I don’t have personal GPU to use and I find Colab Pro is enough for most of the exercise. Colab Pro+ can offer non-stop training when we need to train something longer (like the exercise in RL topic). The downside is that: It is tricky to set up multi-GPU on Colab and that’s part of the reason I couldn’t finish “Topic 3 Training at Scale” because I am not sure how to get multi-GPU environment using MPI, even though it is possible to fake multi-GPU using NCCL (relevant solution <a href="[https://colab.research.google.com/drive/1Wr8TQjWmyRtMIMhreFXIQiYtNCBmoSuY](https://colab.research.google.com/drive/1Wr8TQjWmyRtMIMhreFXIQiYtNCBmoSuY)">here</a>).</li>
+      <li>The existing solution(s) is quite helpful to refer to when I get stuck. Kudos to the existing solution from <a href="https://github.com/ckkissane/deep_learning_curriculum/tree/master/solutions" rel="external nofollow noopener" target="_blank">ckkissane</a>! This is also part of the reason I want to share my solution and experience about this curriculum.</li>
     </ol>
   </li>
+  <li>How much time for each exercise: As we can see in the end, I spent ~20 hours on average on each topic but it varies a lot, some topics take &lt;= 10 hours while some takes &gt;=30.  It depends on the exercise difficulty and also personal interests – whether or not we want to dive deeper into the topics.</li>
+  <li>Skip or not skip some topics: I skipped Topic 4 &amp; 5 according to my own familiarity, interest and time. I think this should be encouraged since one curriculum wouldn’t fit perfectly for everyone. We’d better refrain ourselves from finishing mode and instead focus on those we really need and even spend more time on the topics that interest us. I may come back to them when I find them relevant in the future.</li>
+  <li>Study buddy: Unfortunately, I didn’t find a study buddy to talk with and from hindsight, it would be nice to have that for motivation and learning reason. It would be nice to have a Discord channel or something to form a study group. But…. doing the exercise seems to mimic a real research experience, which is quite valuable in some sense :)</li>
 </ol>
 
-<figure>
+<p>Below is how I spent my time on various topics in DLC and relevant solutions to each topic and hope it can work as a reference for someone also interested in self-studying this material. I arranged the topics by the sequence (from first to last) I did them.</p>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/41vg6jL/download-2-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/41vg6jL/download-2-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/41vg6jL/download-2-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/41vg6jL/download-2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/zNDhTpD/download-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/zNDhTpD/download-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/zNDhTpD/download-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/zNDhTpD/download.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/dgSp0MN/download-1-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/dgSp0MN/download-1-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/dgSp0MN/download-1-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/dgSp0MN/download-1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
+<p>I finished topic 1, 8, 2, 6, 7, 9, 3 (half) and skipped 4 and 5. Total Hours: ~134 hours.</p>
+<ol>
+  <li>
+<a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/1-Transformers.md" rel="external nofollow noopener" target="_blank">Topic 1 Transformer</a> (~20 hours): post <a href="https://ziyuewang25.github.io/blog/2023/DLC-T1-Transformer/">here</a> and Colab <a href="https://colab.research.google.com/drive/18oP7mmz6sgC3pUembsOLdS6jSwlVbmIv?usp=sharing" rel="external nofollow noopener" target="_blank">here</a>.</li>
+  <li>
+<a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md" rel="external nofollow noopener" target="_blank">Topic 8 Interpretability</a>(~8 hours): post <a href="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/">here</a> and Colab <a href="https://colab.research.google.com/drive/15CSZ09T0LQ4_BAM7_NcGDy5sTVneFJQw?usp=sharing" rel="external nofollow noopener" target="_blank">here</a>. The exercise takes me around 3 hours, in addition to 5 hours learning through ARENA.</li>
+  <li>
+<a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/2-Scaling-Laws.md" rel="external nofollow noopener" target="_blank">Topic 2 Scaling Laws</a> (~15 hours): post <a href="https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling-Laws/">here</a> and Colab <a href="https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing" rel="external nofollow noopener" target="_blank">here</a>.</li>
+  <li>
+<a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/6-Reinforcement-Learning.md" rel="external nofollow noopener" target="_blank">Topic 6 RL</a>(~36 hours): post <a href="https://ziyuewang25.github.io/blog/2023/DLC-T6-RL/">here</a>and Colab <a href="https://colab.research.google.com/drive/1n8EhT0RHxdS1MIgiPQkvjDX7sD7Mpxoy?usp=sharing" rel="external nofollow noopener" target="_blank">here</a>. The exercise takes around 25 hours, in addition to 11 hours learning through ARENA.</li>
+  <li>
+<a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/7-Alignment.md" rel="external nofollow noopener" target="_blank">Topic 7 Alignment</a> (~30 hours): GitHub repository <a href="https://github.com/ZiyueWang25/RLHF-Shakespeare" rel="external nofollow noopener" target="_blank">here</a>
+</li>
+  <li>
+<a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/9-Adversarial-Training.md" rel="external nofollow noopener" target="_blank">Topic 9 Adversarial Training</a> (~10 hours): post <a href="https://ziyuewang25.github.io/blog/2023/DLC-T9-AdversarialTraining/">here</a> and Colab <a href="https://colab.research.google.com/drive/1cL3F3jivw6h6lmrVNETOnTUHrePP21K8?usp=sharing" rel="external nofollow noopener" target="_blank">here</a>
+</li>
+  <li>
+<a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/3-Training-at-Scale.md" rel="external nofollow noopener" target="_blank">Topic 3 Training at Scale</a> (~15 hours): I spent around 10 hours learning from ARENA and 5 hours to do the exercise. Unfortunately, due to computation limitation, I didn’t successfully finish the exercise. But I got the main idea from ARENA and I felt satisfied at this moment.</li>
+  <li>Skipped <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/4-Optimization.md" rel="external nofollow noopener" target="_blank">Topic 4 Optimization</a> and <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/5-Modeling-Objectives.md" rel="external nofollow noopener" target="_blank">Topic 5 Modeling Objectives</a> due to time limitation and personal interests.</li>
+</ol>
 
   </article>
 
@@ -231,12 +188,6 @@
     <!-- Adds related posts to the end of an article -->
     <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
     <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/DLC/">Deep Learning Curriculum learning experience</a>
-  </li>
-
   
 
   <li class="my-2">
@@ -259,6 +210,12 @@
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/DLC-T7-Alignment/">RLHF from Shakespeare</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/ARENA/">ARENA learning experience</a>
   </li>
 
 <div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
