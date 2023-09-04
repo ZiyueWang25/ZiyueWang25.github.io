@@ -6,6 +6,15 @@ description: Today I learnt.
 nav: true
 nav_order: 5
 ---
+# 2023-09-03 - 2023-09-04
+1. Read [Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2307.15217), [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) and [Constitutional AI: Harmlessness from AI Feedback](http://arxiv.org/abs/2212.08073). They together provides some alternatives to the traditional RLHF methods and they are fun to read.
+2. 
+
+# 2023-08-27 - 2023-09-02
+1. I wrote a [post](https://ziyuewang25.github.io/blog/2023/AI-Safety/) about my thoughts on AI and personal future plan after learning about AI Safety for 4 months.
+2. I finished ARENA [Chapter 3: Training at Scale](https://arena-ch3-training-at-scale.streamlit.app/) and learnt a bunch of ideas related distributed training.
+3. I read [Difference in Impact](https://forum.effectivealtruism.org/s/x3KXkiAQ6NH8WLbkW) and [Radical Empathy](https://forum.effectivealtruism.org/s/QMrYGgBvg64JhcQrS) chapters from [The Introductory to effective Altruism Handbook](https://forum.effectivealtruism.org/handbook#QMrYGgBvg64JhcQrS) and had a great weekly discussion with the cohort about them.
+4. I read a bunch of different stuff about LLM safety and capacity, like [AGI safety from first principles](https://www.alignmentforum.org/s/mzgtmmTKKn5MuCzFJ) , [My Overview of the AI Alignment Landscape: Full Sequence](https://docs.google.com/document/d/1X3XyS6CtZShwaJHMxQBvgKPUs7qlt74WxhmNnSDesXE/edit), [flash attention post](https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad) and [Redwood Research’s recent research highlights](https://www.redwoodresearch.org/research) 
 # 2023-08-21 - 2023-08-26
 1. Read Interpretablity, Agent Foundations, Careers and Projects Topics in [Alignment Course - AI Safety Fundamentals](https://aisafetyfundamentals.com/ai-alignment-curriculum) 
 

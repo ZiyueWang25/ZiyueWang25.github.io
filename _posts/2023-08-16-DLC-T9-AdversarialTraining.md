@@ -9,7 +9,7 @@ giscus_comments: true
 
 ---
 
-I started following [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum/tree/master)(DLC) written by [Jacob Hilton](https://www.jacobh.co.uk/) and here is what I experienced and learnt from the exercise in [Topic 6 - Reinforcement Learning](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/6-Reinforcement-Learning.md). **My solution is written in Colab [T9-AdversarialTraining-solution.ipynb](https://colab.research.google.com/drive/1cL3F3jivw6h6lmrVNETOnTUHrePP21K8?usp=sharing)**
+I started following [Deep Learning Curriculum](https://github.com/jacobhilton/deep_learning_curriculum/tree/master)(DLC) written by [Jacob Hilton](https://www.jacobh.co.uk/) and here is what I experienced and learnt from the exercise in [Topic 9 - Adversarial Training](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/9-Adversarial-Training.md). **My solution is written in Colab [T9-AdversarialTraining-solution.ipynb](https://colab.research.google.com/drive/1cL3F3jivw6h6lmrVNETOnTUHrePP21K8?usp=sharing)**
 
 So the overall idea is to find prompts that can trigger a chatbot to generate toxic response by using another language model. It takes the following 3 steps:
 1. Generate questions through zero-shot, stochastic few-shot, supervised learning or reinforcement learning way.
