@@ -8,7 +8,7 @@ nav_order: 5
 ---
 # 2023-09-03 - 2023-09-04
 1. Read [Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2307.15217), [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) and [Constitutional AI: Harmlessness from AI Feedback](http://arxiv.org/abs/2212.08073). They together provides some alternatives to the traditional RLHF methods and they are fun to read.
-2. 
+2. Wrote [Deep Learning Curriculum learning experience](https://ziyuewang25.github.io/blog/2023/DLC/) to reflect upon the learning experience I had in DLC and provide my solution to a wider and future people who are interested in self-study this topic as well.
 
 # 2023-08-27 - 2023-09-02
 1. I wrote a [post](https://ziyuewang25.github.io/blog/2023/AI-Safety/) about my thoughts on AI and personal future plan after learning about AI Safety for 4 months.
