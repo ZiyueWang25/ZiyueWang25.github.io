@@ -3,7 +3,7 @@ layout: post
 title: Replicating Scaling Laws by using MNIST data
 date: 2023-07-10
 description: I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.
-tags: ML
+tags: Project
 categories: AI
 giscus_comments: true
 

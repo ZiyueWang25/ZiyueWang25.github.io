@@ -3,7 +3,7 @@ layout: post
 title: RLHF from Shakespeare
 date: 2023-08-16
 description: I tried to finetune LLM with RLHF to generate positive tone message from Shakespeare Corpus. Here is what I learnt.
-tags: ML
+tags: Project
 categories: AI
 giscus_comments: true
 

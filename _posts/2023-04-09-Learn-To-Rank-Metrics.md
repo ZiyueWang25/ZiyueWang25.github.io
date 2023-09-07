@@ -3,7 +3,7 @@ layout: post
 title: Metrics in Learn-To-Rank (LTR) problems
 date: 2023-04-09
 description:
-tags: ML
+tags: Project
 categories: AI
 giscus_comments: true
 

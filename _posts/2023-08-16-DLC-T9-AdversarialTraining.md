@@ -3,7 +3,7 @@ layout: post
 title: Red Teaming Language Models with Language Models
 date: 2023-08-16
 description: I tried to replicating the "Red Teaming Language Models with Language Models" paper. Here is what I learnt.
-tags: ML
+tags: Project
 categories: AI
 giscus_comments: true
 

@@ -1,12 +1,12 @@
 ---
 layout: page
-permalink: /repo/
-title: Repo
+permalink: /code/
+title: Code
 description:
 nav: true
 nav_order: 3
 ---
-
+<!-- 
 ## GitHub users
 
 {% if site.data.repositories.github_users %}
@@ -31,7 +31,7 @@ nav_order: 3
 
 {% endfor %}
 {% endif %}
-{% endif %}
+{% endif %} -->
 
 ## GitHub Repositories
 

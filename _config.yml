@@ -101,7 +101,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  Feel free to contact me through email or linkedin.
+  Feel free to contact me through email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -257,7 +257,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['ML', 'Kaggle', 'Climbing', 'Reflection'] # this tags will be dispalyed on the front page of your blog
+display_tags: ['Project', 'Reflection', 'Climbing'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

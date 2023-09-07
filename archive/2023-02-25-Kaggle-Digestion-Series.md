@@ -3,7 +3,7 @@ layout: post
 title: Kaggle Digestion Series
 date: 2023-02-25
 description:
-tags: Kaggle
+tags: AI Projects
 categories: AI
 giscus_comments: true
 

@@ -3,7 +3,7 @@ layout: post
 title: Can Large Language Models Solve Security Challenges? 
 date: 2023-08-21
 description: Here is our report from the Eval Hacakthon and what I learnt from my first Hackathon. 
-tags: ML
+tags: Project
 categories: AI
 giscus_comments: true
 

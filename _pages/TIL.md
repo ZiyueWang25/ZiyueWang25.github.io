@@ -15,6 +15,7 @@ nav_order: 5
 2. I finished ARENA [Chapter 3: Training at Scale](https://arena-ch3-training-at-scale.streamlit.app/) and learnt a bunch of ideas related distributed training.
 3. I read [Difference in Impact](https://forum.effectivealtruism.org/s/x3KXkiAQ6NH8WLbkW) and [Radical Empathy](https://forum.effectivealtruism.org/s/QMrYGgBvg64JhcQrS) chapters from [The Introductory to effective Altruism Handbook](https://forum.effectivealtruism.org/handbook#QMrYGgBvg64JhcQrS) and had a great weekly discussion with the cohort about them.
 4. I read a bunch of different stuff about LLM safety and capacity, like [AGI safety from first principles](https://www.alignmentforum.org/s/mzgtmmTKKn5MuCzFJ) , [My Overview of the AI Alignment Landscape: Full Sequence](https://docs.google.com/document/d/1X3XyS6CtZShwaJHMxQBvgKPUs7qlt74WxhmNnSDesXE/edit), [flash attention post](https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad) and [Redwood Research’s recent research highlights](https://www.redwoodresearch.org/research) 
+
 # 2023-08-21 - 2023-08-26
 1. Read Interpretablity, Agent Foundations, Careers and Projects Topics in [Alignment Course - AI Safety Fundamentals](https://aisafetyfundamentals.com/ai-alignment-curriculum) 
 
