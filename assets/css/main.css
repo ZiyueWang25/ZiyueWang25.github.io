@@ -218,6 +218,10 @@ blockquote {
     display: block;
   }
 }
+body {
+  font-family: "Amiri";
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
@@ -398,18 +402,23 @@ footer.sticky-bottom {
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
 }
 .header-bar h1 {
   color: var(--global-theme-color);
-  font-size: 5rem;
+  font-size: 3rem;
+}
+.header-bar h2 {
+  font-size: 1.5rem;
 }
 
 .tag-list {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  font-size: 1rem;
 }
 .tag-list ul {
   justify-content: center;
@@ -417,10 +426,15 @@ footer.sticky-bottom {
 }
 .tag-list ul p,
 .tag-list ul li {
+  font-size: 0.8rem;
   list-style: none;
   display: inline-block;
-  padding: 1rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   color: var(--global-text-color-light);
+}
+.tag-list ul p:hover,
+.tag-list ul li:hover {
+  color: var(--global-hover-color);
 }
 
 .post-list {
@@ -431,8 +445,8 @@ footer.sticky-bottom {
 .post-list li {
   border-bottom: 1px solid var(--global-divider-color);
   list-style: none;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .post-list li .post-meta {
   color: var(--global-text-color-light);
