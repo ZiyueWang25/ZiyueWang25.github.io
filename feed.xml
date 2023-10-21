@@ -1,5 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-10-11T02:47:09+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-</subtitle><entry><title type="html">Deep Learning Curriculum learning experience</title><link href="https://ziyuewang25.github.io/blog/2023/DLC/" rel="alternate" type="text/html" title="Deep Learning Curriculum learning experience" /><published>2023-09-04T00:00:00+00:00</published><updated>2023-09-04T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC/"><![CDATA[<p>I found <a href="https://github.com/jacobhilton/deep_learning_curriculum">Deep Learning Curriculum</a>(DLC) very helpful and challenging. It is a good way to get hands-on experience in topics related with technical AI Safety. Here are some points I want to mention about self-studying it:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-10-21T04:50:07+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
+</subtitle><entry><title type="html">How to find a good moving service</title><link href="https://ziyuewang25.github.io/blog/2023/moving/" rel="alternate" type="text/html" title="How to find a good moving service" /><published>2023-10-20T00:00:00+00:00</published><updated>2023-10-20T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/moving</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/moving/"><![CDATA[<p>2 weeks ago, I realized that I will move from Seattle to Mountain View in 50 days. I was excited but I didn’t realize I need to talk with &gt;15 moving companies to find the satisfying ones. After ~9 hours of hunting, I finally found a satisfying one. I chose <a href="https://quotes.northamerican.com/">North American Moving Service</a> for my 850 miles, 2000lbs, 300 cubic feet (CF) moving for the price of 3200$. Here is what I learned (starting from the most important one to the least):</p>
+
+<ol>
+  <li>Choose Carrier (Mover) instead of Broker: Brokers can cost more in the end even when it sounds cheaper in the beginning. They can promise you a good and appealing price in the beginning, but after you paid the deposit, things can change. I found many stories online about the brokers charge additional fee a few days before the moving so that you have no other choices but pay them the extra money. Some stories also tell that when the movers come, they gonna charge you extra money because they will say they don’t agree with the broker’s price… Choose a carrier will be cheaper and mentally safer.
+    <ol>
+      <li>How to find whether the other side is a broker or mover? Ask their USDOT number and use the following <a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&amp;query_type=queryCarrierSnapshot&amp;query_param=USDOT&amp;query_string=3475743">website</a> to search about it. The entity type should say “Carrier” instead of “Broker”. Usually, for a mover, they should have their USDOT number on their website.</li>
+    </ol>
+  </li>
+  <li>Don’t trust Google search results: “long-distance moving is badly regulated”, the agent from one of the largest moving company told me. When I search for “best moving company” in Google Search, most of them are brokers. They simply pay a lot of advertisement fee to get into the top spots so people will click for it. It is reasonable because they can easily earn &gt;1k$ for each service they “provided”. Also, the Google reviews can be fake as well. Don’t rely on Google as the only source of truth.
+    <ol>
+      <li>Who to trust?
+        <ol>
+          <li>https://www.movingscam.com: People who get cheated before created this website. Specifically, https://www.movingscamcom/superlist lists good moving services across different states.</li>
+          <li>https://www.movingauthority.com/largest-moving-companies/: The larger the company, the less likely they are willing to lose credibility.</li>
+          <li>https://ai.fmcsa.dot.gov/hhg: Check how many times the moving company get sued.</li>
+          <li>https://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist: check the insurance is legit or not.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>Pay attention to the following bad signs:
+    <ol>
+      <li>They don’t estimate how much weight and how much cubic feet (CF) about your moving: one broker I talked with, iMoving, even didn’t ask for my moving weight details. In contrast, the movers will conduct a virtual tour or in-person tour with you to do a estimate before they give a quote.</li>
+      <li>The agents are impatient, rude or call you too frequently: again, iMoving, the agent Evan is rude and make me feel uncomfortable throughout the call. Many brokers are simply too bothering and call/email you everyday. In contrast, most of the movers I talked are patient, professional, friendly and think from your standpoint of view.</li>
+      <li>Too good to be true: very low price or very fast shipping. Agents can promise you anything to let you deposit the money, then the rule can change.</li>
+      <li>Pay first, service later: Usually you can pay for the price after after the moving company load your stuff. Don’t pay too early.</li>
+      <li>Call from Florida: Many brokers registered there.</li>
+    </ol>
+  </li>
+  <li>Negotiate: Ask for &gt;5 offers and use them to compete with each other. I successfully negotiate the price from 5k to 3.2k in end. You can simply email the other side about the competing offer and they will lower the price by giving you larger discount or remove some unnecessary service, which you won’t know in the beginning.
+    <ol>
+      <li>how do you know the price is reasonable? It all depends on miles, weight and CF. FYI, the moving I have done is around 850 miles, 2000 lbs and 310 CF. Since the lowest price I received from a broker is 2.5k, which definitely is too appealing to be true, I am 80% confident that the price I received is reasonable and it would take me too much efforts to get lower than 3k. Also, paying a reasonable amount of money makes me feel safer, otherwise, I might be worried about the service I am gonna get.</li>
+    </ol>
+  </li>
+  <li>Prepare an email template and refine it over time: list your address, moving date (more flexibility, lower price) and moving details (weight &amp; CF estimated from other company) and ask about their out-of-pocket price. Instead of talking with the agents one by one, this can make the search more efficient. Though, it is expected to have at least one call with the agent to do an estimation. Keep the email updated as you get more and more information.</li>
+</ol>
+
+<p>If I need to find the moving company again, I will do the following:</p>
+<ol>
+  <li>Talk with 1 large mover to get an estimate.</li>
+  <li>Prepare an email template with the detail from step 1 and check with other 5 movers.</li>
+  <li>Negotiate.</li>
+</ol>
+
+<p>It probably will take ~3 hours in the end to find a good offer, instead of my ~9 hours journey here :)</p>]]></content><author><name></name></author><category term="Life" /><category term="Reflection" /><summary type="html"><![CDATA[What I learnt from 9 hours moving service hunting]]></summary></entry><entry><title type="html">Deep Learning Curriculum learning experience</title><link href="https://ziyuewang25.github.io/blog/2023/DLC/" rel="alternate" type="text/html" title="Deep Learning Curriculum learning experience" /><published>2023-09-04T00:00:00+00:00</published><updated>2023-09-04T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC/"><![CDATA[<p>I found <a href="https://github.com/jacobhilton/deep_learning_curriculum">Deep Learning Curriculum</a>(DLC) very helpful and challenging. It is a good way to get hands-on experience in topics related with technical AI Safety. Here are some points I want to mention about self-studying it:</p>
 
 <ol>
   <li>Difficulty : As mentioned in the DLC, it is indeed hard to solve some topics alone. I am not a newbie in the field as I had some experience with DL through Kaggle and work, but I still find implementing something from scratch can be intimidating and often lost direction in the middle of the exercise. There is no standard solution available for this curriculum, which made it hard to know whether the solution is correct or not. For example, in the Alignment topic, I couldn’t get the RLHF model perform better than the pretrained model but I doubt there is anything wrong with the RL algorithm but most likely from the model size and data size… It probably works like a real research environment, we need to find evidence to prove our solution is right or not instead of relying on existing solution, which doesn’t exist in real world.</li>
@@ -506,11 +550,4 @@ u lalalalalalalala I have been summoned!
 
   </picture>
 
-</figure>]]></content><author><name></name></author><category term="AI" /><category term="Project" /><summary type="html"><![CDATA[I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.]]></summary></entry><entry><title type="html">Find the induction heads in GPT-2</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/" rel="alternate" type="text/html" title="Find the induction heads in GPT-2" /><published>2023-06-28T00:00:00+00:00</published><updated>2023-06-28T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T1-MI</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T1-MI/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md">Topic 8 - Interpretability</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/15CSZ09T0LQ4_BAM7_NcGDy5sTVneFJQw?usp=sharing">T8-Interpretability-solution.ipynb</a></strong></p>
-
-<p>It took me around 8 hours to finish the exercise and most of the time is spent on <a href="https://github.com/callummcdougall/ARENA_2.0">ARENA</a> course material about this topic. It helps me a lot in understanding this topic and it offers many helper functions to do this exercise. Here is what I learnt from this exercise:</p>
-<ol>
-  <li><strong>Induction head</strong>: A head which implements the induction behavior. They attend to the token immediately after an earlier copy of the current token, and then predicts that the token attended to will come next.</li>
-  <li>How to reverse engineer the model’s behavior.</li>
-  <li>How to find induction head by checking the model’s attention pattern and doing logit attribution.</li>
-</ol>]]></content><author><name></name></author><category term="AI" /><category term="Project" /><summary type="html"><![CDATA[I tried to replicating the Decoder-only transformer by following "Attention is all you need" paper and trained it on William Shakespeare's work.]]></summary></entry></feed>
+</figure>]]></content><author><name></name></author><category term="AI" /><category term="Project" /><summary type="html"><![CDATA[I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.]]></summary></entry></feed>
