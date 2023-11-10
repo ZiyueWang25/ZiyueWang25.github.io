@@ -6,7 +6,7 @@
  * Themes
  ******************************************************************************/
 :root {
-  --global-bg-color: #ffffff;
+  --global-bg-color:#EEEEEE;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
@@ -84,7 +84,7 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 650px;
 }
 
 .profile img {
@@ -220,6 +220,8 @@ blockquote {
 }
 body {
   font-family: "Amiri";
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .post-description {
