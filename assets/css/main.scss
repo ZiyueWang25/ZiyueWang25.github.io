@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Dimensions
-$max-content-width: 650px;
+$max-content-width: {{ site.max_width }};
 
 @import
   "variables",
