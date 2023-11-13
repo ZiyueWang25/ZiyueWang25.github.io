@@ -1,6 +1,6 @@
 # Personal website
 
-https://ziyuewang25.github.io/
+https://ziyuewang.com
 
 Local setup
 
