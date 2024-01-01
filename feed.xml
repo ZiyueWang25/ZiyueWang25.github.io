@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-11-13T04:54:06+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-</subtitle><entry><title type="html">How to find a good moving service</title><link href="https://ziyuewang25.github.io/blog/2023/moving/" rel="alternate" type="text/html" title="How to find a good moving service" /><published>2023-10-20T00:00:00+00:00</published><updated>2023-10-20T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/moving</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/moving/"><![CDATA[<p>Cross-post from <a href="https://www.lesswrong.com/posts/GgezTQnwqxPzA2yNS/how-to-find-a-good-moving-service">LessWrong</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://ziyuewang25.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ziyuewang25.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-01-01T04:15:12+00:00</updated><id>https://ziyuewang25.github.io/feed.xml</id><title type="html">blank</title><subtitle>Think -&gt; Experiment -&gt; Create -&gt; Serve :)
+</subtitle><entry><title type="html">The special day or it is just a day</title><link href="https://ziyuewang25.github.io/blog/2023/last-day/" rel="alternate" type="text/html" title="The special day or it is just a day" /><published>2023-12-31T00:00:00+00:00</published><updated>2023-12-31T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/last-day</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/last-day/"><![CDATA[<p>Speaking about the last day or the first day of the year, we generally have high expectation about it and we tend to do something different. I sometimes feel pressure about this and I actually feel happier during the normal days. Why?</p>
+
+<ol>
+  <li>I like routine. Special day means special behavior/meal/gathering, which sometimes doesn’t fit to my preference.</li>
+  <li>Lots of waste. People tend to order/eat/spend a lot more during the special days.</li>
+  <li>A decent day becomes not that great. If I go to a normal hiking trail, I will feel happy during a normal day. But for the last day of the year, we tend to have a special trail and feel less satisfactory about the normal good things happening around us.</li>
+  <li>Lots of reflection and plans. Let’s be honest, we normally cannot predict year-long behavior and cannot remember exactly what has happened 6 months ago. And doing them in such busy ~2 days is also unrealistic.</li>
+  <li>Positive Bias. We tend to share good wish and present positive experience in the end the year. For someone with a bad year, that could make him/her feel worse through comparison. We probably should be more honest about ourselves and our year.</li>
+</ol>
+
+<p>So, I am suggesting the following:</p>
+<ol>
+  <li>Respect the routine of others. At least let us sleep well, eat comfortably and have time to be alone.</li>
+  <li>Only buy/eat/use what we need. About gift, buy something we have high (&gt;90%) confidence that the receiver will like and use, otherwise, just donate the money to <a href="https://www.givingwhatwecan.org/best-charities-to-donate-to-2023">effective charity</a>.</li>
+  <li>Appreciate what we already have and are experiencing.</li>
+  <li>Reflect and plan more often, don’t just do it in the 2 special days.</li>
+  <li>Be honest to ourselve and be compassionate about others.</li>
+</ol>
+
+<p>No matter how, still, Happy New Year :D</p>]]></content><author><name></name></author><category term="Life" /><category term="Reflection" /><summary type="html"><![CDATA[How should we treat the last day of the year]]></summary></entry><entry><title type="html">How to find a good moving service</title><link href="https://ziyuewang25.github.io/blog/2023/moving/" rel="alternate" type="text/html" title="How to find a good moving service" /><published>2023-10-20T00:00:00+00:00</published><updated>2023-10-20T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/moving</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/moving/"><![CDATA[<p>Cross-post from <a href="https://www.lesswrong.com/posts/GgezTQnwqxPzA2yNS/how-to-find-a-good-moving-service">LessWrong</a></p>
 
 <p>2 weeks ago, I realized that I will move from Seattle to Mountain View in 50 days. I was excited but I didn’t realize I need to talk with &gt;15 moving companies to find the satisfying ones. After ~9 hours of hunting, I finally found a satisfying one. I chose <a href="https://quotes.northamerican.com/">North American Moving Service</a> for my 850 miles, 2000lbs, 300 cubic feet (CF) moving for the price of 3200$. Here is what I learned (starting from the most important one to the least):</p>
 
@@ -470,86 +489,4 @@ u lalalalalalalala I have been summoned!
 
 <p>Extensively track the metrics can also be helpful to debug where things went wrong or well, though relying on some of them solely might be inadequate. I am confused by <a href="https://andyljones.com/posts/rl-debugging.html#:~:text=handling%20invalid%20actions.-,Residual%20variance,-The%20variance%20of">residual variance</a> oscillation inside CartPole environment before, i.e. the residual variance doesn’t go smoothly towards a positive value, but <a href="https://wandb.ai//vincentwang25/PPOCart/reports/PPO-CartPPO-CartPole-Wrong-Value-Residual-Variance--Vmlldzo0OTE1NTcw?accessToken=jb0t273joya2ec1a4xaiefydzhb5qd0h1wekl40yo55cr9r6mcz6t25ibj0otim4">oscillate wildly</a>. It turns out that this can be due to the inherent simplicity of the CartPole environment: it doesn’t need much value estimation, but more relying on planning. This cause the value estimation to be unstable.</p>
 
-<p>Overall I found this exercise quite helpful for me to understand the PPO algorithm and generally RL algorithm structure.</p>]]></content><author><name></name></author><category term="AI" /><category term="Project" /><summary type="html"><![CDATA[I tried to implementing PPO from scratch and apply it to Procgen environment. Here is what I learnt.]]></summary></entry><entry><title type="html">Replicating Scaling Laws by using MNIST data</title><link href="https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling-Laws/" rel="alternate" type="text/html" title="Replicating Scaling Laws by using MNIST data" /><published>2023-07-10T00:00:00+00:00</published><updated>2023-07-10T00:00:00+00:00</updated><id>https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling%20Laws</id><content type="html" xml:base="https://ziyuewang25.github.io/blog/2023/DLC-T2-Scaling-Laws/"><![CDATA[<p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/2-Scaling-Laws.md">Topic 2 - Scaling Laws</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing">T2-ScalingLaws-solution.ipynb</a></strong></p>
-
-<p>It took me around 15 hours to finish the exercise. Throughout the process I learnt:</p>
-<ol>
-  <li>How to vary the CNN width and training data to follow scaling laws experimentation set up.</li>
-  <li>How to use Pytorch lighting learning rate finder to adjust the learning rate based on model size.
-    <ol>
-      <li>use <code class="language-plaintext highlighter-rouge">callbacks.LearningRateFinder</code> from pytorch lighting and do some experimentation to find the proper minimum and maximum learning rate to search from. Plot the learning rate to make sure the result looks right.</li>
-    </ol>
-  </li>
-</ol>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/BBN4gyc/lr-plot.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-<ol>
-  <li>How the compute-efficient model size varies with compute.
-    <ol>
-      <li>To approximate the relationship between compute and loss, we can use <a href="https://www.cuemath.com/calculus/cube-root-function/">Cubic Root Function</a>. We need to train more episodes to enable an accurate approximation.</li>
-    </ol>
-  </li>
-</ol>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/41vg6jL/download-2-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/41vg6jL/download-2-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/41vg6jL/download-2-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/41vg6jL/download-2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/zNDhTpD/download-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/zNDhTpD/download-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/zNDhTpD/download-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/zNDhTpD/download.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/dgSp0MN/download-1-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/dgSp0MN/download-1-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/dgSp0MN/download-1-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="https://i.ibb.co/dgSp0MN/download-1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>]]></content><author><name></name></author><category term="AI" /><category term="Project" /><summary type="html"><![CDATA[I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.]]></summary></entry></feed>
+<p>Overall I found this exercise quite helpful for me to understand the PPO algorithm and generally RL algorithm structure.</p>]]></content><author><name></name></author><category term="AI" /><category term="Project" /><summary type="html"><![CDATA[I tried to implementing PPO from scratch and apply it to Procgen environment. Here is what I learnt.]]></summary></entry></feed>
