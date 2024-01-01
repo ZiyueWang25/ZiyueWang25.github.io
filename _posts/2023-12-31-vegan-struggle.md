@@ -20,4 +20,4 @@ I am not a master of communication and I haven't found a good way to answer "why
 
 I should respect their diet because it is a [personal preference](https://www.ziyuewang.com/blog/2023/personal-preference/). But I should speak up because when one more people stop eating meat, we will have more restaurant offer better vegan option, less animal suffering and less CO2 emission. You may refer to the impact analysis [here](https://reducing-suffering.org/does-vegetarianism-make-a-difference/).
 
-How should I speak up then? I will try to figure it out. But before then, I should probably find a better way to gather together than eating. And sorry my mom and day, I probably should learn to say no to your way of saying love.
+How should I speak up then? I will try to figure it out. But before then, I should probably find a better way to gather together than eating. And sorry my mom and dad, I probably should learn to say no to your way of saying love.
