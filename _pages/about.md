@@ -23,4 +23,4 @@ Hobby-wise, I [enjoy rock climbing](https://www.instagram.com/p/CVG0jDqJMqJ/?utm
 
 Education-wise, I got my master degree in Financial Engineering from the "[Best](https://quantnet.com/mfe-programs-rankings/)" program in the US.
 
-Hope you can find something fun / helpful here. Happy to [chat](https://calendly.com/ziyue-wang0125)!
+Hope you can find something fun / helpful here.
