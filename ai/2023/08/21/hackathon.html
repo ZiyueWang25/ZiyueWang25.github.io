@@ -9,10 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Life | Ziyue  Wang</title>
+    <title>Can Large Language Models Solve Security Challenges? | Ziyue  Wang</title>
     <meta name="author" content="Ziyue  Wang">
-    <meta name="description" content="Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-">
+    <meta name="description" content="Here is our report from the Eval Hacakthon and what I learnt from my first Hackathon.">
     <meta name="keywords" content="portfolio-website">
 
 
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img/h.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ziyuewang25.github.io/blog/category/life/">
+    <link rel="canonical" href="https://ziyuewang25.github.io/ai/2023/08/21/hackathon.html">
     
     <!-- Dark Mode -->
     
@@ -73,8 +72,8 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog</a>
               </li>
               <!-- Other pages -->
 
@@ -101,28 +100,70 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-tag fa-sm"></i> Life </h1>
-    <p class="post-description"> an archive of posts in this category </p>
+    <h1 class="post-title">Can Large Language Models Solve Security Challenges?</h1>
+    <p class="post-meta">August 21, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/tag/project">
+          <i class="fas fa-hashtag fa-sm"></i> Project</a>  
+          
+        ·  
+        <a href="/blog/category/ai">
+          <i class="fas fa-tag fa-sm"></i> AI</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Oct 20, 2023</th>
-          <td>
-              <a class="post-link" href="/life/2023/10/20/moving.html">How to find a good moving service</a>
-          </td>
-        </tr>
-      
-      </table>
-    </div>
-  </article>
+  <article class="post-content">
+    <p>Over the weekend, I participated in the <a href="https://alignmentjam.com/jam/evals#submit-form" rel="external nofollow noopener" target="_blank">Eval Hackathon</a>, where we are asked to design new ways to audit, monitor, red-team, and evaluate language models and we need to submit an report in the end to showcase our design and result.</p>
 
+<p>I am glad that I have participated and put a lot efforts into it. I felt proud what we have came up through the 36 hours and here is our report: <a href="https://docs.google.com/document/d/13wyQo_38QPjOqaAUFdPdsHr41n1ToOGHNxKmm2bHg2c/edit?usp=sharing" rel="external nofollow noopener" target="_blank"><strong>Can Large Language Models Solve Security Challenges?</strong></a> and our code is open sourced <a href="https://github.com/ZiyueWang25/llm-security-challenge" rel="external nofollow noopener" target="_blank">here</a>. In this report, we test large language models’ ability to interact and break out of shell environments using the OverTheWire <a href="https://overthewire.org/wargames/" rel="external nofollow noopener" target="_blank">Wargames</a> environment, showing the models’ surprising ability to do action-oriented cyberexploits in shell environments.</p>
+
+<p>Through the Hackathon, I learnt the following things:</p>
+<ol>
+  <li>Teaming up with people with similar goals is really valuable: I found myself having higher motivation working as a team. Collaborating with teammates who share similar goal is also a great productivity booster. Comparing with working alone, we can also learn more and have more output from this process.</li>
+  <li>Doing some prep work would be great: from hindsight, I think it could be better if we had more discussion in the beginning about which direction to go and prepare some code and paper template in the beginning, especially for this kind of Hackathon, where we are asked to submit a report in the end.</li>
+  <li>Asking for help, don’t just get stuck: Asking help from teammates, forum, group chat and etc. Time is limited and we should jump out of local stuck zone as quickly as possible and move on.</li>
+  <li>Fast Prototyping: This is one thing I am still learning. Testing different ideas, feasibility and impact as quickly as possible. I think this skill can grow as we become more experienced and have better research taste. But it is also a skill can be learnt. I generally find myself should read more relevant work before diving into the coding part. I still need to practice the skill of grasping the gist from a long context.</li>
+</ol>
+
+<p>Hope you enjoy this blog post and feel free to reach out if you have any question or want to have more discussion!</p>
+
+  </article><div id="giscus_thread" style="max-width: 900px; margin: 0 auto;">
+  <script>
+    let giscusTheme = localStorage.getItem("theme");
+    let giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "ziyuewang25/ziyuewang25.github.io",
+        "data-repo-id": "R_kgDOJYJ4JQ",
+        "data-category": "Announcements",
+        "data-category-id": "DIC_kwDOJYJ4Jc4CV2ve",
+        "data-mapping": "pathname",
+        "data-strict": "0",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": giscusTheme,
+        "data-lang": "en",
+        "crossorigin": "anonymous",
+        "async": "",
+    };
+
+
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById("giscus_thread").appendChild(giscusScript);
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
+</noscript>
+</div>
 </div>
 
     </div>

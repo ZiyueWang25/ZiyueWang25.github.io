@@ -9,10 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Life | Ziyue  Wang</title>
+    <title>Implementing PPO from scratch | Ziyue  Wang</title>
     <meta name="author" content="Ziyue  Wang">
-    <meta name="description" content="Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-">
+    <meta name="description" content="I tried to implementing PPO from scratch and apply it to Procgen environment. Here is what I learnt.">
     <meta name="keywords" content="portfolio-website">
 
 
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img/h.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ziyuewang25.github.io/blog/category/life/">
+    <link rel="canonical" href="https://ziyuewang25.github.io/ai/2023/07/23/DLC-T6-RL.html">
     
     <!-- Dark Mode -->
     
@@ -73,8 +72,8 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog</a>
               </li>
               <!-- Other pages -->
 
@@ -101,28 +100,131 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-tag fa-sm"></i> Life </h1>
-    <p class="post-description"> an archive of posts in this category </p>
+    <h1 class="post-title">Implementing PPO from scratch</h1>
+    <p class="post-meta">July 23, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/tag/project">
+          <i class="fas fa-hashtag fa-sm"></i> Project</a>  
+          
+        ·  
+        <a href="/blog/category/ai">
+          <i class="fas fa-tag fa-sm"></i> AI</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Oct 20, 2023</th>
-          <td>
-              <a class="post-link" href="/life/2023/10/20/moving.html">How to find a good moving service</a>
-          </td>
-        </tr>
-      
-      </table>
-    </div>
-  </article>
+  <article class="post-content">
+    <p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master" rel="external nofollow noopener" target="_blank">Deep Learning Curriculum</a>(DLC) written by <a href="https://www.jacobh.co.uk/" rel="external nofollow noopener" target="_blank">Jacob Hilton</a> and here is what I experienced and learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/6-Reinforcement-Learning.md" rel="external nofollow noopener" target="_blank">Topic 6 - Reinforcement Learning</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/1n8EhT0RHxdS1MIgiPQkvjDX7sD7Mpxoy?usp=sharing" rel="external nofollow noopener" target="_blank">T6-RL-solution.ipynb</a></strong></p>
 
+<p>It took me around 40 hours to finish the exercise. I started by spending around 15 hours doing the exercise in <a href="https://github.com/callummcdougall/ARENA_2.0/tree/main" rel="external nofollow noopener" target="_blank">ARENA</a> about RL to get myself familiar with different components in RL and then spending the rest 25 hours doing the DLC exercise.</p>
+
+<p>To implement and debug the RL algorithm, I referred to posts <a href="https://andyljones.com/posts/rl-debugging.html" rel="external nofollow noopener" target="_blank">Debugging RL, Without the Agonizing Pain</a> and <a href="https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/" rel="external nofollow noopener" target="_blank">The 37 Implementation Details of Proximal Policy Optimization</a>.</p>
+
+<p>I used Colab Pro+ environment to enable background running and more compute. The experimentation is done using 1 V100 GPU.</p>
+
+<p>I have generated the  Result <a href="https://wandb.ai/vincentwang25/PPOProcgen/reports/PPO-Implementation-in-Procgen-Env--Vmlldzo0OTQ3NzE5?accessToken=s9w0lpjb2fjv77ouf1c7nrb2s0zcviymc0mmw8pksr34mnsiblw5x7t7izv5gbhs" rel="external nofollow noopener" target="_blank">Report</a> in Weights &amp; Bias. It shows</p>
+
+<ol>
+  <li>Increasing amount of episode return</li>
+  <li>reasonable amount of ratios clipped by PPO.</li>
+  <li>Small and fairly stable approximate KL.</li>
+  <li>Policy entropy (relative entropy) falls gradually</li>
+  <li>Value residual Variance (1 - value explained variance) tend to something positive.</li>
+  <li>Mean and standard deviation for advantage normalization are fairly stable and mean is pretty close to zero.</li>
+</ol>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/9rkgjbc/2023-07-23-09-12-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/9rkgjbc/2023-07-23-09-12.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/nQzcTBs/2023-07-23-09-13-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/nQzcTBs/2023-07-23-09-13.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<p>Another closer look at the episode return. It shows that using IMPALA model performs better than traditional CNN, especially at <code class="language-plaintext highlighter-rouge">bigfish</code> environment.</p>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/2g1Pjfd/2023-07-23-09-16.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<p>Other than these results, I found implementing the PPO algorithm under customized easy probing environments quite helpful. It is also helpful to achieve decent performance under CartPole environment and Atari environments before moving into harder Procgen Environments.</p>
+
+<p>Extensively track the metrics can also be helpful to debug where things went wrong or well, though relying on some of them solely might be inadequate. I am confused by <a href="https://andyljones.com/posts/rl-debugging.html#:~:text=handling%20invalid%20actions.-,Residual%20variance,-The%20variance%20of" rel="external nofollow noopener" target="_blank">residual variance</a> oscillation inside CartPole environment before, i.e. the residual variance doesn’t go smoothly towards a positive value, but <a href="https://wandb.ai//vincentwang25/PPOCart/reports/PPO-CartPPO-CartPole-Wrong-Value-Residual-Variance--Vmlldzo0OTE1NTcw?accessToken=jb0t273joya2ec1a4xaiefydzhb5qd0h1wekl40yo55cr9r6mcz6t25ibj0otim4" rel="external nofollow noopener" target="_blank">oscillate wildly</a>. It turns out that this can be due to the inherent simplicity of the CartPole environment: it doesn’t need much value estimation, but more relying on planning. This cause the value estimation to be unstable.</p>
+
+<p>Overall I found this exercise quite helpful for me to understand the PPO algorithm and generally RL algorithm structure.</p>
+
+  </article><div id="giscus_thread" style="max-width: 900px; margin: 0 auto;">
+  <script>
+    let giscusTheme = localStorage.getItem("theme");
+    let giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "ziyuewang25/ziyuewang25.github.io",
+        "data-repo-id": "R_kgDOJYJ4JQ",
+        "data-category": "Announcements",
+        "data-category-id": "DIC_kwDOJYJ4Jc4CV2ve",
+        "data-mapping": "pathname",
+        "data-strict": "0",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": giscusTheme,
+        "data-lang": "en",
+        "crossorigin": "anonymous",
+        "async": "",
+    };
+
+
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById("giscus_thread").appendChild(giscusScript);
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
+</noscript>
+</div>
 </div>
 
     </div>

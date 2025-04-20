@@ -9,10 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Life | Ziyue  Wang</title>
+    <title>Replicating Scaling Laws by using MNIST data | Ziyue  Wang</title>
     <meta name="author" content="Ziyue  Wang">
-    <meta name="description" content="Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-">
+    <meta name="description" content="I tried to replicating scaling laws result by using MNIST data. Here is what I learnt.">
     <meta name="keywords" content="portfolio-website">
 
 
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img/h.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ziyuewang25.github.io/blog/category/life/">
+    <link rel="canonical" href="https://ziyuewang25.github.io/ai/2023/07/10/DLC-T2-Scaling-Laws.html">
     
     <!-- Dark Mode -->
     
@@ -73,8 +72,8 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog</a>
               </li>
               <!-- Other pages -->
 
@@ -101,28 +100,140 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-tag fa-sm"></i> Life </h1>
-    <p class="post-description"> an archive of posts in this category </p>
+    <h1 class="post-title">Replicating Scaling Laws by using MNIST data</h1>
+    <p class="post-meta">July 10, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/tag/project">
+          <i class="fas fa-hashtag fa-sm"></i> Project</a>  
+          
+        ·  
+        <a href="/blog/category/ai">
+          <i class="fas fa-tag fa-sm"></i> AI</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Oct 20, 2023</th>
-          <td>
-              <a class="post-link" href="/life/2023/10/20/moving.html">How to find a good moving service</a>
-          </td>
-        </tr>
-      
-      </table>
-    </div>
-  </article>
+  <article class="post-content">
+    <p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master" rel="external nofollow noopener" target="_blank">Deep Learning Curriculum</a> written by <a href="https://www.jacobh.co.uk/" rel="external nofollow noopener" target="_blank">Jacob Hilton</a> and here is what I learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/2-Scaling-Laws.md" rel="external nofollow noopener" target="_blank">Topic 2 - Scaling Laws</a>. <strong>My solution is written in Colab <a href="https://colab.research.google.com/drive/1xTpfj6xADQYdUudnZE9AWMUzyr8DBoU6?usp=sharing" rel="external nofollow noopener" target="_blank">T2-ScalingLaws-solution.ipynb</a></strong></p>
 
+<p>It took me around 15 hours to finish the exercise. Throughout the process I learnt:</p>
+<ol>
+  <li>How to vary the CNN width and training data to follow scaling laws experimentation set up.</li>
+  <li>How to use Pytorch lighting learning rate finder to adjust the learning rate based on model size.
+    <ol>
+      <li>use <code class="language-plaintext highlighter-rouge">callbacks.LearningRateFinder</code> from pytorch lighting and do some experimentation to find the proper minimum and maximum learning rate to search from. Plot the learning rate to make sure the result looks right.</li>
+    </ol>
+  </li>
+</ol>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/BBN4gyc/lr-plot-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/BBN4gyc/lr-plot.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<ol>
+  <li>How the compute-efficient model size varies with compute.
+    <ol>
+      <li>To approximate the relationship between compute and loss, we can use <a href="https://www.cuemath.com/calculus/cube-root-function/" rel="external nofollow noopener" target="_blank">Cubic Root Function</a>. We need to train more episodes to enable an accurate approximation.</li>
+    </ol>
+  </li>
+</ol>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/41vg6jL/download-2-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/41vg6jL/download-2-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/41vg6jL/download-2-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/41vg6jL/download-2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/zNDhTpD/download-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/zNDhTpD/download-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/zNDhTpD/download-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/zNDhTpD/download.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="https://i.ibb.co/dgSp0MN/download-1-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="https://i.ibb.co/dgSp0MN/download-1-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="https://i.ibb.co/dgSp0MN/download-1-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="https://i.ibb.co/dgSp0MN/download-1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+  </article><div id="giscus_thread" style="max-width: 900px; margin: 0 auto;">
+  <script>
+    let giscusTheme = localStorage.getItem("theme");
+    let giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "ziyuewang25/ziyuewang25.github.io",
+        "data-repo-id": "R_kgDOJYJ4JQ",
+        "data-category": "Announcements",
+        "data-category-id": "DIC_kwDOJYJ4Jc4CV2ve",
+        "data-mapping": "pathname",
+        "data-strict": "0",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": giscusTheme,
+        "data-lang": "en",
+        "crossorigin": "anonymous",
+        "async": "",
+    };
+
+
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById("giscus_thread").appendChild(giscusScript);
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
+</noscript>
+</div>
 </div>
 
     </div>

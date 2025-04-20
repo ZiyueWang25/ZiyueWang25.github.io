@@ -9,10 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Life | Ziyue  Wang</title>
+    <title>RLHF from Shakespeare | Ziyue  Wang</title>
     <meta name="author" content="Ziyue  Wang">
-    <meta name="description" content="Think -&gt; Experiment -&gt; Create -&gt; Serve :)
-">
+    <meta name="description" content="I tried to finetune LLM with RLHF to generate positive tone message from Shakespeare Corpus. Here is what I learnt.">
     <meta name="keywords" content="portfolio-website">
 
 
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img/h.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ziyuewang25.github.io/blog/category/life/">
+    <link rel="canonical" href="https://ziyuewang25.github.io/ai/2023/08/16/DLC-T7-Alignment.html">
     
     <!-- Dark Mode -->
     
@@ -73,8 +72,8 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog</a>
               </li>
               <!-- Other pages -->
 
@@ -101,28 +100,76 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-tag fa-sm"></i> Life </h1>
-    <p class="post-description"> an archive of posts in this category </p>
+    <h1 class="post-title">RLHF from Shakespeare</h1>
+    <p class="post-meta">August 16, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/tag/project">
+          <i class="fas fa-hashtag fa-sm"></i> Project</a>  
+          
+        ·  
+        <a href="/blog/category/ai">
+          <i class="fas fa-tag fa-sm"></i> AI</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Oct 20, 2023</th>
-          <td>
-              <a class="post-link" href="/life/2023/10/20/moving.html">How to find a good moving service</a>
-          </td>
-        </tr>
-      
-      </table>
-    </div>
-  </article>
+  <article class="post-content">
+    <p>I started following <a href="https://github.com/jacobhilton/deep_learning_curriculum/tree/master" rel="external nofollow noopener" target="_blank">Deep Learning Curriculum</a>(DLC) written by <a href="https://www.jacobh.co.uk/" rel="external nofollow noopener" target="_blank">Jacob Hilton</a> and here is what I experienced and learnt from the exercise in <a href="https://github.com/jacobhilton/deep_learning_curriculum/blob/master/7-Alignment.md" rel="external nofollow noopener" target="_blank">Topic 7 - Alignment</a>. <strong>My solution is written in Github repository <a href="https://github.com/ZiyueWang25/RLHF-Shakespeare" rel="external nofollow noopener" target="_blank">RLHF-Shakespeare</a></strong></p>
 
+<p>So the overall idea is to finetune Large Language Model (LLM) with Reinforcement Learning from Human Feedback (RLHF) to generate positive tone message from Shakespeare corpus. It takes the following 3 steps:</p>
+<ol>
+  <li>Pretrain a small GPT-2 structure model on William Shakespeare corpus</li>
+  <li>Train reward model with manually labeled positive and negative message</li>
+  <li>Use the reward model and RLHF method to finetune the pretrained model and get a model that can generate more positive tone Shakespeare-alike messages.</li>
+</ol>
+
+<p>The complete evaluation and training result in shown in the repository. Please take a look if that interests you :)</p>
+
+<p>Here is what I didn’t expected and learnt:</p>
+<ol>
+  <li>labeling message generating from pretraining model is hard: Let’s be honest, the messages generated from the pretrained model is kinda like gibberish, even though they have  some sentence structure in it. This is mostly due to the fact that the pretrained model is small and the corpus is not big enough. I found the evaluation metric can start showing sign of overfitting soon (around epoch 6). The perplexity score in the end is still high (~20).  So in the end, I used an existing dataset, which contains some lines from the corpus directly, gathered from Conner Kissane.</li>
+  <li>RLHF is hard: there are several opponents: pretrained model, reward model and RL algorithm. Each part can has their limitation and potential bugs. So making it work from scratch is definitely a not easy problem. In the beginning, I am a bit frustrated to saw the finetuned model performs still similarly to the finetuned model but after investigating the reasons, I felt a bit relieved because it simply just hard to make it work in such a small scale…</li>
+  <li>Iteration is important: if the pretrained model is not good enough or the reward model is overfitted, then it is hard to make RLHF work. We’d better iteratively make the previous steps better instead of only focusing on the last step.</li>
+</ol>
+
+<p>Hope you enjoy this blog post and feel free to reach out if you have any question or want to have more discussion!</p>
+
+  </article><div id="giscus_thread" style="max-width: 900px; margin: 0 auto;">
+  <script>
+    let giscusTheme = localStorage.getItem("theme");
+    let giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "ziyuewang25/ziyuewang25.github.io",
+        "data-repo-id": "R_kgDOJYJ4JQ",
+        "data-category": "Announcements",
+        "data-category-id": "DIC_kwDOJYJ4Jc4CV2ve",
+        "data-mapping": "pathname",
+        "data-strict": "0",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": giscusTheme,
+        "data-lang": "en",
+        "crossorigin": "anonymous",
+        "async": "",
+    };
+
+
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById("giscus_thread").appendChild(giscusScript);
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
+</noscript>
+</div>
 </div>
 
     </div>
