@@ -13,3 +13,11 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+// make profile pic small & round
+.profile img {
+  width: 200px;       // pick your desired size
+  height: 200px;
+  object-fit: cover;  // crop to fill the circle
+  border-radius: 50%;
+}
