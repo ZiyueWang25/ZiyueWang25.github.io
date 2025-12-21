@@ -52,40 +52,20 @@
     <!-- Header -->
     <header>
 
-      <!-- Nav Bar -->
+      <!-- Minimal Nav Bar for Single Page -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-          
-          <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
+          <!-- Name/Logo -->
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Ziyue </span>Wang</a>
 
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-
-              <!-- About -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/">About<span class="sr-only">(current)</span></a>
-              </li>
-              
-              <!-- Blog -->
-              <li class="nav-item ">
-                <a class="nav-link" href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">Blog</a>
-              </li>
-              <!-- Other pages -->
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
-            </ul>
+          <div class="ml-auto d-flex align-items-center">
+            <!-- Theme toggle -->
+            <div class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -101,13 +81,13 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- about.html -->
+      <!-- Single Page About Layout -->
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
       <span class="font-weight-bold">Ziyue</span>  Wang
     </h1>
-    <p class="desc">AI safety researcher / Effective altruist</p>
+    <p class="desc">AGI safety researcher</p>
   </header>
 
   <article>
@@ -132,41 +112,61 @@
     </div>
 
     <div class="clearfix">
-      <p>I am a Research Engineer at Google DeepMind Frontier Safety team in San Francisco. I work on dangerous capability evaluation, elicitation and mitigation. Previously, I worked on improving Gemini Coding capability through pretraining and RL, and spent some time doing algorithmic trading in Wall Street.</p>
+      <p>I am a Senior Research Engineer at <a href="https://deepmind.google/" rel="external nofollow noopener" target="_blank">Google DeepMind</a>, working on the Frontier Safety Mitigation team in San Francisco. My research focuses on designing safeguards against cybersecurity threats and biological risks (What does our team work on? see <a href="https://deepmind.google/blog/taking-a-responsible-path-to-agi/" rel="external nofollow noopener" target="_blank">here</a>).</p>
 
-<p>I believe the idea of <a href="https://80000hours.org/2020/08/misconceptions-effective-altruism/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=80KMAR-EA/LTism&amp;utm_content=145184936813&amp;utm_term=effective%20altruism&amp;gclid=CjwKCAjw5_GmBhBIEiwA5QSMxBaVik5xPNtCy6BxyqMy4EVvjN63iBJwNsi11v8uCi8sMDp82joXEhoCTsEQAvD_BwE" rel="external nofollow noopener" target="_blank">Effective Altruism</a> and I donate 10% of my income.</p>
+<p>Previously, I contributed to dangerous capability <a href="https://arxiv.org/abs/2505.01420" rel="external nofollow noopener" target="_blank">evaluation and elicitation</a> for LLMs and helped improve Gemini’s coding capabilities through pre- and post-training. Prior to my career in AI, I worked in algorithmic trading on Wall Street.</p>
 
-<p>Hobby-wise, I <a href="https://www.instagram.com/p/CVG0jDqJMqJ/?utm_source=ig_web_button_share_sheet" rel="external nofollow noopener" target="_blank">enjoy rock climbing</a>, writing blogs, hanging out with friends and hiking. I like <a href="https://www.kaggle.com/vincentwang25/Home" rel="external nofollow noopener" target="_blank">build models and find rules</a> inside huge amounts of data.</p>
+<p>I am driven by the principles of <a href="https://80000hours.org/2020/08/misconceptions-effective-altruism/" rel="external nofollow noopener" target="_blank">Effective Altruism</a> and have pledged a portion of my income to <a href="https://www.givingwhatwecan.org/best-charities-to-donate-to-2026" rel="external nofollow noopener" target="_blank">high-impact charities</a>.</p>
 
-<p>Education-wise, I got my master degree in Financial Engineering from the “<a href="https://quantnet.com/mfe-programs-rankings/" rel="external nofollow noopener" target="_blank">Best</a>” program in the US.</p>
+<p>Interests: Outside of the lab, I am a <a href="https://www.kaggle.com/vincentwang25/Home" rel="external nofollow noopener" target="_blank">Kaggle Competition Master</a> (notably placing 3rd in a Gravitational Wave Detection challenge which led to a published <a href="https://iopscience.iop.org/article/10.1088/2632-2153/ae2dbc" rel="external nofollow noopener" target="_blank">paper</a>). In my free time, you can find me rock climbing, hiking, traveling, or writing for my <a href="https://ziyuewang.substack.com/" rel="external nofollow noopener" target="_blank">blog</a>.</p>
+
 
     </div>
 
-    <!-- News -->
+    <hr class="my-5">
+
+    <!-- Blog Section - Link to Substack -->
+    <section id="blog" class="mb-5">
+      <h2>Blog</h2>
+      <p>I write about AGI safety and personal reflections.</p>
+      <a href="https://ziyuewang.substack.com/" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-external-link-alt"></i> Read my blog on Substack
+      </a>
+    </section>
+    <hr class="my-5">
+
+    <!-- News Section -->
     
 
-    <!-- Latest posts -->
+    <!-- Latest posts (if enabled) -->
+    
+
+    <!-- Projects Section -->
     
 
     <!-- Selected papers -->
     
 
-
-    <!-- Social -->
-      <div class="social">
+    <!-- Social Icons - At the bottom -->
+    <section id="contact" class="mb-4">
+      <h2>Get in Touch</h2>
+      <div class="social mt-4">
         <div class="contact-icons">
-          <a href="mailto:%7A%69%79%75%65.%77%61%6E%67%30%31%32%35@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope" style="font-size: 0.5em;"></i></a>
-<a href="https://github.com/ziyuewang25" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github" style="font-size: 0.5em;"></i></a>
-<a href="https://www.linkedin.com/in/ziyuewang0125" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin" style="font-size: 0.5em;"></i></a>
-<a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square" style="font-size: 0.5em;"></i></a>
+          <a href="mailto:%7A%69%79%75%65.%77%61%6E%67%30%31%32%35@%67%6D%61%69%6C.%63%6F%6D" title="Email"><i class="fas fa-envelope"></i></a>
+<a href="https://scholar.google.com/citations?user=JWCbqnEAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+<a href="https://github.com/ziyuewang25" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/ziyuewang0125" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://twitter.com/ZyWang25" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
 
 
         </div>
         <div class="contact-note" style="font-size:x-small;">
           
         </div>
-
       </div>
+    </section>
+
   </article>
 </div>
 

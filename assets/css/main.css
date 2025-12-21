@@ -343,17 +343,53 @@ body {
   text-align: center;
 }
 .social .contact-icons {
-  font-size: 4rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.social .contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--global-code-bg-color);
+  transition: all 0.3s ease;
 }
 .social .contact-icons a i::before {
   color: var(--global-text-color);
-  transition-property: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.social .contact-icons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .social .contact-icons a:hover i::before {
   color: var(--global-theme-color);
 }
 .social .contact-note {
   font-size: 0.8rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+.btn-outline-primary {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background-color: var(--global-theme-color);
+  color: white;
+  transform: translateY(-2px);
 }
 
 footer.fixed-bottom {
