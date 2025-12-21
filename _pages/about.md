@@ -15,7 +15,7 @@ show_projects: false  # set to true if you want to display projects inline
 # selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
 
-I am a Senior Research Engineer at [Google DeepMind](https://deepmind.google/), working on the Frontier Safety Mitigation team in San Francisco. My research focuses on designing safeguards against cybersecurity threats and biological risks (What does our team work on? see [here](https://deepmind.google/blog/taking-a-responsible-path-to-agi/)).
+I am a Senior Research Engineer at [Google DeepMind](https://deepmind.google/), working on the Frontier Safety Mitigation team in San Francisco. My research focuses on designing safeguards against cybersecurity threats and biological risks (You can find more about our work [here](https://deepmind.google/blog/taking-a-responsible-path-to-agi/)).
 
 Previously, I contributed to dangerous capability [evaluation and elicitation](https://arxiv.org/abs/2505.01420) for LLMs and helped improve Gemini's coding capabilities through pre- and post-training. Prior to my career in AI, I worked in algorithmic trading on Wall Street.
 
