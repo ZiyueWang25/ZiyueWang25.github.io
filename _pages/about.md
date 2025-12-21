@@ -2,21 +2,24 @@
 layout: about
 title: About
 permalink: /
-subtitle: AI safety researcher / Effective altruist 
+subtitle: AGI safety researcher
 
 profile:
   align: right
   image: profile_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: true
 
+social: true
+show_blog_link: true
+show_projects: false  # set to true if you want to display projects inline
 # selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Research Engineer at Google DeepMind Frontier Safety team in San Francisco. I work on dangerous capability evaluation, elicitation and mitigation. Previously, I worked on improving Gemini Coding capability through pretraining and RL, and spent some time doing algorithmic trading in Wall Street.
+I am a Senior Research Engineer at [Google DeepMind](https://deepmind.google/), working on the Frontier Safety Mitigation team in San Francisco. My research focuses on designing safeguards against cybersecurity threats and biological risks (What does our team work on? see [here](https://deepmind.google/blog/taking-a-responsible-path-to-agi/)).
 
-I believe the idea of [Effective Altruism](https://80000hours.org/2020/08/misconceptions-effective-altruism/?utm_source=google&utm_medium=cpc&utm_campaign=80KMAR-EA/LTism&utm_content=145184936813&utm_term=effective%20altruism&gclid=CjwKCAjw5_GmBhBIEiwA5QSMxBaVik5xPNtCy6BxyqMy4EVvjN63iBJwNsi11v8uCi8sMDp82joXEhoCTsEQAvD_BwE) and I donate 10% of my income.
+Previously, I contributed to dangerous capability [evaluation and elicitation](https://arxiv.org/abs/2505.01420) for LLMs and helped improve Gemini's coding capabilities through pre- and post-training. Prior to my career in AI, I worked in algorithmic trading on Wall Street.
 
-Hobby-wise, I [enjoy rock climbing](https://www.instagram.com/p/CVG0jDqJMqJ/?utm_source=ig_web_button_share_sheet), writing blogs, hanging out with friends and hiking. I like [build models and find rules](https://www.kaggle.com/vincentwang25/Home) inside huge amounts of data.
+I am driven by the principles of [Effective Altruism](https://80000hours.org/2020/08/misconceptions-effective-altruism/) and have pledged a portion of my income to [high-impact charities](https://www.givingwhatwecan.org/best-charities-to-donate-to-2026).
 
-Education-wise, I got my master degree in Financial Engineering from the "[Best](https://quantnet.com/mfe-programs-rankings/)" program in the US.
+Interests: Outside of the lab, I am a [Kaggle Competition Master](https://www.kaggle.com/vincentwang25/Home) (notably placing 3rd in a Gravitational Wave Detection challenge which led to a published [paper](https://iopscience.iop.org/article/10.1088/2632-2153/ae2dbc)). In my free time, you can find me rock climbing, hiking, traveling, or writing for my [blog](https://ziyuewang.substack.com/).
+

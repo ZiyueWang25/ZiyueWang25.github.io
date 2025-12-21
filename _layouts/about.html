@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- about.html -->
+<!-- Single Page About Layout -->
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
@@ -40,36 +40,99 @@ layout: default
       {{ content }}
     </div>
 
-    <!-- News -->
-    {% if page.news -%}
-      <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-      {%- include news.html %}
+    <hr class="my-5">
+
+    <!-- Blog Section - Link to Substack -->
+    {% if page.show_blog_link -%}
+    <section id="blog" class="mb-5">
+      <h2>Blog</h2>
+      <p>I write about AGI safety and personal reflections.</p>
+      <a href="https://ziyuewang.substack.com/" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-external-link-alt"></i> Read my blog on Substack
+      </a>
+    </section>
+    <hr class="my-5">
     {%- endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts -%}
-      <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Latest posts</a></h2>
+    <!-- News Section -->
+    {% if site.news.enabled -%}
+    <section id="news" class="mb-5">
+      <h2>News</h2>
+      {%- include news.html %}
+    </section>
+    <hr class="my-5">
+    {%- endif %}
+
+    <!-- Latest posts (if enabled) -->
+    {% if site.latest_posts.enabled and page.show_latest_posts -%}
+    <section id="posts" class="mb-5">
+      <h2>Latest Posts</h2>
       {%- include latest_posts.html %}
+    </section>
+    <hr class="my-5">
+    {%- endif %}
+
+    <!-- Projects Section -->
+    {% if page.show_projects -%}
+    <section id="projects" class="mb-5">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          {%- assign sorted_projects = site.projects | sort: "importance" -%}
+          {%- for project in sorted_projects -%}
+          <div class="grid-item">
+            {% if project.redirect -%}
+            <a href="{{ project.redirect }}" target="_blank" rel="noopener noreferrer">
+            {%- else -%}
+            <a href="{{ project.url | relative_url }}">
+            {%- endif %}
+              <div class="card hoverable">
+                {%- if project.img %}
+                {%- include figure.html path=project.img alt="project thumbnail" -%}
+                {%- endif %}
+                <div class="card-body">
+                  <h5 class="card-title">{{ project.title }}</h5>
+                  <p class="card-text">{{ project.description }}</p>
+                  {%- if project.github -%}
+                  <div class="github-icon">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  {%- endif %}
+                </div>
+              </div>
+            </a>
+          </div>
+          {%- endfor %}
+        </div>
+      </div>
+    </section>
+    <hr class="my-5">
     {%- endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers -%}
-      <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+    <section id="publications" class="mb-5">
+      <h2>Selected Publications</h2>
       {%- include selected_papers.html %}
+    </section>
+    <hr class="my-5">
     {%- endif %}
 
-
-    <!-- Social -->
+    <!-- Social Icons - At the bottom -->
     {%- if page.social %}
-      <div class="social">
+    <section id="contact" class="mb-4">
+      <h2>Get in Touch</h2>
+      <div class="social mt-4">
         <div class="contact-icons">
           {% include social.html %}
         </div>
         <div class="contact-note" style="font-size:x-small;">
           {{ site.contact_note }}
         </div>
-
       </div>
+    </section>
     {%- endif %}
+
   </article>
 </div>
