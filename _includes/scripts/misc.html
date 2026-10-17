@@ -13,3 +13,14 @@
   <!-- Load Common JS -->
   <script defer src="{{ '/assets/js/common.js' | relative_url }}"></script>
   <script defer src="{{ '/assets/js/copy_code.js' | relative_url }}" type="text/javascript"></script>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('article > section, article .clearfix, article .profile');
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    items.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
+  })();
+</script>
