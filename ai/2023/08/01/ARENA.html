@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Montserrat:wght@400;600;700&amp;display=swap">
 
     <!-- Code Syntax Highlighting -->
@@ -32,7 +33,7 @@
     
     <link rel="shortcut icon" href="/assets/img/h.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1792261348">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1792262954">
     <link rel="canonical" href="https://ziyuewang25.github.io/ai/2023/08/01/ARENA.html">
     
     <!-- Dark Mode -->
@@ -199,6 +200,17 @@
   <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
   <script defer src="/assets/js/common.js"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('article > section, article .clearfix, article .profile');
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    items.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
+  })();
+</script>
 
     
 
